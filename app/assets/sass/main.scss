@@ -4,22 +4,9 @@
 // Components that are not in the NHS.UK frontend library
 @import 'components/list-border';
 @import 'components/related-nav';
+@import 'components/search-bar';
+@import 'components/prototype-index';
 
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
-
-// Index.html (prototype homepage) //
-
-.h1-caption {
-    padding-bottom: 0px;
-    margin-bottom: 5px;
-    color: $nhsuk-secondary-text-color;
-}
-
-.key-links-container {
-    background-color: $color_nhsuk-white;
-    border: 1px solid $nhsuk-border-color;
-    padding: 20px;
-}
-  
