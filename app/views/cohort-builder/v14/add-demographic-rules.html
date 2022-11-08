@@ -11,7 +11,7 @@
 
 {% block outerContent %}
   {{ backLink({
-    "href": "cm-cohort-details",
+    "href": "add-cohort-details",
     "text": "Back",
     "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
   }) }}
@@ -19,7 +19,7 @@
 
 {% block content %}
   <div class="nhsuk-grid-row">
-    <form action="cm-add-condition-group" method="POST">
+    <form action="add-condition-group" method="POST">
       <div class="nhsuk-grid-column-two-thirds">
         
           <h1 class="nhsuk-heading-xl">Add demographic rules</h1>
@@ -113,35 +113,7 @@
 
           <h2 class="nhsuk-heading-l">Location</h2>
 
-          <div class="nhsuk-form-group">
-
-            <fieldset class="nhsuk-fieldset">
-              <div class="nhsuk-checkboxes">
-
-                <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="gp-postcode" name="gp-postcode" type="checkbox" value="gp-postcode-england">
-                  <label class="nhsuk-label nhsuk-checkboxes__label" for="gp-postcode">
-                    Postcode of GP addresses in England
-                  </label>
-                </div>
-
-                <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="gp-icb" name="gp-icb" type="checkbox" value="gp-icb-england">
-                  <label class="nhsuk-label nhsuk-checkboxes__label" for="gp-icb">
-                    GP's in England within an integrated Care Board (ICB)
-                  </label>
-                </div>
-
-                <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="gp-registered" name="gp-registered" type="checkbox" value="gp-registered-england">
-                  <label class="nhsuk-label nhsuk-checkboxes__label" for="gp-registered">
-                    Everyone registered with a GP in England
-                  </label>
-                </div>
-
-              </div> <!-- /. nhsuk-checkboxes -->
-            </fieldset> <!-- /. nhsuk-fieldset -->
-          </div> <!-- /. nhsuk-form-group -->
+          <p>The default option is 'Everyone registered with a GP in England'.</p>
 
           <hr>
 
@@ -158,31 +130,32 @@
           
                 <div class="nhsuk-radios__item">
                   <input class="nhsuk-radios__input" id="sex-at-birth-female" name="sex-at-birth" type="radio" value="female">
-                  <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                  <label class="nhsuk-label nhsuk-radios__label" for="sex-at-birth-female">
                     Female
                   </label>
                 </div>
           
                 <div class="nhsuk-radios__item">
-                  <input class="nhsuk-radios__input" id="sex-at-birth-female" name="sex-at-birth" type="radio" value="male">
-                  <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                  <input class="nhsuk-radios__input" id="sex-at-birth-male" name="sex-at-birth" type="radio" value="male">
+                  <label class="nhsuk-label nhsuk-radios__label" for="sex-at-birth-male">
                     Male
                   </label>
                 </div>
 
                 <div class="nhsuk-radios__divider">or</div>
-
-                <div class="nhsuk-checkboxes">
-  
-                  <div class="nhsuk-checkboxes__item">
-                    <input class="nhsuk-checkboxes__input" id="not-applicable-years" name="not-applicable" type="checkbox" value="not-applicable-age">
-                    <label class="nhsuk-label nhsuk-checkboxes__label" for="not-applicable-years">
-                      Not applicable
-                    </label>
-                  </div>
-  
-                </div> <!-- /. nhsuk-checkboxes -->
+                
               </div> <!-- /. nhsuk-radios -->
+
+              <div class="nhsuk-checkboxes">
+  
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="not-applicable-years" name="not-applicable" type="checkbox" value="not-applicable-age">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="not-applicable-years">
+                    Not applicable
+                  </label>
+                </div>
+
+              </div> <!-- /. nhsuk-checkboxes -->
             </fieldset> <!-- /. nhsuk-fieldset -->
           </div> <!-- /. nhsuk-form-group -->
 
@@ -196,18 +169,18 @@
 
             <div class="nhsuk-form-group">
               <fieldset class="nhsuk-fieldset">
-                <div class="nhsuk-radios nhsuk-radios--conditional">
+                <div class="nhsuk-checkboxes nhsuk-checkboxes--conditional">
 
                   <!-- Asian or Asian British -->
           
-                  <div class="nhsuk-radios__item">
-                    <input class="nhsuk-radios__input" id="asian-british" name="ethnicity" type="radio" value="asian-british" aria-controls="conditional-ethnicity-1" aria-expanded="false">
-                    <label class="nhsuk-label nhsuk-radios__label" for="asian-british">
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="asian-british" name="ethnicity" type="checkbox" value="asian-british" aria-controls="conditional-ethnicity-1" aria-expanded="false">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="asian-british">
                       Asian or Asian British
                     </label>
                   </div>
           
-                  <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-ethnicity-1">
+                  <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-ethnicity-1">
                     <div class="nhsuk-form-group">
 
                       <!-- Asian or Asian British - Indian -->
@@ -260,14 +233,14 @@
 
                   <!-- Black, Black British, Caribbean or African -->
           
-                  <div class="nhsuk-radios__item">
-                    <input class="nhsuk-radios__input" id="black-british" name="ethnicity" type="radio" value="black-british" aria-controls="conditional-ethnicity-2" aria-expanded="false">
-                    <label class="nhsuk-label nhsuk-radios__label" for="black-british">
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="black-british" name="ethnicity" type="checkbox" value="black-british" aria-controls="conditional-ethnicity-2" aria-expanded="false">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="black-british">
                       Black, Black British, Caribbean or African
                     </label>
                   </div>
           
-                  <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-ethnicity-2">
+                  <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-ethnicity-2">
                     <div class="nhsuk-form-group">
 
                       <!-- Black, Black British, Caribbean or African - Caribbean -->
@@ -302,14 +275,14 @@
 
                   <!-- Mixed or multiple ethnic groups -->
           
-                  <div class="nhsuk-radios__item">
-                    <input class="nhsuk-radios__input" id="mixed" name="ethnicity" type="radio" value="mixed" aria-controls="conditional-ethnicity-3" aria-expanded="false">
-                    <label class="nhsuk-label nhsuk-radios__label" for="mixed">
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="mixed" name="ethnicity" type="checkbox" value="mixed" aria-controls="conditional-ethnicity-3" aria-expanded="false">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="mixed">
                       Mixed or multiple ethnic groups
                     </label>
                   </div>
           
-                  <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-ethnicity-3">
+                  <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-ethnicity-3">
                     <div class="nhsuk-form-group">
 
                       <!-- Mixed or multiple ethnic groups - White and Black Caribbean -->
@@ -353,14 +326,14 @@
 
                   <!-- White -->
 
-                  <div class="nhsuk-radios__item">
-                    <input class="nhsuk-radios__input" id="mixed" name="ethnicity" type="radio" value="mixed" aria-controls="conditional-ethnicity-4" aria-expanded="false">
-                    <label class="nhsuk-label nhsuk-radios__label" for="mixed">
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="mixed" name="ethnicity" type="checkbox" value="mixed" aria-controls="conditional-ethnicity-4" aria-expanded="false">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="mixed">
                       White
                     </label>
                   </div>
           
-                  <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-ethnicity-4">
+                  <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-ethnicity-4">
                     <div class="nhsuk-form-group">
 
                       <!-- White - English,Welsh, Scottish, Nothern Irish or British -->
@@ -413,14 +386,14 @@
 
                   <!-- Other ethnic group -->
 
-                  <div class="nhsuk-radios__item">
-                    <input class="nhsuk-radios__input" id="other" name="ethnicity" type="radio" value="other" aria-controls="conditional-ethnicity-5" aria-expanded="false">
-                    <label class="nhsuk-label nhsuk-radios__label" for="other">
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="other" name="ethnicity" type="checkbox" value="other" aria-controls="conditional-ethnicity-5" aria-expanded="false">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="other">
                       Other ethnic group
                     </label>
                   </div>
           
-                  <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-ethnicity-5">
+                  <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-ethnicity-5">
                     <div class="nhsuk-form-group">
 
                       <!-- Other - Arab -->
@@ -454,21 +427,27 @@
                 <div class="nhsuk-checkboxes__item">
                   <input class="nhsuk-checkboxes__input" id="not-applicable-years" name="not-applicable" type="checkbox" value="not-applicable-age">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="not-applicable-years">
-                    None of the above
+                    All of the above
                   </label>
                 </div> <!-- /. nhsuk-checkboxes__item -->
 
               </div> <!-- /. nhsuk-checkboxes -->
             </div> <!-- /. nhsuk-form-group -->
 
-            <p>If the demographic rule you need isn't here, <a href="#">requst a new one</a>.</p>
+            <!-- 
+              <p>If the demographic rule you need isn't here, <a href="#">requst a new one</a>.</p>
+            -->
 
             <button class="nhsuk-button" type="submit">
               Continue
             </button>
+  
+            <a href="#">
+              <p>Save and exit</p>
+            </a>
 
-          </div> <!-- /. nhsuk-grid-column-two-thirds -->
-        </form> <!-- /. form -->
-      </div> <!-- /. nhsuk-grid-row -->
+        </div> <!-- /. nhsuk-grid-column-two-thirds -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
 
 {% endblock %}

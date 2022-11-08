@@ -11,7 +11,7 @@
 
 {% block outerContent %}
   {{ backLink({
-    "href": "/cohort-manager/index",
+    "href": "../v14/landing-page",
     "text": "Back",
     "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
   }) }}
@@ -22,7 +22,7 @@
 
     <div class="nhsuk-grid-column-two-thirds">
 
-      <form action="cm-cohort-build" method="POST">
+      <form action="cohort-hub" method="POST">
       
         <h1 class="nhsuk-heading-xl">Build a new cohort</h1>
       
@@ -60,6 +60,8 @@
         </ul>
   
         <!-- Page actions -->
+
+        <!-- 
   
         <div class="nhsuk-form-group">
           <fieldset class="nhsuk-fieldset" aria-describedby="dont-show-hint">
@@ -72,9 +74,11 @@
                 </label>
               </div>
       
-            </div> <!-- /. nhsuk-checkboxes -->
-          </fieldset> <!-- /. nhsuk=fieldset -->
-        </div> <!-- /. nhsuk-form-group -->
+            </div> 
+          </fieldset>
+        </div>
+
+        -->
 
         <button class="nhsuk-button" type="submit">
           Build a cohort

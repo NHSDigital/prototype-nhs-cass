@@ -11,7 +11,7 @@
 
 {% block outerContent %}
   {{ backLink({
-    "href": "cm-cohort-build",
+    "href": "../v14/cohort-hub",
     "text": "Back",
     "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
   }) }}
@@ -19,7 +19,7 @@
 
 {% block content %}
   <div class="nhsuk-grid-row">
-    <form action="cm-add-demographic-rules" method="POST">
+    <form action="add-demographic-rules" method="POST">
       <div class="nhsuk-grid-column-two-thirds">
         
           <h1 class="nhsuk-heading-xl">Add cohort details</h1>
@@ -111,6 +111,10 @@
           <button class="nhsuk-button" type="submit">
             Continue
           </button>
+
+          <a href="#">
+            <p>Save and exit</p>
+          </a>
 
       </div> <!-- /. nhsuk-grid-column-two-thirds -->
     </form> <!-- /. form -->

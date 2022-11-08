@@ -11,7 +11,7 @@
 
 {% block outerContent %}
   {{ backLink({
-    "href": "cm-landing",
+    "href": "../v14/intro",
     "text": "Back",
     "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
   }) }}
@@ -19,18 +19,18 @@
 
 {% block content %}
   <div class="nhsuk-grid-row">
-    <form action="cm-add-cohort-details" method="POST">
+    <form action="add-cohort-details" method="POST">
       <div class="nhsuk-grid-column-two-thirds">
-        
-          <h1 class="nhsuk-heading-xl">Cohort build</h1>
 
-          <p class="nhsuk-body-l">Use the cohort builder to build a new cohort, or edit and clone existing cohorts using the actions below.</p>
+        <h1 class="nhsuk-heading-xl">Cohort build</h1>
 
-          <p>Your cohorts will be displayed here, build a new cohort to get started.</p>
+        <p class="nhsuk-body-l">Use the cohort builder to build a new cohort, or edit and clone existing cohorts using the actions below.</p>
 
-          <button class="nhsuk-button" type="submit">
-            Build a cohort
-          </button>
+        <p>Your cohorts will be displayed here, build a new cohort to get started.</p>
+
+        <button class="nhsuk-button" type="submit">
+          Build a cohort
+        </button>
 
       </div> <!-- /. nhsuk-grid-column-two-thirds -->
     </form> <!-- /. form -->
