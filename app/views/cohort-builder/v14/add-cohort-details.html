@@ -19,7 +19,7 @@
 
 {% block content %}
   <div class="nhsuk-grid-row">
-    <form action="add-demographic-rules" method="POST">
+    <form action="add-cohort-details-answer" method="POST">
       <div class="nhsuk-grid-column-two-thirds">
         
           <h1 class="nhsuk-heading-xl">Add cohort details</h1>
@@ -35,7 +35,8 @@
             <div class="nhsuk-hint" id="name-of-cohort-hint-text">
               For example, Vaccination Influenza Winter 2022
             </div>
-            <input class="nhsuk-input nhsuk-u-width-full" id="name-of-cohort-hint-text" name="name-of-cohort-hint-text" type="text" aria-describedby="name-of-cohort-hint-text">
+            <input class="nhsuk-input nhsuk-u-width-full" id="name-of-cohort" name="name-of-cohort" type="text" 
+            value="{{ data['name-of-cohort'] }}" aria-describedby="name-of-cohort">
           </div>
 
           <!-- Details -->
@@ -67,7 +68,7 @@
             <div class="nhsuk-hint" id="summary-of-cohort-hint">
               Outline why the cohort needs to be created and what it will be used for.
             </div>
-            <textarea class="nhsuk-textarea" id="summary-of-cohort" name="summary-of-cohort" rows="5" aria-describedby="summary-of-cohort-hint"></textarea>
+            <textarea class="nhsuk-textarea" id="summary-of-cohort" name="summary-of-cohort" rows="5" aria-describedby="summary-of-cohort">{{ data['summary-of-cohort'] }}</textarea>
           </div>
 
           <!-- Details -->
@@ -89,13 +90,13 @@
             </div>
           </details>
 
-          <!-- Name of Comissioner -->
+          <!-- Name of Commissioner -->
 
           <div class="nhsuk-form-group">
             <label class="nhsuk-label" for="name-of-commissioner">
               Name of commissioner
             </label>
-            <input class="nhsuk-input nhsuk-u-width-full" id="name-of-commissioner-text" name="name-of-commissioner" type="text" aria-describedby="name-of-commissioner-text">
+            <input class="nhsuk-input nhsuk-u-width-full" id="name-of-commissioner" name="name-of-commissioner" type="text" aria-describedby="name-of-commissioner" value="{{ data['name-of-commissioner'] }}">
           </div>
 
           <!-- Name of Author -->
@@ -104,9 +105,8 @@
             <label class="nhsuk-label" for="name-of-author">
               Name of author
             </label>
-            <input class="nhsuk-input nhsuk-u-width-full" id="name-of-author-text" name="name-of-author" type="text" aria-describedby="name-of-author-text">
+            <input class="nhsuk-input nhsuk-u-width-full" id="name-of-author" name="name-of-author" type="text" aria-describedby="name-of-author" value="{{ data['name-of-author'] }}">
           </div>
-
 
           <button class="nhsuk-button" type="submit">
             Continue
