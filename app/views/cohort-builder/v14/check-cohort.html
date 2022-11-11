@@ -104,11 +104,15 @@
         <div class="nhsuk-summary-list__row">
           <dt class="nhsuk-summary-list__key">Minimum age</dt>
           <dd class="nhsuk-summary-list__value">
+
             {% if data['age-min-years'] %}
-              {{ data['age-min-years'] }} year(s) {{ data['age-min-months'] }} month(s)
+              {{ data['age-min-years'] }} year(s)
+            {% elif data['age-min-months'] %}
+              {{ data['age-min-months'] }} month(s)
             {% else %}
               {{ data['not-applicable-min-age'] }}
             {% endif %}
+
           </dd>
           <dd class="nhsuk-summary-list__actions">
             <a href="#" onclick="DeleteSummaryRow();" style="margin-right: 15px;">
@@ -125,11 +129,15 @@
         <div class="nhsuk-summary-list__row">
           <dt class="nhsuk-summary-list__key">Maximum age</dt>
           <dd class="nhsuk-summary-list__value">
-            {% if data['age-min-years'] %}
-              {{ data['age-max-years'] }} year(s) {{ data['age-max-months'] }} month(s)
+
+            {% if data['age-max-years'] %}
+              {{ data['age-max-years'] }} year(s)
+            {% elif data['age-max-months'] %}
+              {{ data['age-max-months'] }} month(s)
             {% else %}
               {{ data['not-applicable-max-age'] }}
             {% endif %}
+
           </dd>
           <dd class="nhsuk-summary-list__actions">
             <a href="#" onclick="DeleteSummaryRow();" style="margin-right: 15px;">
