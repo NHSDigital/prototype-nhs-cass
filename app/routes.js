@@ -46,6 +46,34 @@ router.post("/cohort-builder/v14/add-demographic-rules-answer", function (req, r
     }
 })
 
+// Contextual routing - add-condition-group.html
+
+router.post("/cohort-builder/v14/add-condition-group-answer", function (req, res) {
+  // grab value from the data store
+  let complete = req.session.data.complete
+  // if the journey is complete send back to the 'check-your-cohort' page
+  console.log(req.session.data)
+  if (complete === 'true') {
+    res.redirect('/cohort-builder/v14/check-cohort')  
+  } else {  
+    res.redirect('/cohort-builder/v14/check-condition-groups')  
+  }
+})
+
+// Contextual routing - check-condition-group.html
+
+router.post("/cohort-builder/v14/check-condition-group-answer", function (req, res) {
+  // grab value from the data store
+  let complete = req.session.data.complete
+  // if the journey is complete send back to the 'check-your-cohort' page
+  console.log(req.session.data)
+  if (complete === 'true') {
+    res.redirect('/cohort-builder/v14/check-cohort')  
+  } else {  
+    res.redirect('/cohort-builder/v14/check-cohort')  
+  }
+})
+
 // Set journey as complete - check-cohort.html
 
 router.get("/cohort-builder/v14/check-cohort", function (req, res) {  

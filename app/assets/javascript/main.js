@@ -9,6 +9,15 @@ function DeleteRow() {
     tr.parentNode.removeChild(tr);
 }
 
+// Delete summary list row (used on check-condition-group page)
+
+function DeleteSummaryRow() {
+    // event.target will be the input element.
+    var dt = event.target.parentNode; 
+    var dd = dt.parentNode; // the row to be removed
+    dd.parentNode.removeChild(dd);
+}
+
 // uncheck radio when checkbox is selected
 
 function deSelectRadio() {
