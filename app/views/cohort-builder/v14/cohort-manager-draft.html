@@ -10,11 +10,7 @@
 {% endblock %}
 
 {% block outerContent %}
-  {{ backLink({
-    "href": "../v14/check-cohort",
-    "text": "Back",
-    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
-  }) }}
+
 {% endblock %}
 
 {% block content %}
@@ -22,9 +18,14 @@
     <form action="add-cohort-details" method="POST">
       <div class="nhsuk-grid-column-two-thirds">
 
-        <h1 class="nhsuk-heading-xl">Cohort build</h1>
+        <h1 class="nhsuk-heading-xl">Cohort manager</h1>
+        <p class="nhsuk-body-l">Use the cohort manager to build a new cohort, or edit and clone existing cohorts using the actions below.</p>
 
-        <p class="nhsuk-body-l">Use the cohort builder to build a new cohort, or edit and clone existing cohorts using the actions below.</p>
+        <p>To build a new cohort you will need:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>a meaningful name</li>
+          <li>demographic rules</li>
+        </ul>  
 
         <p>Your cohorts will be displayed here, build a new cohort to get started.</p>
 

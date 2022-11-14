@@ -11,7 +11,7 @@
 
 {% block outerContent %}
   {{ backLink({
-    "href": "../v14/cohort-hub",
+    "href": "../v14/cohort-manager",
     "text": "Back",
     "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
   }) }}
@@ -48,7 +48,7 @@
               </span>
             </summary>
             <div class="nhsuk-details__text">
-              <p>Name of the cohort so that it's clear what is included.</p>
+              <p>Give your cohort a meaningful name so it is clear what it is.</p>
               <p>Do not use acronyms or your own name. This name could be viewed by other people.</p>
               <p>It may be useful to include details such as:</p>
               <ul>
@@ -96,6 +96,9 @@
             <label class="nhsuk-label" for="name-of-commissioner">
               Name of commissioner
             </label>
+            <div class="nhsuk-hint" id="name-of-commissioner-hint-text">
+              The commissioning body, or organisation and the team involved.
+            </div>
             <input class="nhsuk-input nhsuk-u-width-full" id="name-of-commissioner" name="name-of-commissioner" type="text" aria-describedby="name-of-commissioner" value="{{ data['name-of-commissioner'] }}">
           </div>
 
@@ -105,6 +108,9 @@
             <label class="nhsuk-label" for="name-of-author">
               Name of author
             </label>
+            <div class="nhsuk-hint" id="name-of-commissioner-hint-text">
+              The person who is building the cohort.
+            </div>
             <input class="nhsuk-input nhsuk-u-width-full" id="name-of-author" name="name-of-author" type="text" aria-describedby="name-of-author" value="{{ data['name-of-author'] }}">
           </div>
 
@@ -112,7 +118,7 @@
             Continue
           </button>
 
-          <a href="cohort-hub-status-draft">
+          <a href="#">
             <p>Save and exit</p>
           </a>
 
