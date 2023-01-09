@@ -25,7 +25,7 @@
 
         
         <p class="nhsuk-caption-l">Vaccinations Influenza Spring 2023</p>
-        <h1 class="nhsuk-heading-xl">Add a comment</h1>
+        <h1 class="nhsuk-heading-xl">Supporting information</h1>
 
 
 
@@ -33,12 +33,12 @@
 
         <div class="nhsuk-form-group">
           <label class="nhsuk-label" for="add-comment">
-            Provide a reason for the submission of this cohort
+            Provide any other information that is relevant to this submission.
           </label>
           <textarea class="nhsuk-textarea" id="add-comment" name="add-comment" rows="5" aria-describedby="add-comment"></textarea>
         </div>
 
-        <p>Before you continue, please check the boxes below to confirm:</p>
+        <p>Select any approval or sign off that has been received,</p>
 
 
           <div class="nhsuk-form-group">
@@ -48,30 +48,37 @@
               <div class="nhsuk-checkboxes">
         
                 <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="submission-1" name="submission-1" type="checkbox" value="Clinical Safety documentation has been signed off" {{ checked("submission-1", "Clinical Safety documentation has been signed off") }}>
+                  <input class="nhsuk-checkboxes__input" id="submission-1" name="submission-1" type="checkbox" value="Clinical Safety documentation has been signed off" {{ checked("submission-1", "Clinical Safety documentation has been signed off") }} onclick="deSelectCheckbox5();" >
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="submission-1">
-                    Clinical Safety documentation has been signed off
+                    Clinical Safety documentation sign off
                   </label>
                 </div>
 
                 <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="submission-2" name="submission-2" type="checkbox" value="Clinical Safety is board approved" {{ checked("submission-2", "Clinical Safety is board approved") }}>
+                  <input class="nhsuk-checkboxes__input" id="submission-2" name="submission-2" type="checkbox" value="Clinical Safety is board approved" {{ checked("submission-2", "Clinical Safety is board approved") }} onclick="deSelectCheckbox5();">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="submission-1">
-                    Clinical Safety is board approved
+                    Clinical Safety board approval
                   </label>
                 </div>
         
                 <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="submission-3" name="submission-3" type="checkbox" value="IG documentation has been approved" {{ checked("submission-3", "IG documentation has been approved") }}>
+                  <input class="nhsuk-checkboxes__input" id="submission-3" name="submission-3" type="checkbox" value="IG documentation has been approved" {{ checked("submission-3", "IG documentation has been approved") }} onclick="deSelectCheckbox5();">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="submission-3">
-                    IG documentation has been approved
+                    IG documentation approval
                   </label>
                 </div>
         
                 <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="submission-4" name="submission-4" type="checkbox" value="Live services has been signed off" {{ checked("submission-4", "Live services has been signed off") }}>
+                  <input class="nhsuk-checkboxes__input" id="submission-4" name="submission-4" type="checkbox" value="Live services has been signed off" {{ checked("submission-4", "Live services has been signed off") }} onclick="deSelectCheckbox5();">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="submission-4">
                     Live services has been signed off
+                  </label>
+                </div>
+        
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="submission-5" name="submission-5" type="checkbox" value="None" {{ checked("submission-5", "None") }}" onclick="deSelectCheckbox1to4();">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="submission-5">
+                    None
                   </label>
                 </div>
         

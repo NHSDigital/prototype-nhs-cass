@@ -40,3 +40,15 @@ function toggle(source) {
             checkboxes[i].checked = source.checked;
     }
 }
+// uncheck checkbox when checkbox is selected
+
+function deSelectCheckbox5() {
+    document.querySelector('input[name="submission-5"]').checked = false;
+}
+
+function deSelectCheckbox1to4() {
+    document.querySelector('input[name="submission-1"]').checked = false;
+    document.querySelector('input[name="submission-2"]').checked = false;
+    document.querySelector('input[name="submission-3"]').checked = false;
+    document.querySelector('input[name="submission-4"]').checked = false;
+}
