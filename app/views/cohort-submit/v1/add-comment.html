@@ -38,7 +38,8 @@
           <textarea class="nhsuk-textarea" id="add-comment" name="add-comment" rows="5" aria-describedby="add-comment"></textarea>
         </div>
 
-        <p>Select any approval or sign off that has been received,</p>
+        <h2 class="nhsuk-heading-m">Documentation and approval</h2>
+        <p>Select any that you may have already received.</p>
 
 
           <div class="nhsuk-form-group">
@@ -50,21 +51,21 @@
                 <div class="nhsuk-checkboxes__item">
                   <input class="nhsuk-checkboxes__input" id="submission-1" name="submission-1" type="checkbox" value="Clinical Safety documentation has been signed off" {{ checked("submission-1", "Clinical Safety documentation has been signed off") }} onclick="deSelectCheckbox5();" >
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="submission-1">
-                    Clinical Safety documentation sign off
+                    Clinical Safety documentation has been signed off
                   </label>
                 </div>
 
                 <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="submission-2" name="submission-2" type="checkbox" value="Clinical Safety is board approved" {{ checked("submission-2", "Clinical Safety is board approved") }} onclick="deSelectCheckbox5();">
+                  <input class="nhsuk-checkboxes__input" id="submission-2" name="submission-2" type="checkbox" value="Clinical Safety has been approved" {{ checked("submission-2", "Clinical Safety is has been approved") }} onclick="deSelectCheckbox5();">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="submission-1">
-                    Clinical Safety board approval
+                    Clinical Safety board has been approved
                   </label>
                 </div>
         
                 <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="submission-3" name="submission-3" type="checkbox" value="IG documentation has been approved" {{ checked("submission-3", "IG documentation has been approved") }} onclick="deSelectCheckbox5();">
+                  <input class="nhsuk-checkboxes__input" id="submission-3" name="submission-3" type="checkbox" value="Information Governance documentation has been approved" {{ checked("submission-3", "Information Governance documentation has been approved") }} onclick="deSelectCheckbox5();">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="submission-3">
-                    IG documentation approval
+                    Information Governance documentation has been approved
                   </label>
                 </div>
         
@@ -75,12 +76,12 @@
                   </label>
                 </div>
         
-                <div class="nhsuk-checkboxes__item">
+                <!-- <div class="nhsuk-checkboxes__item">
                   <input class="nhsuk-checkboxes__input" id="submission-5" name="submission-5" type="checkbox" value="None" {{ checked("submission-5", "None") }}" onclick="deSelectCheckbox1to4();">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="submission-5">
                     None
                   </label>
-                </div>
+                </div> -->
         
               </div>
             </fieldset>
