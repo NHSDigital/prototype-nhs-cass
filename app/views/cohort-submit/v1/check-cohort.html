@@ -468,22 +468,10 @@
   
       <dl class="nhsuk-summary-list">
 
-      <!-- Comment -->
-  
-      <div class="nhsuk-summary-list__row">
-        <dt class="nhsuk-summary-list__key">Supporting information</dt>
-        <dd class="nhsuk-summary-list__value">{{ data['add-comment'] or 'No comment added.'}}</dd>
-        <dd class="nhsuk-summary-list__actions">
-          <a href="add-comment">
-            Change<span class="nhsuk-u-visually-hidden"> summary of cohort</span>
-          </a>
-        </dd>
-      </div>
-
         <!-- checklist -->
 
         <div class="nhsuk-summary-list__row">
-          <dt class="nhsuk-summary-list__key">Documentation and approval</dt>
+          <dt class="nhsuk-summary-list__key">Checklist</dt>
           <dd class="nhsuk-summary-list__value">
 
             <!-- Other -->
@@ -514,6 +502,18 @@
           </dd>
 
         </div> <!-- /. nhsuk-summary-list-row -->
+
+      <!-- Comment -->
+  
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">Supporting information</dt>
+        <dd class="nhsuk-summary-list__value">{{ data['add-comment'] or 'No comment added.'}}</dd>
+        <dd class="nhsuk-summary-list__actions">
+          <a href="add-comment">
+            Change<span class="nhsuk-u-visually-hidden"> summary of cohort</span>
+          </a>
+        </dd>
+      </div>
       </dl> <!-- /. nhsuk-summary-list -->
 
       <div class="nhsuk-inset-text">
