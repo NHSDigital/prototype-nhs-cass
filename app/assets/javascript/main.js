@@ -68,3 +68,16 @@ function selectMaxAge() {
     document.getElementById("age-max-years").value = "";
 }
 
+
+// errors
+function error1() {
+    // Check if the button already has the "clicked" class
+    if (document.getElementById("info-tag").classList.contains("nhsuk-tag--grey")) {
+        window.location.href = "#error-summary";
+        document.getElementById("error-summary").style.display = "block";
+        document.getElementById("error-message").classList.add("nhsuk-error-message");
+        document.getElementById("error-section").classList.add("nhsuk-form-group--error");
+    } else {
+        window.location.href = "check-cohort";
+    }
+}
