@@ -40,15 +40,31 @@ function toggle(source) {
             checkboxes[i].checked = source.checked;
     }
 }
-// uncheck checkbox when checkbox is selected
 
-// function deSelectCheckbox5() {
-//     document.querySelector('input[name="submission-5"]').checked = false;
-// }
+// status changes
 
-// function deSelectCheckbox1to4() {
-//     document.querySelector('input[name="submission-1"]').checked = false;
-//     document.querySelector('input[name="submission-2"]').checked = false;
-//     document.querySelector('input[name="submission-3"]').checked = false;
-//     document.querySelector('input[name="submission-4"]').checked = false;
-// }
+document.getElementById("supporting-info").addEventListener("submit", function(e){
+   e.preventDefault();  //prevent form submission
+   window.location.href = "cohort-editor?class=nhsuk-tag--grey";
+});
+
+// demographics
+
+function deSelectMinAge() {
+    document.querySelector('input[name="not-applicable-min-age"]:checked').checked = false;
+}
+
+function selectMinAge() {
+    document.getElementById("age-min-months").value = "";
+    document.getElementById("age-min-years").value = "";
+}
+
+function deSelectMaxAge() {
+    document.querySelector('input[name="not-applicable-max-age"]:checked').checked = false;
+}
+
+function selectMaxAge() {
+    document.getElementById("age-max-months").value = "";
+    document.getElementById("age-max-years").value = "";
+}
+

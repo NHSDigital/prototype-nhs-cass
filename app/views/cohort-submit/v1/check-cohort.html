@@ -11,7 +11,7 @@
 
 {% block outerContent %}
   {{ backLink({
-    "href": "add-comment",
+    "href": "cohort-editor",
     "text": "Back",
     "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
   }) }}
@@ -93,10 +93,16 @@
           <dt class="nhsuk-summary-list__key">Minimum age</dt>
           <dd class="nhsuk-summary-list__value">
 
-            {% if data['age-min-years'] %}
-              {{ data['age-min-years'] }} year(s)
+            
+            {% if data['age-min-years'] and data['age-min-months'] %}
+              {{ data['age-min-years'] }} year(s) {{ data['age-min-months'] }} month(s)
+              
+            {% elif data['age-min-years'] %}
+            {{ data['age-min-years'] }} year(s)
+
             {% elif data['age-min-months'] %}
               {{ data['age-min-months'] }} month(s)
+              
             {% else %}
               {{ data['not-applicable-min-age'] or 'Not applicable'}}
             {% endif %}
@@ -309,9 +315,6 @@
             {{ data['ethnicity-other-2'] }}
 
 
-            {% else %}
-              {{ 'Not applicable' }}
-
             {% endif %}
 
           </dd>
@@ -517,7 +520,7 @@
       </dl> <!-- /. nhsuk-summary-list -->
 
       <div class="nhsuk-inset-text">
-        <p>Make sure that all the information you have provided is correct. You will not be able to change it once you submit it for assurance.</p>
+        <p>Make sure that all the information you have provided is correct. To make a change to the cohort after you have submitted, you'll need to cancel and submit it again.</p>
       </div>
 
       <!-- Page Actions -->

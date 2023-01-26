@@ -1,0 +1,41 @@
+{% extends 'custom-layouts/caas-header-logged-in.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+
+{% block pageTitle %}
+  CaaS prototype
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  
+<div class="nhsuk-grid-row">
+  <form action="cohort-manager" method="POST">
+    <div class="nhsuk-grid-column-two-thirds">
+
+        <p class="nhsuk-caption-l">Vaccinations Influenza Spring 2023</p>
+        <h1 class="nhsuk-heading-xl">Are you sure you want to cancel?</h1>
+
+      
+        <p>If you cancel this submission this cohort will no longer be available for review by the Caas team. It will return to draft where you will be able to make changes to the cohort and submit it again.</p> 
+
+          <button class="nhsuk-button" type="submit">
+            Cancel this submission
+          </button>
+          <p>
+            <a href="cohort-locked">Return to cohort</a>
+          </p>
+
+        </div> <!-- /. nhsuk-grid-column-two-thirds -->
+      </form> <!-- /. form -->
+    </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

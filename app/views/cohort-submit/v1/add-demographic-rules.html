@@ -41,14 +41,14 @@
             <label class="nhsuk-label" for="age-min-years">
               Years
             </label>
-            <input class="nhsuk-input nhsuk-u-width-one-quarter" id="age-min-years" name="age-min-years" type="number" aria-describedby="age-min-years" value="{{ data['age-min-years'] }}">
+            <input class="nhsuk-input nhsuk-u-width-one-quarter" id="age-min-years" name="age-min-years" type="number" aria-describedby="age-min-years" value="{{ data['age-min-years'] }}" oninput="deSelectMinAge();">
           </div>
 
           <div class="nhsuk-form-group">
             <label class="nhsuk-label" for="age-min-months">
               Months
             </label>
-            <input class="nhsuk-input nhsuk-u-width-one-quarter" id="age-min-months" name="age-min-months" type="number" aria-describedby="age-min-months" value="{{ data['age-min-months'] }}">
+            <input class="nhsuk-input nhsuk-u-width-one-quarter" id="age-min-months" name="age-min-months" type="number" aria-describedby="age-min-months" value="{{ data['age-min-months'] }}" oninput="deSelectMinAge();">
           </div>
 
           <!-- Not Applicable -->
@@ -59,7 +59,7 @@
   
                 <div class="nhsuk-checkboxes__item">
                   <input class="nhsuk-checkboxes__input" id="not-applicable" name="not-applicable-min-age" type="checkbox" 
-                  value="Not applicable" {{ checked("not-applicable-min-age", "Not applicable") }} checked> 
+                  value="Not applicable" {{ checked("not-applicable-min-age", "Not applicable") }} checked onclick="selectMinAge();"> 
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="not-applicable">
                     Not applicable
                   </label>
@@ -77,14 +77,14 @@
             <label class="nhsuk-label" for="age-max-years">
               Years
             </label>
-            <input class="nhsuk-input nhsuk-u-width-one-quarter" id="age-max-years" name="age-max-years" type="number" aria-describedby="age-max-years" value="{{ data['age-max-years'] }}">
+            <input class="nhsuk-input nhsuk-u-width-one-quarter" id="age-max-years" name="age-max-years" type="number" aria-describedby="age-max-years" value="{{ data['age-max-years'] }}" oninput="deSelectMaxAge();">
           </div>
 
           <div class="nhsuk-form-group">
             <label class="nhsuk-label" for="age-max-months">
               Months
             </label>
-            <input class="nhsuk-input nhsuk-u-width-one-quarter" id="age-max-months" name="age-max-months" type="number" aria-describedby="age-max-months" value="{{ data['age-max-months'] }}">
+            <input class="nhsuk-input nhsuk-u-width-one-quarter" id="age-max-months" name="age-max-months" type="number" aria-describedby="age-max-months" value="{{ data['age-max-months'] }}" oninput="deSelectMaxAge();">
           </div>
 
           <!-- Not Applicable -->
@@ -95,7 +95,7 @@
   
                 <div class="nhsuk-checkboxes__item">
                   <input class="nhsuk-checkboxes__input" id="not-applicable-years" name="not-applicable-max-age" type="checkbox" 
-                  value="Not applicable" {{ checked("not-applicable-max-age", "Not applicable") }} checked>
+                  value="Not applicable" {{ checked("not-applicable-max-age", "Not applicable") }} checked onclick="selectMaxAge();">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="not-applicable-years">
                     Not applicable
                   </label>
@@ -445,7 +445,7 @@
             -->
 
             <button class="nhsuk-button" type="submit">
-              Save and continue
+              Save and return
             </button>
   
             <a href="cohort-editor">

@@ -20,12 +20,12 @@
 {% block content %}
   
 <div class="nhsuk-grid-row">
-  <form action="check-cohort" method="POST">
+  <form action="cohort-editor" method="POST" id="supporting-info">
     <div class="nhsuk-grid-column-two-thirds">
         
         <p class="nhsuk-caption-l">Vaccinations Influenza Spring 2023</p>
         <h1 class="nhsuk-heading-xl">Supporting information</h1>
-        <p class="nhsuk-heading-m">Sign off and approval (optional)</p>
+        <p class="nhsuk-body">Sign off and approval (optional)</p>
         <p class="nhsuk-hint">Select any that have already been received.</p>
 
 
@@ -88,13 +88,15 @@
         
         
 
-          <button class="nhsuk-button" type="submit">
-            Save and continue
+          <button class="nhsuk-button" type="submit" id="info-button">
+            Save and return
           </button>
-          <p><a href="cohort-editor">Save and exit</a></p>
+          <p><a href="cohort-editor">Cancel</a></p>
 
         </div> <!-- /. nhsuk-grid-column-two-thirds -->
       </form> <!-- /. form -->
     </div> <!-- /. nhsuk-grid-row -->
 
 {% endblock %}
+
+
