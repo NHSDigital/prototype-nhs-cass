@@ -1,0 +1,97 @@
+{% extends 'custom-layouts/caas-header-logged-in.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+
+{% block pageTitle %}
+  CaaS prototype
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  
+<div class="nhsuk-grid-row">
+  <form action="cohort-manager-reviewed" method="POST">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <div class="nhsuk-panel">
+        <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-2">Cohort Approved</h1>
+        <p class="nhsuk-body-l nhsuk-u-margin-bottom-2">Vaccinations Influenza Spring 2023 has been approved</p>
+      </div>
+
+      <dl class="nhsuk-summary-list">
+        <div class="nhsuk-summary-list__row">
+  
+          <!-- Name of cohort -->
+  
+          <dt class="nhsuk-summary-list__key">Name of cohort</dt>
+          <dd class="nhsuk-summary-list__value">{{ data['name-of-cohort'] or 'Vaccinations Influenza Spring 2023'}}</dd>
+        </div>
+
+        <!-- checklist -->
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">Checklist</dt>
+          <dd class="nhsuk-summary-list__value">
+
+            <!-- Other -->
+
+            {% if data['submission-1'] %}
+              <li>{{ data['submission-1'] }}</li>
+            {% else %}
+              {{ 'None' }}
+            {% endif %}
+
+            {% if data['submission-2'] %}
+            <li>{{ data['submission-2'] }}</li>
+            {% endif %}
+
+            {% if data['submission-3'] %}
+            <li>{{ data['submission-3'] }}</li>
+            {% endif %}
+
+            {% if data['submission-4'] %}
+            <li>{{ data['submission-4'] }}</li>
+            {% endif %}
+
+          </dd>
+        </div> <!-- /. nhsuk-summary-list-row -->
+
+        <!-- Comment -->
+    
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">Supporting information</dt>
+          <dd class="nhsuk-summary-list__value">{{ data['add-comment'] or 'No comment added.'}}</dd>
+        </div>
+
+        <!-- Comment -->
+    
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">Outcome</dt>
+          <dd class="nhsuk-summary-list__value">{{ data['outcome'] }}
+          </dd>
+        </div>
+      </dl> <!-- /. nhsuk-summary-list -->
+
+      </dl>
+
+      <h2 class="nhsuk-heading-m">What happens next</h2>
+      <p>The status of the cohort will be updated.</p>
+          
+
+          <button class="nhsuk-button" type="submit">
+            Return to cohort manager
+          </button>
+
+        </div> <!-- /. nhsuk-grid-column-two-thirds -->
+      </form> <!-- /. form -->
+    </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

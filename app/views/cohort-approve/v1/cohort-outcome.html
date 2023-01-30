@@ -1,0 +1,71 @@
+{% extends 'custom-layouts/caas-header-logged-in.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  CaaS prototype
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "review-information",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  
+<div class="nhsuk-grid-row">
+  <form action="check-review" method="POST">
+    <div class="nhsuk-grid-column-two-thirds">
+        
+        <p class="nhsuk-caption-l">Vaccinations Influenza Spring 2023</p>
+        <h1 class="nhsuk-heading-xl">Approve or reject cohort</h1>
+        <p class="nhsuk-body">Select the appropriate outcome for this cohort</p>
+
+
+        <div class="nhsuk-form-group">
+
+          <fieldset class="nhsuk-fieldset">
+            <div class="nhsuk-radios">
+        
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="outcome-1" aria-describedby="outcome-1"  name="outcome" type="radio" value="Approve" {{ checked("outcome", "Approve") }} >
+                <label class="nhsuk-label nhsuk-radios__label" for="outcome-1">
+                  Approve
+                </label>
+              </div>
+        
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" aria-describedby="outcome-2" id="outcome-2" name="outcome" type="radio" value="Reject"{{ checked("outcome", "Reject") }}>
+                <label class="nhsuk-label nhsuk-radios__label" for="outcome-2">
+                  Reject
+                </label>
+              </div>
+        
+            </div>
+          </fieldset>
+        
+        </div>
+
+
+
+        
+        
+
+          <button class="nhsuk-button" type="submit">
+            Save and continue
+          </button>
+          <p><a href="cohort-locked">Cancel</a></p>
+
+        </div> <!-- /. nhsuk-grid-column-two-thirds -->
+      </form> <!-- /. form -->
+    </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
+
+
