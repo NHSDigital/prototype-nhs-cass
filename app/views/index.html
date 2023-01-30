@@ -25,112 +25,250 @@
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 <div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-two-thirds">
-    <!-- Change the page title here -->
+  <div class="nhsuk-grid-column-full">
 
     <p class="nhsuk-u-font-size-24 h1-caption">Cohorting as a Service</p>
     <h1>CaaS Prototype</h1>
+    <p class="nhsuk-body-l">Home for CaaS prototypes used in usability sessions and team demos.</p>
 
-    <p class="nhsuk-body-l">
-      Home for CaaS prototypes used in usability sessions and demos.
-    </p>
-  </div>
-  <!-- /. nhsuk-grid-column-two-thirds-->
+    <!-- Design files Expander -->
 
-  <div class="nhsuk-grid-column-one-third">
-    <div class="key-links-container">
-      <h4>Key links</h4>
-      <hr
-        class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible"
-      />
-      <p><a href="#" target="_blank">Figma - Build a cohort</a></p>
-      <p><a href="#" target="_blank">Figma - Submit for approval</a></p>
-    </div>
-    <!-- /. key-links-container -->
-  </div>
-  <!-- /. nhsuk-grid-column-one-third -->
+    <details class="nhsuk-details nhsuk-expander">
 
-  <div class="nhsuk-grid-column-full">
-    <ul class="nhsuk-grid-row nhsuk-card-group">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Links to design files
+        </span>
+      </summary>
 
-      <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-        <div class="nhsuk-card nhsuk-card--clickable">
-          <div class="nhsuk-card__content">
-            <h2 class="nhsuk-card__heading nhsuk-heading-m">
-              <a class="nhsuk-card__link" href="cohort-builder/index">Build a cohort</a>
-            </h2>
-            <p class="nhsuk-card__description">
-              A place for people to create, build and edit cohorts - users can also submit a cohort for assurance as well as publishing a cohort.
-            </p>
-          </div>
+      <div class="nhsuk-details__text">
+        <ul class="nhsuk-list">
+          <li><a href="https://www.figma.com/file/3yXzZVcPU0zRQtf79xiBAq/Cell-1-Delivery?node-id=10%3A24522&t=ZvcXnoMkmdF35lTF-1" target="_blank">Cell 1 Figma design file</a></li>
+          <li><a href="https://www.figma.com/file/pnkjqEmi8tUNvibN9JxN0E/Cell-2-Delivery?node-id=10%3A24522&t=CihLvBpziuu6nHV4-1" target="_blank">Cell 2 Figma design file</a></li>
+          <li><a href="https://app.mural.co/invitation/room/1616579475080?code=b2b2dcd7ce5f4c2e95db59c3689d2a50&sender=ue98d13684b46ae3295c88630" target="_blank">Cohorting Mural room</a></li>
+        </ul> <!-- /. nhsuk-link-list -->
+      </div> <!-- /. nhsuk-details-text -->
+    </details> <!-- /. nhsuk-details -->
+
+    <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible">
+
+    <!-- Build and Save Cohort Expander -->
+
+    <details class="nhsuk-details nhsuk-expander">
+
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Build and save a cohort
+        </span>
+      </summary>
+
+      <div class="nhsuk-details__text">
+        <p>A place for people to create, edit cohorts. This flow will branch out to submitting a cohort.</p>
+        <div class="nhsuk-hint nhsuk-u-font-size-16">
+          v1 - v13 iterations 
+          <a href="https://app.mural.co/t/nhsdigital8118/m/nhsdigital8118/1657618756043/5a671dce6cfac32ce5d21e90586d80618a2dd132?sender=ue98d13684b46ae3295c88630" target="_blank">can be found in this mural.</a> Please note, the Mural iteration tracker is no longer in use, all design work and versioning lives in Figma and this prototype kit.
         </div>
-      </li>
 
-      <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-        <div class="nhsuk-card nhsuk-card--clickable">
-          <div class="nhsuk-card__content">
-            <h2 class="nhsuk-card__heading nhsuk-heading-m">
-              <a class="nhsuk-card__link" href="cohort-submit/index">Submit a cohort</a>
-            </h2>
-            <p class="nhsuk-card__description">
-              Once a cohort has been built, users can amend or submit the cohort for approval.
-            </p>
-          </div>
+        <table role="table" class="nhsuk-table-responsive">
+
+          <!-- Table Headers -->
+  
+          <thead role="rowgroup" class="nhsuk-table__head">
+            <tr role="row">
+              <th role="columnheader" class="" scope="col">
+                Version
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Status
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Notes
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Action
+              </th>
+            </tr>
+          </thead> <!-- /. nhsuk-table__head -->
+  
+          <!-- Table Rows -->
+  
+          <tbody class="nhsuk-table__body">
+  
+            <!-- Row 1 -->
+  
+            <tr role="row" class="nhsuk-table__row">
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Version</span>v14
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Status</span>
+                <strong class="nhsuk-tag nhsuk-tag--green">
+                  Research complete
+                </strong>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Notes</span>
+                <a href="https://hscic365.sharepoint.com/:p:/r/sites/RiskStratification/Shared%20Documents/Cohorting%20as%20a%20Service%20(CaaS)/User%20Research/6.%20Build%20and%20Save%20(Nov%202022)/Create%20and%20save%20-%20Round%201%20playback.pptx?d=w1b89ee22ab824eed9ee6ec57daa27800&csf=1&web=1&e=1QkSQx" target="_blank">Research summary</a>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Action</span>
+                <a href="build-save-cohort/v14/intro">Launch</a>
+              </td>
+  
+            </tr> <!-- /. nhsuk-table__row -->
+  
+          </tbody> <!-- /. nhsuk-table__body -->
+        </table> <!-- /. nhsuk-table-responsive -->
+      </div> <!-- /. nhsuk-details-text -->
+    </details> <!-- /. nhsuk-details -->
+
+    <!-- Cohort Explorer Expander -->
+
+    <details class="nhsuk-details nhsuk-expander">
+
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Cohort explorer
+        </span>
+      </summary>
+
+      <div class="nhsuk-details__text">
+        <p>View published cohort details.</p>
+        <div class="nhsuk-hint nhsuk-u-font-size-16">
+          v1  
+          <a href="https://app.mural.co/t/nhsdigital8118/m/nhsdigital8118/1657618756043/5a671dce6cfac32ce5d21e90586d80618a2dd132?sender=ue98d13684b46ae3295c88630" target="_blank">can be found in this mural.</a> Please note, the Mural iteration tracker is no longer in use, all design work and versioning lives in Figma and this prototype kit.
         </div>
-      </li>
 
-      <!-- 
+        <table role="table" class="nhsuk-table-responsive">
 
-      <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-        <div class="nhsuk-card nhsuk-card--clickable">
-          <div class="nhsuk-card__content">
-            <h2 class="nhsuk-card__heading nhsuk-heading-m">
-              <a class="nhsuk-card__link" href="#"
-                >Help from social services and charities</a
-              >
-            </h2>
-            <p class="nhsuk-card__description">
-              Includes helplines, needs assessments, advocacy and reporting
-              abuse
-            </p>
-          </div>
-        </div>
-      </li>
+          <!-- Table Headers -->
+  
+          <thead role="rowgroup" class="nhsuk-table__head">
+            <tr role="row">
+              <th role="columnheader" class="" scope="col">
+                Version
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Status
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Notes
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Action
+              </th>
+            </tr>
+          </thead> <!-- /. nhsuk-table__head -->
+  
+          <!-- Table Rows -->
+  
+          <tbody class="nhsuk-table__body">
+  
+            <!-- Row 1 -->
+  
+            <tr role="row" class="nhsuk-table__row">
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Version</span>v2
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Status</span>
+                <strong class="nhsuk-tag nhsuk-tag--yellow">
+                  In design
+                </strong>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Notes</span>
+                <a href="#" target="_blank">Research summary TBC</a>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Action</span>
+                <a href="#">Launch</a>
+              </td>
+  
+            </tr> <!-- /. nhsuk-table__row -->
+          </tbody> <!-- /. nhsuk-table__body -->
+        </table> <!-- /. nhsuk-table-responsive -->
+      </div> <!-- /. nhsuk-details-text -->
+    </details> <!-- /. nhsuk-details -->
 
-      <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-        <div class="nhsuk-card nhsuk-card--clickable">
-          <div class="nhsuk-card__content">
-            <h2 class="nhsuk-card__heading nhsuk-heading-m">
-              <a class="nhsuk-card__link" href="#">Money, work and benefits</a>
-            </h2>
-            <p class="nhsuk-card__description">
-              How to pay for care and support, and where you can get help with
-              costs
-            </p>
-          </div>
-        </div>
-      </li>
+    <!-- Cohort Explorer Expander -->
 
-      <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-        <div class="nhsuk-card nhsuk-card--clickable">
-          <div class="nhsuk-card__content">
-            <h2 class="nhsuk-card__heading nhsuk-heading-m">
-              <a class="nhsuk-card__link" href="#"
-                >Care after a hospital stay</a
-              >
-            </h2>
-            <p class="nhsuk-card__description">
-              Includes hospital discharge and care and support afterwards
-            </p>
-          </div>
-        </div>
-      </li>
+    <details class="nhsuk-details nhsuk-expander">
 
-      -->
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Submit a cohort
+        </span>
+      </summary>
 
-    </ul>
-  </div>
-  <!-- /. nhsuk-grid-column-two-thirds-->
-</div>
-<!-- /. nhsuk-grid-row -->
+      <div class="nhsuk-details__text">
+        <p>Once a cohort has been built, users can amend or submit the cohort for approval.</p>
+
+        <table role="table" class="nhsuk-table-responsive">
+
+          <!-- Table Headers -->
+  
+          <thead role="rowgroup" class="nhsuk-table__head">
+            <tr role="row">
+              <th role="columnheader" class="" scope="col">
+                Version
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Status
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Notes
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Action
+              </th>
+            </tr>
+          </thead> <!-- /. nhsuk-table__head -->
+  
+          <!-- Table Rows -->
+  
+          <tbody class="nhsuk-table__body">
+  
+            <!-- Row 1 -->
+  
+            <tr role="row" class="nhsuk-table__row">
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Version</span>v1
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Status</span>
+                <strong class="nhsuk-tag nhsuk-tag--green">
+                  Research complete
+                </strong>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Notes</span>
+                <a href="https://hscic365.sharepoint.com/:p:/r/sites/RiskStratification/Shared%20Documents/Cohorting%20as%20a%20Service%20(CaaS)/User%20Research/7.%20Submit%20a%20Cohort%20for%20Approval%20(Jan%202023)/UR%20Playback%20-%20Submit%20a%20cohort%20for%20approval%20-%20Sprint%20review.pptx?d=w44905c643d9e4dcdbf234ced5c710510&csf=1&web=1" target="_blank">Research summary</a>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Action</span>
+                <a href="cohort-submit/v1/cohort-manager">Launch</a>
+              </td>
+  
+            </tr> <!-- /. nhsuk-table__row -->
+          </tbody> <!-- /. nhsuk-table__body -->
+        </table> <!-- /. nhsuk-table-responsive -->
+      </div> <!-- /. nhsuk-details-text -->
+    </details> <!-- /. nhsuk-details -->
+
+  </div> <!-- /. nhsuk-grid-column-full-->
+</div> <!-- /. nhsuk-grid-row -->
+
 {% endblock %}
