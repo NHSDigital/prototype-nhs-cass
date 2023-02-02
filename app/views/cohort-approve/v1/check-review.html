@@ -26,6 +26,7 @@
       <h1 class="nhsuk-heading-xl">Check review details</h1>
   
       <dl class="nhsuk-summary-list">
+
         <div class="nhsuk-summary-list__row">
   
           <!-- Name of cohort -->
@@ -35,6 +36,19 @@
           <dd class="nhsuk-summary-list__actions">
             <a href="add-cohort-details">
               Change<span class="nhsuk-u-visually-hidden"> name of cohort</span>
+            </a>
+          </dd>
+        </div>
+
+        <!-- Outcome -->
+    
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">Outcome</dt>
+          <dd class="nhsuk-summary-list__value">{{ data['outcome'] }}
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="add-comment">
+              Change<span class="nhsuk-u-visually-hidden"> checklist</span>
             </a>
           </dd>
         </div>
@@ -84,22 +98,8 @@
             </a>
           </dd>
         </div>
-
-        <!-- Comment -->
-    
-        <div class="nhsuk-summary-list__row">
-          <dt class="nhsuk-summary-list__key">Outcome</dt>
-          <dd class="nhsuk-summary-list__value">{{ data['outcome'] }}
-          </dd>
-          <dd class="nhsuk-summary-list__actions">
-            <a href="add-comment">
-              Change<span class="nhsuk-u-visually-hidden"> checklist</span>
-            </a>
-          </dd>
-        </div>
       </dl> <!-- /. nhsuk-summary-list -->
 
-      </dl>
 
       <!-- Submission actions -->
   
