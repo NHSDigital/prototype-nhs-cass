@@ -11,7 +11,7 @@
 
 {% block outerContent %}
   {{ backLink({
-    "href": "../v1/cohort-editor",
+    "href": "../v1/cohort-locked",
     "text": "Back",
     "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
   }) }}
@@ -20,11 +20,11 @@
 {% block content %}
   
 <div class="nhsuk-grid-row">
-  <form action="cohort-editor" method="POST" id="supporting-info">
+  <form action="cohort-outcome" method="POST">
     <div class="nhsuk-grid-column-two-thirds">
         
         <p class="nhsuk-caption-l">Vaccinations Influenza Spring 2023</p>
-        <h1 class="nhsuk-heading-xl">Supporting information</h1>
+        <h1 class="nhsuk-heading-xl">Review information</h1>
         <p class="nhsuk-body">Sign off and approval (optional)</p>
         <p class="nhsuk-hint">Select any that have already been received.</p>
 
@@ -36,30 +36,23 @@
               <div class="nhsuk-checkboxes">
         
                 <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="submission-1" name="submission-1" type="checkbox" value="Information Governance documentation approval" {{ checked("submission-1", "Information Governance documentation approval") }} onclick="deSelectCheckbox5();" >
+                  <input class="nhsuk-checkboxes__input" id="submission-1" name="submission-1" type="checkbox" value="Clinical Safety documentation has been signed off" {{ checked("submission-1", "Solution assurance has been completed") }} onclick="deSelectCheckbox5();" >
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="submission-1">
-                    Information Governance documentation approval
+                    Solution assurance has been completed
                   </label>
                 </div>
 
                 <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="submission-2" name="submission-2" type="checkbox" value="Clinical Safety documentation sign off" {{ checked("submission-2", "Clinical Safety documentation sign off") }} onclick="deSelectCheckbox5();">
+                  <input class="nhsuk-checkboxes__input" id="submission-2" name="submission-2" type="checkbox" value="Clinical Safety has been approved" {{ checked("submission-2", "CaaS governance is signed off") }} onclick="deSelectCheckbox5();">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="submission-1">
-                    Clinical Safety documentation sign off
+                    CaaS governance is signed off
                   </label>
                 </div>
         
                 <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="submission-3" name="submission-3" type="checkbox" value="Clinical Safety group approval" {{ checked("submission-3", "Clinical Safety group approval") }} onclick="deSelectCheckbox5();">
+                  <input class="nhsuk-checkboxes__input" id="submission-3" name="submission-3" type="checkbox" value="Information Governance documentation has been approved" {{ checked("submission-3", "Approval from the Commissioning body") }} onclick="deSelectCheckbox5();">
                   <label class="nhsuk-label nhsuk-checkboxes__label" for="submission-3">
-                    Clinical Safety group approval
-                  </label>
-                </div>
-        
-                <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="submission-4" name="submission-4" type="checkbox" value="Live Services approval" {{ checked("submission-4", "Live Services approval") }} onclick="deSelectCheckbox5();">
-                  <label class="nhsuk-label nhsuk-checkboxes__label" for="submission-4">
-                    Live Services approval
+                    Approval from the Commissioning body
                   </label>
                 </div>
         
@@ -81,17 +74,17 @@
 
         <div class="nhsuk-form-group">
           <label class="nhsuk-label" for="add-comment">
-            Provide any other information relevant to your cohort submission. This may be information that you have not been able to add in the previous sections (optional)
+            Provide any other information relevant to your cohort review. This may be information about your decision to approve or reject this cohort (optional)
           </label>
           <textarea class="nhsuk-textarea" id="add-comment" name="add-comment" rows="5" aria-describedby="add-comment"></textarea>
         </div>
         
         
 
-          <button class="nhsuk-button" type="submit" id="info-button">
-            Save and return
+          <button class="nhsuk-button" type="submit">
+            Save and continue
           </button>
-          <p><a href="cohort-editor">Cancel</a></p>
+          <p><a href="cohort-locked">Cancel</a></p>
 
         </div> <!-- /. nhsuk-grid-column-two-thirds -->
       </form> <!-- /. form -->
