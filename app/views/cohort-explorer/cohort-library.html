@@ -1,0 +1,58 @@
+{% extends 'custom-layouts/caas-header-sub-nav.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  CaaS prototype
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "landing",
+    "text": "Go back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Cohort library</h1>
+        <p class="nhsuk-body-l">The cohort library displays the existing cohorts created by Cohorting as a Service (CaaS).</p>
+        <p>Select a cohort below to see more information on what is displayed in the digital cohort.</p>
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+      <div class="nhsuk-grid-column-full">
+        <table class="nhsuk-table">
+          <thead role="rowgroup" class="nhsuk-table__head">
+              <tr role="row">
+                <th role="columnheader" class="" scope="col">
+                  Cohort name
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Description
+                </th>
+              </tr>
+          </thead>
+          <tbody class="nhsuk-table__body">
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell"><a href="#">COVID Targeted Antivirals</a></td>
+              <td class="nhsuk-table__cell ">Clinical risk groups who should receive targeted antivirals.</td>
+            </tr>
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">
+                <a href="influenza-winter-22/influenza-cohort">Vaccinations Influenza Winter 2022</a>
+              </td>
+              <td class="nhsuk-table__cell ">The Vaccinations Influenza Winter 2022 cohort provides direct protection to those who are at higher risk of influenza. It aims to reduce transmission to all age groups through the vaccination of children.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- /. nhsuk-grid-column-full -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
