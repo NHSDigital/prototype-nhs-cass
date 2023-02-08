@@ -1,0 +1,88 @@
+{% extends 'custom-layouts/caas-header-sub-nav.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  CaaS prototype
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "landing",
+    "text": "Go back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Data integration library</h1>
+        <p class="nhsuk-body-l">The data integration library displays the data sources used in the cohorts.</p>
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+      <div class="nhsuk-grid-column-full">
+        <table class="nhsuk-table">
+          <thead role="rowgroup" class="nhsuk-table__head">
+              <tr role="row">
+                <th role="columnheader" class="" scope="col">
+                  Name
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Description
+                </th>
+              </tr>
+          </thead>
+          <tbody class="nhsuk-table__body">
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell"><a href="#">Hospital episode library (HES)</a></td>
+              <td class="nhsuk-table__cell ">Hospital Episode Statistics (HES) is a database containing details of all admissions, A and E attendances and outpatient appointments at NHS hospitals in England.</td>
+            </tr>
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">
+                <a href="#">Personal demographics service (PDS)</a>
+              </td>
+              <td class="nhsuk-table__cell ">The Personal Demographics Service (PDS) is the national electronic database of NHS patient details such as name, address, date of birth and NHS Number (known as demographic information).</td>
+            </tr>
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">
+                <a href="#">General Practice Extraction Service (GPES)</a>
+              </td>
+              <td class="nhsuk-table__cell ">The General Practice Extraction Service (GPES) collects information for a wide range of purposes, including providing GP payments.</td>
+            </tr>
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">
+                <a href="#">GPES Data for Planning and Research (GDPPR)</a>
+              </td>
+              <td class="nhsuk-table__cell ">The purpose of this data collection is to respond to the intense demand, from across a wide range of interested parties, for General Practice data to be shared in support of vital planning and research for COVID-19 purposes, including under the legal notices issued by the Secretary of State under Regulation 3(4) of the Health Service (Control of Patient Information) Regulations 2002 (COPI).</td>
+            </tr>
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">
+                <a href="#">Maternity Services Data Set (MSDS)</a>
+              </td>
+              <td class="nhsuk-table__cell ">The Maternity Services Data Set (MSDS) is a patient-level data set that captures information about activity carried out by Maternity Services relating to a mother and baby(s), from the point of the first booking appointment until mother and baby(s) are discharged from maternity services.</td>
+            </tr>
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">
+                <a href="#">National pathology Exchange (NPEx)</a>
+              </td>
+              <td class="nhsuk-table__cell ">The National Pathology Exchange (NPEx) is a national service for NHS pathology managers to connect all UK labs together through a single exchange hub so that test requests and pathology results are sent digitally from any lab to any lab in a matter of seconds.
+              </td>
+            </tr>
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">
+                <a href="#">Systemic Anti-Cancer Therapy (SACT)</a>
+              </td>
+              <td class="nhsuk-table__cell">The Systemic Anti-Cancer Therapy (SACT) data set captures activity data relating to the treatment of cancer with medicines.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- /. nhsuk-grid-column-full -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
