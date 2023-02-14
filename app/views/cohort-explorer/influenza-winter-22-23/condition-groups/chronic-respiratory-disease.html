@@ -40,7 +40,7 @@
               </li>
               <li class="nhsuk-contents-list__item">
                   <a class="nhsuk-contents-list__link" href="#related-cohorts">
-                      Cohorts related to chronic respiratory disease
+                    Cohorts related to chronic respiratory disease
                   </a>
               </li>
           </ol>
@@ -54,11 +54,11 @@
       <p>Asthma that requires continuous or repeated use of inhaled or systemic steroids or with previous exacerbations requiring hospital admission.</p>
       <p>Chronic obstructive pulmonary disease (COPD) including:</p>
       <ul class="nhsuk-list nhsuk-list--bullet">
-          <li>chronic bronchitis and emphysema</li>
-          <li>bronchiectasis</li>
-          <li>cystic fibrosis</li>
-          <li>interstitial lung fibrosis</li>
-          <li>pneumoconiosis and bronchopulmonary dysplasia (BPD)</li>
+        <li>chronic bronchitis and emphysema</li>
+        <li>bronchiectasis</li>
+        <li>cystic fibrosis</li>
+        <li>interstitial lung fibrosis</li>
+        <li>pneumoconiosis and bronchopulmonary dysplasia (BPD)</li>
       </ul>
       <p>Children who have previously been admitted to hospital for lower respiratory tract disease.</p>
 
@@ -75,7 +75,96 @@
     </div> <!-- /. nhsuk-grid-column-two-thirds -->
 
     <div class="nhsuk-grid-column-full">
-      <table role="table" class="nhsuk-table-responsive">
+
+      <!-- Rule Logic Table View < 1024px --> 
+
+      <div class="nhsd-m-table__mobile-list">
+        <ul class="nhsd-!t-display-s-hide">
+
+          <li>
+            <ul class="nhsd-m-table__mobile-list-item">
+              <li>
+                <p class="m-table-header">Clinical condition</p>
+                <p class="m-table-content">Asthma that requires continuous or repeated use of inhaled steroids or systemic steroids. <br><a href="../code-sets/asthma-repeated-inhaler-use">View code sets for this clinical condition</a>.</p>
+              </li>
+              <li>
+                <p class="m-table-header">Data used</p>
+                <p class="m-table-content">GPES v4 and GDPPR</p>
+              </li>
+              <li>
+                <p class="m-table-header">Ruleset</p>
+                <p class="m-table-content">All people over 6 months of age on asthma treatment (inhaled steroids) in the previous 12 months.</p>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul class="nhsd-m-table__mobile-list-item">
+              <li>
+                <p class="m-table-header">Clinical condition</p>
+                <p class="m-table-content">Asthma with previous exacerbations requiring hospital admission. <br><a href="#">View code sets for this clinical condition</a>.</p>
+              </li>
+              <li>
+                <p class="m-table-header">Data used</p>
+                <p class="m-table-content">GPES v4 and GDPPR</p>
+              </li>
+              <li>
+                <p class="m-table-header">Ruleset</p>
+                <p class="m-table-content">All people over 6 months of age with an emergency admission due to asthma between 1 September 2022 to 31 March 2023.</p>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul class="nhsd-m-table__mobile-list-item">
+              <li>
+                <p class="m-table-header">Clinical condition</p>
+                <p class="m-table-content">Children who have previously been admitted to hospital for lower respiratory tract disease. <br><a href="#">View code sets for this clinical condition</a>.</p>
+              </li>
+              <li>
+                <p class="m-table-header">Data used</p>
+                <p class="m-table-content">GPES v4 and GDPPR</p>
+              </li>
+              <li>
+                <p class="m-table-header">Ruleset</p>
+                <p class="m-table-content">All children under 17 years on 1 September 2023 and over 6 months of age who have previously been admitted to hospital for a lower respiratory tract disease.</p>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul class="nhsd-m-table__mobile-list-item">
+              <li>
+                <p class="m-table-header">Clinical condition</p>
+                <p class="m-table-content">COPD including: chronic bronchitis and emphysema, bronchiectasis, cystic fibrosis, interstitial lung fibrosis, pneumoconiosis and BPD
+                  <!--
+                  <ul class="nhsuk-list--bullet">
+                    <li>tiredness and lack of energy</li>
+                    <li>shortness of breath</li>
+                    <li>noticeable heartbeats (heart palpitations)</li>
+                    <li>pale skin</li>
+                  </ul>
+                  -->
+                  <br>
+                  <a href="#">View code sets for this clinical condition</a>.</p>
+              </li>
+              <li>
+                <p class="m-table-header">Data used</p>
+                <p class="m-table-content">GPES v4 and GDPPR</p>
+              </li>
+              <li>
+                <p class="m-table-header">Ruleset</p>
+                <p class="m-table-content">All people over 6 months of age with a diagnosis of COPD including: chronic bronchitis and emphysema, bronchiectasis, cystic fibrosis, interstitial lung fibrosis, pneumoconiosis and BPD</p>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Rule Logic Table View > 1024px -->
+
+      <table role="table" class="nhsuk-table-responsive rule-logic-table-desktop">
         <thead role="rowgroup" class="nhsuk-table__head">
           <tr role="row">
             <th role="columnheader" class="" scope="col">
@@ -89,16 +178,12 @@
             </th>
           </tr>
         </thead>
-
+    
         <tbody class="nhsuk-table__body">
-
-          <!-- #1 Clinical Condition -->
-
+    
           <tr role="row" class="nhsuk-table__row">
             <td role="cell" class="nhsuk-table__cell">
-              <span class="nhsuk-table-responsive__heading">Clinical condition </span>Asthma that requires continuous or repeated use of inhaled or systemic steroids.
-              <div class="nhsuk-u-padding-bottom-3"></div>
-              <a href="../code-sets/all-code-sets">View code sets for this clinical condition.</a>
+              <span class="nhsuk-table-responsive__heading">Clinical condition </span>Asthma that requires continuous or repeated use of inhaled or systemic steroids. <a href="../code-sets/asthma-repeated-inhaler-use">View code sets for this clinical condition</a>.
             </td>
             <td role="cell" class="nhsuk-table__cell">
               <span class="nhsuk-table-responsive__heading">Data used </span>GPES v4 and GDPPR
@@ -108,13 +193,10 @@
             </td>
           </tr>
 
-          <!-- #2 Clinical Condition -->
-
           <tr role="row" class="nhsuk-table__row">
             <td role="cell" class="nhsuk-table__cell">
               <span class="nhsuk-table-responsive__heading">Clinical condition </span>Asthma with previous exacerbations requiring hospital admission.
-              <div class="nhsuk-u-padding-bottom-3"></div>
-              <a href="../code-sets/all-code-sets">View code sets for this clinical condition.</a>
+              <a href="#">View code sets for this clinical condition.</a>
             </td>
             <td role="cell" class="nhsuk-table__cell">
               <span class="nhsuk-table-responsive__heading">Data used </span>GPES v4 and GDPPR
@@ -123,14 +205,10 @@
               <span class="nhsuk-table-responsive__heading">Ruleset </span>All people over 6 months of age with an emergency admission due to asthma between 1 September 2022 to 31 March 2023.
             </td>
           </tr>
-
-          <!-- #3 Clinical Condition -->
-
+    
           <tr role="row" class="nhsuk-table__row">
             <td role="cell" class="nhsuk-table__cell">
-              <span class="nhsuk-table-responsive__heading">Clinical condition </span>Children who have previously been admitted to hospital for lower respiratory tract disease.
-              <div class="nhsuk-u-padding-bottom-3"></div>
-              <a href="../code-sets/all-code-sets">View code sets for this clinical condition.</a>
+              <span class="nhsuk-table-responsive__heading">Clinical condition </span>Children who have previously been admitted to hospital for lower respiratory tract disease. <a href="#">View code sets for this clinical condition.</a>
             </td>
             <td role="cell" class="nhsuk-table__cell">
               <span class="nhsuk-table-responsive__heading">Data used </span>GPES v4 and GDPPR
@@ -139,9 +217,7 @@
               <span class="nhsuk-table-responsive__heading">Ruleset </span>All children under 17 years on 1 September 2023 and over 6 months of age who have previously been admitted to hospital for a lower respiratory tract disease.
             </td>
           </tr>
-
-          <!-- #3 Clinical Condition -->
-
+    
           <tr role="row" class="nhsuk-table__row">
             <td role="cell" class="nhsuk-table__cell">
               <span class="nhsuk-table-responsive__heading">Clinical condition </span>COPD including:
@@ -151,9 +227,9 @@
                 <li>bronchiectasis</li>
                 <li>cystic fibrosis</li>
                 <li>interstitial lung fibrosis</li>
-                <li>pneumoconiosis and bronchopulmonary dysplasia (BPD)</li>
+                <li>pneumoconiosis and BPD</li>
               </ul>
-              <a href="../code-sets/all-code-sets">View code sets for this clinical condition.</a>
+              <a href="#">View code sets for this clinical condition.</a>
             </td>
             <td role="cell" class="nhsuk-table__cell">
               <span class="nhsuk-table-responsive__heading">Data used </span>GPES v4 and GDPPR
@@ -162,9 +238,10 @@
               <span class="nhsuk-table-responsive__heading">Ruleset </span>All people over 6 months of age with a diagnosis of COPD including:
             </td>
           </tr>
+    
+        </tbody> 
+      </table> 
 
-        </tbody> <!-- /. nhsuk-table__body -->
-      </table> <!-- /. nhsuk-table-responsive -->
       <div class="nhsuk-u-padding-bottom-9"></div>
     </div> <!-- /. nhsuk-grid-column-full -->
 
@@ -177,7 +254,71 @@
     </div> <!-- /. nhsuk-grid-column-two-thirds -->
 
     <div class="nhsuk-grid-column-full">
-      <table role="table" class="nhsuk-table-responsive">
+
+      <!-- Non-Digital Pathways Table View < 1024px -->
+
+      <div class="nhsd-m-table__mobile-list">
+        <ul class="nhsd-!t-display-s-hide">
+
+          <li>
+            <ul class="nhsd-m-table__mobile-list-item">
+              <li>
+                <p class="m-table-header">Clinical condition</p>
+                <p class="m-table-content">Asthma that requires continuous or repeated use of inhaled steroids or systemic steroids.</p>
+              </li>
+              <li>
+                <p class="m-table-header">Conditions following a non-digital pathway</p>
+                <p class="m-table-content">The prescribing data for systemic steroids is not maintained centrally on GP records, so it’s not possible to determine the duration and dose of treatment.<br><br> People identified as being on asthma treatment with systemic steroids, may not be included in the digital cohort unless a GP practice uses a SNOMED CT administrative code to show eligibility for flu vaccination.</p>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul class="nhsd-m-table__mobile-list-item">
+              <li>
+                <p class="m-table-header">Clinical condition</p>
+                <p class="m-table-content">Asthma that requires continuous or repeated use of inhaled steroids or systemic steroids.</p>
+              </li>
+              <li>
+                <p class="m-table-header">Conditions following a non-digital pathway</p>
+                <p class="m-table-content">When it comes to data around hospital admissions, GP records, are not reliable. People identified based only on hospital admission data, may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.</p>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul class="nhsd-m-table__mobile-list-item">
+              <li>
+                <p class="m-table-header">Clinical condition</p>
+                <p class="m-table-content">Chronic obstructive pulmonary disease (COPD) including: chronic bronchitis and emphysema, bronchiectasis, cystic fibrosis, interstitial lung fibrosis, pneumoconiosis and bronchopulmonary dysplasia (BPD)</p>
+              </li>
+              <li>
+                <p class="m-table-header">Conditions following a non-digital pathway</p>
+                <p class="m-table-content">All conditions included in digital pathway.</p>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul class="nhsd-m-table__mobile-list-item">
+              <li>
+                <p class="m-table-header">Clinical condition</p>
+                <p class="m-table-content">Children who have previously been admitted to hospital for lower respiratory tract disease.</p>
+              </li>
+              <li>
+                <p class="m-table-header">Conditions following a non-digital pathway</p>
+                <p class="m-table-content">When it comes to data around hospital admissions, GP records, are not reliable. People identified based only on hospital admission data, may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.</p>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Non-Digital Pathways Table View > 1024px -->
+      
+      <table role="table" 
+      class="nhsuk-table-responsive non-digital-pathways-table-desktop">
         <thead role="rowgroup" class="nhsuk-table__head">
           <tr role="row">
             <th role="columnheader" class="" scope="col">
