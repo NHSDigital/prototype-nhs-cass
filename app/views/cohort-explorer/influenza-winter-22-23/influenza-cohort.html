@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block outerContent %}
-  {% set backText = "Go back to " + previousPageTitle if previousPageTitle else "Go back" %}
+{% set backText = "Go back to: " + previousPageTitle if previousPageTitle else "Go back" %}
   {{ backLink({
     "href": "../cohort-library",
     "text": backText,
@@ -22,11 +22,9 @@
 <div class="nhsuk-grid-row">
   <form action="#" method="POST">
       <div class="nhsuk-grid-column-full">
-        <h1 class="nhsuk-heading-xl">
-          Influenza vaccinations 2022 to 2023: Cohort identification methodology
-        </h1>
+        <h1 class="nhsuk-heading-xl">{{ currentPageTitle }}</h1>
 
-        <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+        <nav class="nhsuk-contents-list" role="navigation" aria-label="Content list of this condition group">
           <h2 class="nhsuk-u-visually-hidden">Contents</h2>
           <ol class="nhsuk-contents-list__list">
             <li class="nhsuk-contents-list__item" aria-current="page">
