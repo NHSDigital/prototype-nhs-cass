@@ -19,94 +19,103 @@
 
 {% block content %}
 <div class="nhsuk-grid-row">
-    <form action="#" method="POST">
-        <div class="nhsuk-grid-column-full">
-            <h1 class="nhsuk-heading-xl">
-              Influenza vaccinations 2022 to 2023: Cohort identification methodology
-            </h1>
-            <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
-                <h2 class="nhsuk-u-visually-hidden">Contents</h2>
-                <ol class="nhsuk-contents-list__list">
-                  <li class="nhsuk-contents-list__item" aria-current="page">
-                    <span class="nhsuk-contents-list__current">Summary</span>
-                  </li>
-                  <li class="nhsuk-contents-list__item">
-                    <a class="nhsuk-contents-list__link" href="#clinical-at-risk-groups">
-                        Clinical at-risk groups
-                    </a>
-                  </li>
-                  <li class="nhsuk-contents-list__item">
-                    <a class="nhsuk-contents-list__link" href="#demographics">Demographics</a>
-                  </li>
-                  <li class="nhsuk-contents-list__item">
-                    <a class="nhsuk-contents-list__link" href="#cohort-details">Cohort details</a>
-                  </li>
-                  <li class="nhsuk-contents-list__item">
-                    <a class="nhsuk-contents-list__link" href="#more-information">More information</a>
-                  </li>
-                </ol>
-            </nav>
-        </div> <!-- /. nhsuk-grid-column-full -->
+  <form action="#" method="POST">
+      <div class="nhsuk-grid-column-full">
+        <h1 class="nhsuk-heading-xl">
+          Influenza vaccinations 2022 to 2023: Cohort identification methodology
+        </h1>
 
-        <div class="nhsuk-grid-column-two-thirds">
-            <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+        <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+          <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+          <ol class="nhsuk-contents-list__list">
+            <li class="nhsuk-contents-list__item" aria-current="page">
+              <span class="nhsuk-contents-list__current">Summary</span>
+            </li>
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="#clinical-at-risk-groups">
+                  Clinical at-risk groups
+              </a>
+            </li>
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="#demographics">Demographics</a>
+            </li>
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="#cohort-details">Cohort details</a>
+            </li>
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="#more-information">More information</a>
+            </li>
+          </ol>
+        </nav>
 
-            <!-- Summary -->
-            <h2 class="nhsuk-heading-l" id="summary">Summary</h2>
-            <p>The Technology workstream within the NHS Digital Vaccination Deployment Programme (VDP) will send <a href="https://digital.nhs.uk/services/national-data-opt-out/understanding-the-national-data-opt-out/confidential-patient-information" title="External website">patient identifiable data</a> to the National Immunisation Management Service (NIMS). This will allow for monitoring of flu vaccinations and call and recall during the 2022 to 2023 influenza season (1 September 2022 to 31 March 2023).</p>
-            <p>Cohorting as a Service (CaaS) will provide patient identifiable cohorts to VDP. This will help to identify citizens who are eligible for flu vaccinations.</p>
-            <p>CaaS will use criteria outlined in <a href="https://www.gov.uk/government/publications/influenza-the-green-book-chapter-19" title="External website">chapter 19 of the influenza Green Book</a> to identify eligible and clinical at-risk citizens for flu vaccinations.</p>
-            <div class="nhsuk-inset-text">
-                <span class="nhsuk-u-visually-hidden">Information: </span>
-                <p>The information provided outlines CaaS’s approach to delivering this cohort using established methodologies. It highlights any differences from the clinical criteria in chapter 19 of the Green Book and associated assumptions.</p>
-            </div>
-            <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+      </div> <!-- /. nhsuk-grid-column-full -->
 
-            <!-- Clinical at-risk groups -->
-            <h2 class="nhsuk-heading-l" id="clinical-at-risk-groups">Clinical at-risk groups</h2>
-            <p>You can find the Green Book rules and code list for each condition in the links below.</p>
-            <p>This list below is not exhaustive, and decisions should be based on clinical judgement.</p>
-            <p>The clinical at-risk groups within the Green Book are:</p>
-            <ul class="nhsuk-list">
-                <li>
-                  <a href="condition-groups/chronic-respiratory-disease">Chronic respiratory disease</a>
-                </li>
-                <li><a href="#">Chronic heart disease and vascular disease</a></li>
-                <li><a href="#">Chronic kidney disease</a></li>
-                <li><a href="#">Chronic liver disease</a></li>
-                <li><a href="#">Chronic neurological disease</a></li>
-                <li><a href="#">Clinically coded eligibility</a></li>
-                <li><a href="#">Diabetes and adrenal insufficiency</a></li>
-                <li><a href="#">Immunosuppression including asplenia or dysfunction of the spleen</a></li>
-                <li><a href="#">Morbid obesity (class 3 obesity)</a></li>
-                <li><a href="#">Pregnancy</a></li>
-            </ul>
-            <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+      <div class="nhsuk-grid-column-two-thirds">
+        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
 
-            <!-- Demogprahics -->
-            <h2 class="nhsuk-heading-l" id="demographics">Demographics</h2>
-            <p>All people aged 6 months or older that are in the clinical risk groups shown in table 19.4, chapter 19 of the Green Book.</p>
-            <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+        <!-- Summary -->
+        <h2 class="nhsuk-heading-l" id="summary">Summary</h2>
+        <p>The Technology workstream within the NHS Digital Vaccination Deployment Programme (VDP) will send <a href="https://digital.nhs.uk/services/national-data-opt-out/understanding-the-national-data-opt-out/confidential-patient-information" title="External website">patient identifiable data</a> to the National Immunisation Management Service (NIMS). This will allow for monitoring of flu vaccinations and call and recall during the 2022 to 2023 influenza season (1 September 2022 to 31 March 2023).</p>
+        <p>Cohorting as a Service (CaaS) will provide patient identifiable cohorts to VDP. This will help to identify citizens who are eligible for flu vaccinations.</p>
+        <p>CaaS will use criteria outlined in <a href="https://www.gov.uk/government/publications/influenza-the-green-book-chapter-19" title="External website">chapter 19 of the influenza Green Book</a> to identify eligible and clinical at-risk citizens for flu vaccinations.</p>
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <p>The information provided outlines CaaS’s approach to delivering this cohort using established methodologies. It highlights any differences from the clinical criteria in chapter 19 of the Green Book and associated assumptions.</p>
+        </div>
+        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
 
-            <!-- Cohort details -->
-            <h2 class="nhsuk-heading-l" id="cohort-details">Cohort details</h2>
-            <h3 class="nhsuk-heading-m">Purpose</h3>
-            <p>Direct care</p>
-            <h3 class="nhsuk-heading-m">Commissioner</h3>
-            <p>NHS-E</p>
-            <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+        <!-- Clinical at-risk groups -->
+        <h2 class="nhsuk-heading-l" id="clinical-at-risk-groups">Clinical at-risk groups</h2>
+        <p>You can find the Green Book rules and code list for each condition in the links below.</p>
+        <p>This list below is not exhaustive, and decisions should be based on clinical judgement.</p>
+        <p>The clinical at-risk groups within the Green Book are:</p>
+        <ul class="nhsuk-list">
+            <li>
+              <a href="condition-groups/chronic-respiratory-disease">Chronic respiratory disease</a>
+            </li>
+            <li><a href="#">Chronic heart disease and vascular disease</a></li>
+            <li><a href="#">Chronic kidney disease</a></li>
+            <li>
+              <a href="condition-groups/chronic-liver-disease">Chronic liver disease</a>
+            </li>
+            <li><a href="#">Chronic neurological disease</a></li>
+            <li><a href="#">Clinically coded eligibility</a></li>
+            <li><a href="#">Diabetes and adrenal insufficiency</a></li>
+            <li><a href="#">Immunosuppression including asplenia or dysfunction of the spleen</a></li>
+            <li><a href="#">Morbid obesity (class 3 obesity)</a></li>
+            <li><a href="#">Pregnancy</a></li>
+        </ul>
+        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
 
-            <!-- More Information -->
-            <h2 class="nhsuk-heading-l" id="more-information">More information</h2>
-            <p>Data sets and coding classifications used for this cohort.</p>
-            <ul class="nhsuk-list">
-                <li><a href="https://digital.nhs.uk/coronavirus/gpes-data-for-pandemic-planning-and-research" title="External website">GPES (General Practice Extraction service) v4: COVID-19 at risk patients data collection version 4</a></li>
-                <li><a href="https://digital.nhs.uk/coronavirus/gpes-data-for-pandemic-planning-and-research" title="External website">GPES Data for Planning and Research (GDPPR)</a></li>
-                <li><a href="https://digital.nhs.uk/services/terminology-and-classifications/snomed-ct" title="External website">SNOMED CT: Systematised Nomenclature of Medicine</a></li>
-            </ul>
+        <!-- Demogprahics -->
+        <h2 class="nhsuk-heading-l" id="demographics">Demographics</h2>
+        <p>All people aged 6 months or older that are in the clinical risk groups shown in table 19.4, chapter 19 of the Green Book.</p>
+        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
 
-        </div> <!-- /. nhsuk-grid-column-two-thirds -->
-    </form> <!-- /. form -->
+        <!-- Cohort details -->
+        <h2 class="nhsuk-heading-l" id="cohort-details">Cohort details</h2>
+        <h3 class="nhsuk-heading-m">Purpose</h3>
+        <p>Direct care</p>
+        <h3 class="nhsuk-heading-m">Commissioner</h3>
+        <p>NHS-E</p>
+        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+        <!-- More Information -->
+        <h2 class="nhsuk-heading-l" id="more-information">More information</h2>
+        <p>Data sets and coding classifications used for this cohort.</p>
+        <ul class="nhsuk-list">
+            <li>
+              <a href="https://digital.nhs.uk/coronavirus/gpes-data-for-pandemic-planning-and-research" title="External website">GPES (General Practice Extraction service) v4: COVID-19 at risk patients data collection version 4</a>
+            </li>
+            <li>
+              <a href="https://digital.nhs.uk/coronavirus/gpes-data-for-pandemic-planning-and-research" title="External website">GPES Data for Planning and Research (GDPPR)</a>
+            </li>
+            <li>
+              <a href="https://digital.nhs.uk/services/terminology-and-classifications/snomed-ct" title="External website">SNOMED CT: Systematised Nomenclature of Medicine</a>
+            </li>
+        </ul>
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+  </form> <!-- /. form -->
 </div> <!-- /. nhsuk-grid-row -->
 
 {% endblock %}
