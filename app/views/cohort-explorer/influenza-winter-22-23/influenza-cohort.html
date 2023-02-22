@@ -10,9 +10,10 @@
 {% endblock %}
 
 {% block outerContent %}
+  {% set backText = "Go back to " + previousPageTitle if previousPageTitle else "Go back" %}
   {{ backLink({
     "href": "../cohort-library",
-    "text": "Go back",
+    "text": backText,
     "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
   }) }}
 {% endblock %}
