@@ -10,10 +10,9 @@
 {% endblock %}
 
 {% block outerContent %}
-  {% set backText = "Go back to: " + previousPageTitle if previousPageTitle else "Go back" %}
   {{ backLink({
-    "href": "landing",
-    "text": backText,
+    "href": "javascript:history.go(-1)",
+    "text": "Go back",
     "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
   }) }}
 {% endblock %}
@@ -23,7 +22,7 @@
 <div class="nhsuk-grid-row">
   <form action="#" method="POST">
     <div class="nhsuk-grid-column-two-thirds">
-      <h1 class="nhsuk-heading-xl">{{ currentPageTitle }}</h1>
+      <h1 class="nhsuk-heading-xl">Cohort library</h1>
       <p class="nhsuk-body-l">CaaS has created the following cohorts for the purpose of direct care.</p>
     </div> <!-- /. nhsuk-grid-column-two-thirds -->
 

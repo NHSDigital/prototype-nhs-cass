@@ -11,7 +11,7 @@
 
 {% block outerContent %}
   {{ backLink({
-    "href": "landing",
+    "href": "javascript:history.go(-1)",
     "text": "Go back",
     "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
   }) }}
@@ -21,8 +21,8 @@
   <div class="nhsuk-grid-row">
     <form action="#" method="POST">
       <div class="nhsuk-grid-column-two-thirds">
-        <h1 class="nhsuk-heading-xl">Data integration library</h1>
-        <p class="nhsuk-body-l">The data integration library displays the data sources used in the cohorts.</p>
+        <h1 class="nhsuk-heading-xl">Data integrations library</h1>
+        <p class="nhsuk-body-l">The library shows all the data sets that were used when building the cohorts</p>
       </div> <!-- /. nhsuk-grid-column-two-thirds -->
 
       <div class="nhsuk-grid-column-full">
@@ -38,8 +38,31 @@
               </tr>
           </thead>
           <tbody class="nhsuk-table__body">
+
+            <!-- General Practice Extraction Service (GPES) -->
+
             <tr role="row" class="nhsuk-table__row">
-              <td class="nhsuk-table__cell"><a href="#">Hospital episode library (HES)</a></td>
+              <td class="nhsuk-table__cell">
+                <a href="#">General Practice Extraction Service (GPES)</a>
+              </td>
+              <td class="nhsuk-table__cell ">GPES collects information for a wide range of purposes, including providing GP payments.</td>
+            </tr>
+
+            <!-- GPES Data for Planning and Research (GDPPR) -->
+
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">
+                <a href="#">GPES Data for Planning and Research (GDPPR)</a>
+              </td>
+              <td class="nhsuk-table__cell ">The purpose of this data collection is to respond to the intense demand for General Practice data to be shared. This supports the vital planning and research for COVID-19 purposes.</td>
+            </tr>
+
+            <!-- Hospital Episode Statistics (HES) -->           
+
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">
+                <a href="#">Hospital Episode Statistics (HES)</a>
+              </td>
               <td class="nhsuk-table__cell ">
                 <p>HES is a database containing:</p>
                 <ul class="nhsuk-list nhsuk-list--bullet">
@@ -49,52 +72,36 @@
                 </ul>
               </td>
             </tr>
+
+            <!-- OPCS-4: Classification of Interventions and Procedures -->           
+
             <tr role="row" class="nhsuk-table__row">
               <td class="nhsuk-table__cell">
-                <a href="#">Personal demographics service (PDS)</a>
+                <a href="#">OPCS-4: Classification of Interventions and Procedures</a>
               </td>
-              <td class="nhsuk-table__cell ">
-                <p>PDS is the national electronic database of NHS patient details such as:</p>
-                <ul class="nhsuk-list nhsuk-list--bullet">
-                  <li>name</li>
-                  <li>address</li>
-                  <li>date of birth</li>
-                  <li>NHS number (known as demographics information)</li>
-                </ul>
-              </td>
+              <td class="nhsuk-table__cell ">OPCS-4 is a clinical classification standard. It’s mandated nationally for use across the NHS and consists of a grouping of concepts (codes), plus definitions and business rules for its use.</td>
             </tr>
+
+            <!-- Systemic Anti-Cancer Therapy (SACT) Dataset -->
+
             <tr role="row" class="nhsuk-table__row">
               <td class="nhsuk-table__cell">
-                <a href="#">General Practice Extraction Service (GPES)</a>
+                <a href="#">Systemic Anti-Cancer Therapy (SACT) Dataset</a>
               </td>
-              <td class="nhsuk-table__cell ">GPES collects information for a wide range of purposes, including providing GP payments.</td>
+              <td class="nhsuk-table__cell">SACT data set captures activity data relating to the treatment of cancer with medicines.</td>
             </tr>
+
+            <!-- Radiotherapy Treatment Data Service (RTDS) -->
+
             <tr role="row" class="nhsuk-table__row">
               <td class="nhsuk-table__cell">
-                <a href="#">GPES Data for Planning and Research (GDPPR)</a>
+                <a href="#">Radiotherapy Treatment Data Service (RTDS)</a>
               </td>
-              <td class="nhsuk-table__cell ">The use of GP patient information (also known as GP data) changes our understanding of what causes ill health. It helps us to find out what we can do to prevent or treat it and provide better care.</td>
+              <td class="nhsuk-table__cell">Providers of NHS-funded radiotherapy services are required to submit a monthly return on their delivery of radiotherapy treatments.</td>
             </tr>
-            <tr role="row" class="nhsuk-table__row">
-              <td class="nhsuk-table__cell">
-                <a href="#">Maternity Services Data Set (MSDS)</a>
-              </td>
-              <td class="nhsuk-table__cell">MSDS is a patient-level data set that captures information about activity carried out by Maternity Services relating to a mother and baby or babies.</td>
-            </tr>
-            <tr role="row" class="nhsuk-table__row">
-              <td class="nhsuk-table__cell">
-                <a href="#">National pathology Exchange (NPEx)</a>
-              </td>
-              <td class="nhsuk-table__cell ">NPEx is a national service for NHS pathology managers to connect all UK labs together through a single exchange hub.</td>
-            </tr>
-            <tr role="row" class="nhsuk-table__row">
-              <td class="nhsuk-table__cell">
-                <a href="#">Systemic Anti-Cancer Therapy (SACT)</a>
-              </td>
-              <td class="nhsuk-table__cell">SACT) data set captures activity data relating to the treatment of cancer with medicines.</td>
-            </tr>
-          </tbody>
-        </table>
+
+          </tbody> <!-- /. nhsuk-table__body -->
+        </table> <!-- /. nhsuk-table -->
       </div> <!-- /. nhsuk-grid-column-full -->
     </form> <!-- /. form -->
   </div> <!-- /. nhsuk-grid-row -->

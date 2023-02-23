@@ -11,8 +11,8 @@
 
 {% block outerContent %}
   {{ backLink({
-    "href": "../influenza-cohort",
-    "text": "Go back to: Influenza vaccinations 2022 to 2023: Cohort identification methodology",
+    "href": "javascript:history.go(-1)",
+    "text": "Go back",
     "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
   }) }}
 {% endblock %}
@@ -70,7 +70,7 @@
         <div class="nhsuk-inset-text">
           <span class="nhsuk-u-visually-hidden">Information: </span>
           <p><a href="../code-sets/chronic-respiratory-disease/specific-code-sets">
-            View all the code lists for this condition group</a>.</p>
+            View the code lists for this condition group</a>.</p>
         </div>
 
         <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
@@ -94,8 +94,6 @@
       <p>All conditions are included in digital pathway.</p>
       <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
     </div> <!-- /. nhsuk-grid-column-two-thirds -->
-
-    
 
     <div class="nhsuk-grid-column-two-thirds">
         <h2 class="nhsuk-heading-l" id="code-list">Code list</h2>

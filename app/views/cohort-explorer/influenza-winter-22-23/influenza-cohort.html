@@ -10,10 +10,9 @@
 {% endblock %}
 
 {% block outerContent %}
-{% set backText = "Go back to: " + previousPageTitle if previousPageTitle else "Go back" %}
   {{ backLink({
-    "href": "../cohort-library",
-    "text": backText,
+    "href": "javascript:history.go(-1)",
+    "text": "Go back",
     "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
   }) }}
 {% endblock %}
@@ -22,7 +21,7 @@
 <div class="nhsuk-grid-row">
   <form action="#" method="POST">
       <div class="nhsuk-grid-column-full">
-        <h1 class="nhsuk-heading-xl">{{ currentPageTitle }}</h1>
+        <h1 class="nhsuk-heading-xl">Influenza vaccinations 2022 to 2023: Cohort identification methodology</h1>
 
         <nav class="nhsuk-contents-list" role="navigation" aria-label="Content list of this condition group">
           <h2 class="nhsuk-u-visually-hidden">Contents</h2>
@@ -89,7 +88,7 @@
               <a href="condition-groups/chronic-respiratory-disease">Chronic respiratory disease</a>
             </li>
             <li>
-              <a href="#">Clinically coded eligibility</a>
+              <a href="condition-groups/clinically-coded-eligibility">Clinically coded eligibility</a>
             </li>
             <li>
               <a href="#">Diabetes and adrenal insufficiency</a>
