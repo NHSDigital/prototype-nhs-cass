@@ -28,12 +28,17 @@
   .m-table-header {
     text-align: left;
     font-weight: bold;
-    margin-right: 16px;
+    margin: 16px 0px 16px 0px;
   }
 
+  .m-table-content-wrapper {
+    display: block !important;
+  
+  }
+  
   .m-table-content {
-    text-align: right;
-    margin-left: 16px;
+    text-align: left;
+    margin-left: 0px;
   }
   
   .nhsd-m-table--no-heading-wrap thead {
