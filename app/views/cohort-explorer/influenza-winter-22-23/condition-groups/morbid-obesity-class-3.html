@@ -1,0 +1,83 @@
+{% extends 'custom-layouts/caas-header-sub-nav.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  CaaS prototype
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "javascript:history.go(-1)",
+    "text": "Go back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <form action="#" method="POST">
+    <div class="nhsuk-grid-column-two-thirds">
+      <p class="nhsuk-u-font-size-24 nhsuk-u-secondary-text-color nhsuk-u-margin-bottom-2">Influenza vaccinations winter 2022 to 2023</p>
+      <h1 class="nhsuk-heading-xl">Morbid obesity (class 3 obesity)</h1>
+
+      <!-- Content list -->
+
+      <nav class="nhsuk-contents-list" role="navigation" aria-label="Content list of this condition group">
+        <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+          <ol class="nhsuk-contents-list__list">
+            <li class="nhsuk-contents-list__item" aria-current="page">
+                <span class="nhsuk-contents-list__current" href="#rule-logic">
+                  Rule logic
+                </span>
+            </li>
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="#non-digital-pathways">
+                Non-digital pathways
+              </a>
+            </li>
+          </ol>
+      </nav> <!-- /. nhsuk-content-list -->
+
+      <!-- Rule logic -->
+
+      <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+      <h2 class="nhsuk-heading-l" id="rule-logic">Rule logic</h2>
+      <p>The information below shows the digital pathway rule logic for the conditions that have been identified for call and recall for the flu season winter 2022 to 2023.</p>
+      <p>These conditions are detailed in <a href="https://www.gov.uk/government/publications/influenza-the-green-book-chapter-19" title="External website">chapter 19 of the influenza Green Book</a>.</p>
+
+      <h3 class="nhsuk-heading-m">Condition description</h3>
+      <p>Adults with a Body Mass Index (BMI) ≥40 kg/m².</p>
+
+      <h3 class="nhsuk-heading-m">Ruleset</h3>
+      <p>All people over 16 years with a BMI equal to or over 40 at any time between 1 September 2022 to 31 March 2023.</p>
+      <p>If there is no BMI within this time frame, anyone over 16 years whose last recorded BMI within the last 3 years was equal to or over 40.</p>
+
+      <h3 class="nhsuk-heading-m">Data used</h3>
+      <p>GPES v4 and GDPPR</p>
+
+      <div class="nhsuk-inset-text">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+        <p>
+          <a href="../code-sets/chronic-respiratory-disease/specific-code-sets">
+            View the code lists for this condition group
+          </a>.
+        </p>
+      </div>
+
+      <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+      <!-- Non-Digital Pathways -->
+
+      <h2 class="nhsuk-heading-l" id="non-digital-pathways">Non-digital pathways</h2>
+      <p>All conditions are included in digital pathway.</p>
+
+    </div> <!-- /. nhsuk-grid-column-two-thirds -->
+  </form> <!-- /. form -->
+</div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
