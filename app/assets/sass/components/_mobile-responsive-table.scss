@@ -1,5 +1,10 @@
 
-// CSS lifted from the tactical pages to get stacked table columns in mobile view
+// The following styles are additional to what was lifted from Tactical
+
+// Additional styles include:
+// - Breakpoints to display the mobile table (set at 1024px)
+// - Stacking the header and content above one another rather than side by side
+// - Aligning content to the left
 
 @media screen and (max-width: 64em) {
     .rule-logic-table-desktop {
@@ -14,10 +19,6 @@
       display: none;
     }
 }
-
-.nhsd-m-table {
-    overflow-x: auto;
-  }
 
   @media screen and (min-width: 64.001em) {
     .nhsd-m-table__mobile-list {
@@ -39,6 +40,12 @@
   .m-table-content {
     text-align: left;
     margin-left: 0px;
+  }
+
+  // The following are styles lifted directly from tactical pages
+
+  .nhsd-m-table {
+    overflow-x: auto;
   }
   
   .nhsd-m-table--no-heading-wrap thead {
