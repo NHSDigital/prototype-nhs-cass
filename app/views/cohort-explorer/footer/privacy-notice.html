@@ -1,0 +1,36 @@
+{% extends 'custom-layouts/caas-header-sub-nav.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Privacy notice - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "javascript:history.go(-1)",
+    "text": "Go back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <form action="#" method="POST">
+    <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Privacy notice</h1>
+        <p class="nhsuk-body">The CaaS service is run by NHS England. We want everyone to be able to use it.</p>
+        <p class="nhsuk-body">If you access our service using your NHS Care Identity Service 2 details, the identity access and management services are managed by NHS Digital.</p>
+        <p>NHS Digital is the "controller" for any personal information you provided to NHS Digital to get a national digital identity via the NHS Care Identity Service 2 and authenticate your claim to that identity. It uses that personal information solely for that single purpose.</p>
+        <p>For any personal information, our role is the "processor" only and we must act under the instructions provided by NHS Digital (as the "controller") when verifying your identity.</p>
+        <p>Read NHS Digital's <a href="https://digital.nhs.uk/services/registration-authorities-and-smartcards/privacy-notice-to-smartcard-authorised-device-users-on-the-use-of-your-personal-data" target="_blank">privacy notice and terms and conditions for the NHS Care Identity Service 2 (opens in new window)</a>.</p>
+        <p>This restriction does not apply to personal information you provide to us separately, which is managed in accordance with our privacy policy.</p>
+    </div> <!-- /. nhsuk-grid-column-two-thirds -->
+  </form> <!-- /. form -->
+</div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
