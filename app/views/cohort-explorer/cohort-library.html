@@ -1,4 +1,4 @@
-{% extends 'custom-layouts/caas-header-sub-nav.html' %}
+{% extends 'custom-layouts/explorer/exp-cohort-library-header.html' %}
 
 {% set mainClasses = "nhsuk-main-wrapper--s" %}
 
@@ -10,11 +10,7 @@
 {% endblock %}
 
 {% block outerContent %}
-  {{ backLink({
-    "href": "javascript:history.go(-1)",
-    "text": "Go back",
-    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
-  }) }}
+
 {% endblock %}
 
 {% block content %}
