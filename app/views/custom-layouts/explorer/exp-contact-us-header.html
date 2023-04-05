@@ -150,37 +150,47 @@
 <!-- Edit the footer -->
 <!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
 {% block footer %}
-  {{ footer({
-    "links": [
-      {
-        "URL": "/cohort-explorer/contact-us",
-        "label": "Contact us"
-      },
-      {
-        "URL": "/cohort-explorer/accessibility-statement",
-        "label": "Accessibility statement"
-      },
-      {
-        "URL": "https://www.nhs.uk/our-policies/terms-and-conditions/",
-        "label": "Terms and conditions"
-      },
-      {
-        "URL": "https://www.england.nhs.uk/contact-us/privacy-notice/",
-        "label": "Privacy notice"
-      },
-      {
-        "URL": "/examples/passing-data/clear-data",
-        "label": "Clear prototype data"
-      }
-    ]
-  })}}
+{{ footer({
+"links": [
+  {
+    "URL": "/cohort-explorer/accessibility-statement",
+    "label": "Accessibility statement"
+  },
+  {
+    "URL": "https://www.nhs.uk/our-policies/terms-and-conditions/",
+    "label": "Terms and conditions"
+  },
+  {
+    "URL": "https://www.england.nhs.uk/contact-us/privacy-notice/",
+    "label": "Privacy notice"
+  },
+  {
+    "URL": "https://github.com/nhsuk/nhsuk-prototype-kit/releases",
+    "label": "Prototype kit version: " + version
+  },
+  {
+    "URL": "?devMode=true",
+    "label": "Turn on devMode"
+  },
+  {
+    "URL": "/examples/passing-data/clear-data",
+    "label": "Clear prototype data"
+  }
+]
+})}}
 {% endblock %}
 
 {% block bodyEnd %}
+
+  {% if data['devMode'] === 'true' %}
+    {% include "includes/devmode.html" %}
+  {% endif %}
+
   {% block scripts %}
     <!-- Custom JavaScript files can be added to this file -->
     {% include "includes/scripts.html" %}
     <!-- For adding page specific JavsScript -->
     {% block pageScripts %}{% endblock %}
   {% endblock %}
+  
 {% endblock %}
