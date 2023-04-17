@@ -18,6 +18,14 @@
     .chronic-respiratory-code-set-table-desktop {
       display: none;
     }
+    .bullet-list-item {
+      border: none;
+      display: list-item;                                          
+      list-style-type: disc;
+      list-style-position: inside;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
 }
 
   @media screen and (min-width: 64.001em) {
@@ -41,6 +49,15 @@
     text-align: left;
     margin-left: 0px;
   }
+
+  .bullet-list-item {
+    border: none;
+    display: list-item;                                          
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-top: 10px;
+  }
+
 
   // The following are styles lifted directly from tactical pages
 

@@ -51,7 +51,11 @@
 
         <div class="nhsuk-grid-column-full">
 
-            <!-- Rule Logic Table View < 1024px -->
+            <!-- 
+                
+                Rule Logic Table View < 1024px 
+            
+            -->
 
             <div class="nhsd-m-table__mobile-list">
                 <ul class="nhsd-!t-display-s-hide">
@@ -61,11 +65,39 @@
                             <li class="m-table-content-wrapper">
                                 <p class="m-table-header">Condition description</p>
                                 <p class="m-table-content">
-                                    Immunosuppression due to disease leading to immunosuppression, bone marrow transplant, HIV infection at all stages, multiple myeloma or genetic disorders affecting the immune system (e.g. IRAK-4, NEMO, complement disorder).
+                                    <div class="bulleted-list">
+                                        <p>Immunosuppression due to disease leading to:</p>
+                                        <p class="bullet-list-item">
+                                            immunosuppression
+                                        </p>
+                                        <p class="bullet-list-item">
+                                            bone marrow transplant
+                                        </p>
+                                        <p class="bullet-list-item">
+                                            HIV infection at all stages
+                                        </p>
+                                        <p class="bullet-list-item">multiple myeloma</p>
+                                        <p class="bullet-list-item">genetic disorders affecting the immune system (for example, IRAK-4, NEMO, complement disorder)</p>
+                                    </div>
                                     <div class="nhsuk-u-padding-bottom-3"></div>
                                     It’s difficult to define at what level of immunosuppression a patient could be considered to be at a greater risk of the serious consequences of flu and should be offered a vaccination.
                                     <div class="nhsuk-u-padding-bottom-3"></div>
                                     This decision is best made on an individual basis and left to the patient’s clinician.
+                                    <div class="nhsuk-u-padding-bottom-3"></div>
+                                    Asplenia or dysfunction of the spleen.
+                                    <div class="bulleted-list">
+                                        <p>This also includes conditions such as:</p>
+                                        <p class="bullet-list-item">
+                                            homozygous sickle cell disease
+                                        </p>
+                                        <p class="bullet-list-item">
+                                            hereditary spherocytosis
+                                        </p>
+                                        <p class="bullet-list-item">
+                                            thalassemia major
+                                        </p>
+                                        <p class="bullet-list-item">coeliac syndrome that may lead to splenic dysfunction</p>
+                                    </div>
                                 </p>
                             </li>
                             <li class="m-table-content-wrapper">
@@ -116,35 +148,14 @@
                         </ul>
                     </li>
 
-                    <li>
-                        <ul class="nhsd-m-table__mobile-list-item">
-                            <li class="m-table-content-wrapper">
-                                <p class="m-table-header">Condition description</p>
-                                <p class="m-table-content">
-                                    Asplenia or dysfunction of the spleen.
-                                    <div class="nhsuk-u-padding-bottom-3"></div>
-                                    This also includes conditions such as homozygous sickle cell disease, hereditary spherocytosis, thalassemia major and coeliac syndrome that may lead to splenic dysfunction.
-                                </p>
-                            </li>
-                            <li class="m-table-content-wrapper">
-                                <p class="m-table-header">Data used</p>
-                                <p class="m-table-content">
-                                    GPES v4 and GDPPR
-                                </p>
-                            </li>
-                            <li class="m-table-content-wrapper">
-                                <p class="m-table-header">Ruleset</p>
-                                <p class="m-table-content">
-                                    All people with a splenectomy or splenic damage, sickle cell anaemia, thalasaemia, spherocytosis, coeliac syndrome and some other diseases that cause asplenia or splenic dysfunction.
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-
                 </ul> <!-- nhsd-!t-display-s-hide -->
             </div> <!-- /. nhsd-m-table__mobile-list -->
 
-            <!-- Rule Logic Table View > 1024px -->
+            <!-- 
+                
+                Rule Logic Table View > 1024px 
+            
+            -->
 
             <table role="table" class="nhsuk-table-responsive rule-logic-table-desktop">
                 <thead role="rowgroup" class="nhsuk-table__head">
@@ -170,11 +181,25 @@
                             <span class="nhsuk-table-responsive__heading">
                                 Condition description
                             </span>
-                            Immunosuppression due to disease leading to immunosuppression, bone marrow transplant, HIV infection at all stages, multiple myeloma or genetic disorders affecting the immune system (e.g. IRAK-4, NEMO, complement disorder).
-                            <div class="nhsuk-u-padding-bottom-3"></div>
-                            It’s difficult to define at what level of immunosuppression a patient could be considered to be at a greater risk of the serious consequences of flu and should be offered a vaccination.
-                            <div class="nhsuk-u-padding-bottom-3"></div>
-                            This decision is best made on an individual basis and left to the patient’s clinician.
+                            <p>Immunosuppression due to disease leading to:</p>
+                            <ul class="nhsuk-list nhsuk-list--bullet">
+                                <li>immunosuppression</li>
+                                <li>bone marrow transplant</li>
+                                <li>bronchiectasis</li>
+                                <li>HIV infection at all stages</li>
+                                <li>multiple myeloma</li>
+                                <li>genetic disorders affecting the immune system (for example, IRAK-4, NEMO, complement disorder)</li>
+                            </ul>
+                            <p>It’s difficult to define at what level of immunosuppression a patient could be considered to be at a greater risk of the serious consequences of flu and should be offered a vaccination.</p>
+                            <p>This decision is best made on an individual basis and left to the patient’s clinician.</p>
+                            <p>Asplenia or dysfunction of the spleen.</p>
+                            <p>This also includes conditions such as:</p>
+                            <ul class="nhsuk-list nhsuk-list--bullet">
+                                <li>homozygous sickle cell disease</li>
+                                <li>hereditary spherocytosis</li>
+                                <li>thalassemia major</li>
+                                <li>coeliac syndrome that may lead to splenic dysfunction</li>
+                            </ul>
                         </td>
                         <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-quarter">
                             <span class="nhsuk-table-responsive__heading">
@@ -223,24 +248,6 @@
                         </td>
                     </tr>
 
-                    <!-- #3 Condition Description -->
-
-                    <tr role="row" class="nhsuk-table__row">
-                        <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-third">
-                            <span class="nhsuk-table-responsive__heading">Condition description </span>Asplenia or dysfunction of the spleen.
-                            <div class="nhsuk-u-padding-bottom-3"></div>
-                            This also includes conditions such as homozygous sickle cell disease, hereditary spherocytosis, thalassemia major and coeliac syndrome that may lead to splenic dysfunction.
-                        </td>
-                        <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-quarter">
-                            <span class="nhsuk-table-responsive__heading">Data used </span>GPES v4 and GDPPR
-                        </td>
-                        <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-third">
-                            <span class="nhsuk-table-responsive__heading">
-                                Ruleset 
-                            </span>
-                            All people with a splenectomy or splenic damage, sickle cell anaemia, thalasaemia, spherocytosis, coeliac syndrome and some other diseases that cause asplenia or splenic dysfunction.
-                        </td>
-                    </tr>
                 </tbody>
             </table>
 
@@ -257,7 +264,11 @@
 
         <div class="nhsuk-grid-column-full">
 
-            <!-- Non-Digital Pathways Table View < 1024px -->
+            <!-- 
+                
+                Non-Digital Pathways Table View < 1024px 
+            
+            -->
 
             <div class="nhsd-m-table__mobile-list">
                 <ul class="nhsd-!t-display-s-hide">
@@ -267,9 +278,43 @@
                             <li class="m-table-content-wrapper">
                                 <p class="m-table-header">Condition description</p>
                                 <p class="m-table-content">
-                                    Immunosuppression due to disease leading to immunosuppression, bone marrow transplant, HIV infection at all stages, multiple myeloma or genetic disorders affecting the immune system (e.g. IRAK-4, NEMO, complement disorder).
+                                    <div class="bulleted-list">
+                                        <p>Immunosuppression due to disease leading to:</p>
+                                        <p class="bullet-list-item">
+                                            immunosuppression
+                                        </p>
+                                        <p class="bullet-list-item">
+                                            bone marrow transplant
+                                        </p>
+                                        <p class="bullet-list-item">
+                                            HIV infection at all stages
+                                        </p>
+                                        <p class="bullet-list-item">multiple myeloma</p>
+                                        <p class="bullet-list-item">
+                                            genetic disorders affecting the immune system (for example, IRAK-4, NEMO, complement disorder)
+                                        </p>
+                                    </div>
                                     <div class="nhsuk-u-padding-bottom-3"></div>
                                     It’s difficult to define at what level of immunosuppression a patient could be considered to be at a greater risk of the serious consequences of flu and should be offered flu vaccination. This decision is best made on an individual basis and left to the patient’s clinician.
+                                    <div class="nhsuk-u-padding-bottom-3"></div>
+                                    This decision is best made on an individual basis and left to the patient’s clinician.
+                                    <div class="nhsuk-u-padding-bottom-3"></div>
+                                    Asplenia or dysfunction of the spleen.
+                                    <div class="bulleted-list">
+                                        <p>This also includes conditions such as:</p>
+                                        <p class="bullet-list-item">
+                                            homozygous sickle cell disease
+                                        </p>
+                                        <p class="bullet-list-item">
+                                            hereditary spherocytosis
+                                        </p>
+                                        <p class="bullet-list-item">
+                                            thalassemia major
+                                        </p>
+                                        <p class="bullet-list-item">
+                                            coeliac syndrome that may lead to splenic dysfunction
+                                        </p>
+                                    </div>
                                 </p>
                             </li>
                             <li class="m-table-content-wrapper">
@@ -278,6 +323,10 @@
                                     NHS Digital clinicians have worked hard to include all conditions that may cause immunosuppression. As there is no clinically agreed list of these conditions, the code clusters may not be complete.
                                     <div class="nhsuk-u-padding-bottom-3"></div>
                                     People with immunocompromise due to disease, may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.
+                                    <div class="nhsuk-u-padding-bottom-3"></div>
+                                    NHS Digital clinicians have worked hard to include all conditions that may cause asplenia or splenic dysfunction. As there is no clinically agreed list of these conditions, the code clusters may not be complete.
+                                    <div class="nhsuk-u-padding-bottom-3"></div>
+                                    People with asplenia or splenic dysfunction due to diseases , may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.
                                 </p>
                             </li>
                         </ul>
@@ -310,25 +359,6 @@
                         </ul>
                     </li>
 
-                    <li>
-                        <ul class="nhsd-m-table__mobile-list-item">
-                            <li class="m-table-content-wrapper">
-                                <p class="m-table-header">Condition description</p>
-                                <p class="m-table-content">
-                                    Asplenia or dysfunction of the spleen. This includes conditions such as homozygous sickle cell disease, hereditary spherocytosis, thalassemia major and coeliac syndrome that may lead to splenic dysfunction.
-                                </p>
-                            </li>
-                            <li class="m-table-content-wrapper">
-                                <p class="m-table-header">Conditions following a non-digital pathway</p>
-                                <p class="m-table-content">
-                                    NHS Digital clinicians have worked hard to include all conditions that may cause asplenia or splenic dysfunction. As there is no clinically agreed list of these conditions, the code clusters may not be complete.
-                                    <div class="nhsuk-u-padding-bottom-3"></div>
-                                    People with asplenia or splenic dysfunction due to diseases , may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-
                 </ul> <!-- /. nhsd-!t-display-s-hide -->
             </div> <!-- /. nhsd-m-table__mobile-list -->
 
@@ -355,9 +385,25 @@
                             <span class="nhsuk-table-responsive__heading">
                                 Condition description
                             </span>
-                            Immunosuppression due to disease leading to immunosuppression, bone marrow transplant, HIV infection at all stages, multiple myeloma or genetic disorders affecting the immune system (e.g. IRAK-4, NEMO, complement disorder).
-                            <div class="nhsuk-u-padding-bottom-3"></div>
-                            It’s difficult to define at what level of immunosuppression a patient could be considered to be at a greater risk of the serious consequences of flu and should be offered flu vaccination. This decision is best made on an individual basis and left to the patient’s clinician.
+                            <p>Immunosuppression due to disease leading to:</p>
+                            <ul class="nhsuk-list nhsuk-list--bullet">
+                                <li>immunosuppression</li>
+                                <li>bone marrow transplant</li>
+                                <li>bronchiectasis</li>
+                                <li>HIV infection at all stages</li>
+                                <li>multiple myeloma</li>
+                                <li>genetic disorders affecting the immune system (for example, IRAK-4, NEMO, complement disorder)</li>
+                            </ul>
+                            <p>It’s difficult to define at what level of immunosuppression a patient could be considered to be at a greater risk of the serious consequences of flu and should be offered a vaccination.</p>
+                            <p>This decision is best made on an individual basis and left to the patient’s clinician.</p>
+                            <p>Asplenia or dysfunction of the spleen.</p>
+                            <p>This also includes conditions such as:</p>
+                            <ul class="nhsuk-list nhsuk-list--bullet">
+                                <li>homozygous sickle cell disease</li>
+                                <li>hereditary spherocytosis</li>
+                                <li>thalassemia major</li>
+                                <li>coeliac syndrome that may lead to splenic dysfunction</li>
+                            </ul>
                         </td>
                         <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-half">
                             <span class="nhsuk-table-responsive__heading">
@@ -366,6 +412,10 @@
                             NHS Digital clinicians have worked hard to include all conditions that may cause immunosuppression. As there is no clinically agreed list of these conditions, the code clusters may not be complete.
                             <div class="nhsuk-u-padding-bottom-3"></div>
                             People with immunocompromise due to disease, may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.
+                            <div class="nhsuk-u-padding-bottom-3"></div>
+                            NHS Digital clinicians have worked hard to include all conditions that may cause asplenia or splenic dysfunction. As there is no clinically agreed list of these conditions, the code clusters may not be complete.
+                            <div class="nhsuk-u-padding-bottom-3"></div>
+                            People with asplenia or splenic dysfunction due to diseases , may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.
                         </td>
                     </tr>
 
@@ -393,25 +443,6 @@
                             Patient data held in GP records does not generally identify people on chemotherapy.
                             <div class="nhsuk-u-padding-bottom-3"></div>
                             People who are immunosuppressed due to current or recent chemotherapy treatment, may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.
-                        </td>
-                    </tr>
-
-                    <!-- #3 Clinical Condition -->
-
-                    <tr role="row" class="nhsuk-table__row">
-                        <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-half">
-                            <span class="nhsuk-table-responsive__heading">
-                                Condition description
-                            </span>
-                            Asplenia or dysfunction of the spleen. This includes conditions such as homozygous sickle cell disease, hereditary spherocytosis, thalassemia major and coeliac syndrome that may lead to splenic dysfunction.
-                        </td>
-                        <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-half">
-                            <span class="nhsuk-table-responsive__heading">
-                                Conditions following a non-digital pathway
-                            </span>
-                            NHS Digital clinicians have worked hard to include all conditions that may cause asplenia or splenic dysfunction. As there is no clinically agreed list of these conditions, the code clusters may not be complete.
-                            <div class="nhsuk-u-padding-bottom-3"></div>
-                            People with asplenia or splenic dysfunction due to diseases, may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.
                         </td>
                     </tr>
 
