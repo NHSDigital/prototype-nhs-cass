@@ -1,0 +1,87 @@
+{% extends 'custom-layouts/explorer-v3/exp-default-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Cohorting as a Service (CaaS) - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+          <h1 class="nhsuk-heading-xl">Cohorting as a Service (CaaS)</h1>
+          <p class="nhsuk-body-l">CaaS securely identifies groups of people with shared characteristics from national health data. The results enable tailored direct care to be delivered to improve health and social care outcomes.</p>
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+      <div class="nhsuk-grid-column-full">
+        <ul class="nhsuk-grid-row nhsuk-card-group">
+          <!-- Cohort library card -->
+          <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content">
+                <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                  <a class="nhsuk-card__link" href="cohort-library">Cohort library</a>
+                </h2>
+                <p class="nhsuk-card__description">Explore the current cohorts created by CaaS.</p>
+              </div>
+            </div>
+          </li>
+          <!-- Condition group library Card -->
+          <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content">
+                <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                  <a class="nhsuk-card__link" href="condition-group-library">Condition group library</a>
+                </h2>
+                <p class="nhsuk-card__description">Find detailed information on individual clinical conditions.</p>
+              </div>
+            </div>
+          </li>
+          <!-- Data integrations library Card -->
+          <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content">
+                <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                  <a class="nhsuk-card__link" href="data-integration-library">Data integrations library</a>
+                </h2>
+                <p class="nhsuk-card__description">The library contains a complete list of the data sources used in the cohorts.</p>
+              </div>
+            </div>
+          </li>
+        </ul> <!-- /. nhsuk-card-group -->
+      </div> <!-- /. nhsuk-grid-column-full -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+  {% if data['devMode'] === 'true' %}
+
+    {# DEVMODE SCENARIOS #}
+
+    <details class="nhsuk-details dev-mode govuk-!-margin-bottom-5" role="group">
+      <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-0" aria-expanded="true">
+        <span class="nhsuk-details__summary-text">
+          View Error Scenarios
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        <h4>Back-End errors</h4>
+        <ul class="nhsuk-list">
+          <li><a href="../error-scenarios/back-end/404">404</a></li>
+          <li><a href="../error-scenarios/back-end/generic-error">Generic error</a></li>
+          <li><a href="../error-scenarios/back-end/service-unavailable">Service unavailable</a></li>
+          <li><a href="../error-scenarios/back-end/unauthorised">Unauthorised</a></li>
+        </ul>
+      </div>
+    </details>
+
+  {% endif %}
+
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'custom-layouts/explorer-v2/exp-data-integration-library-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Data integration library - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Data integrations library</h1>
+        <p class="nhsuk-body-l">The library shows all the data sets that were used when building the cohorts</p>
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+      <div class="nhsuk-grid-column-full">
+        <table class="nhsuk-table">
+          <thead role="rowgroup" class="nhsuk-table__head">
+              <tr role="row">
+                <th role="columnheader" class="" scope="col">
+                  Name
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Description
+                </th>
+              </tr>
+          </thead>
+          <tbody class="nhsuk-table__body">
+
+            <!-- General Practice Extraction Service (GPES) -->
+
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service">General Practice Extraction Service (GPES)</a>
+              </td>
+              <td class="nhsuk-table__cell ">GPES collects information for a wide range of purposes, including providing GP payments.</td>
+            </tr>
+
+            <!-- GPES Data for Planning and Research (GDPPR) -->
+
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GPES Data for Pandemic Planning and Research (GDPPR)</a>
+              </td>
+              <td class="nhsuk-table__cell ">The purpose of this data collection is to respond to the intense demand for General Practice data to be shared. This supports the vital planning and research for COVID-19 purposes.</td>
+            </tr>
+
+          </tbody> <!-- /. nhsuk-table__body -->
+        </table> <!-- /. nhsuk-table -->
+      </div> <!-- /. nhsuk-grid-column-full -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

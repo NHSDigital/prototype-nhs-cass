@@ -1,0 +1,81 @@
+{% extends 'custom-layouts/explorer-v3/exp-default-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Chronic liver disease - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <form action="#" method="POST">
+    <div class="nhsuk-grid-column-two-thirds">
+      <p class="nhsuk-u-font-size-24 nhsuk-u-secondary-text-color nhsuk-u-margin-bottom-2"> Influenza vaccinations 2022 to 2023</p>
+      <h1 class="nhsuk-heading-xl">Chronic liver disease</h1>
+
+      <!-- Content list -->
+
+      <nav class="nhsuk-contents-list" role="navigation" aria-label="Content list of this condition group">
+        <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+        <ol class="nhsuk-contents-list__list">
+          <li class="nhsuk-contents-list__item" aria-current="page">
+            <span class="nhsuk-contents-list__current" href="#rule-logic">
+              Rule logic
+            </span>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="#non-digital-pathways">
+              Non-digital pathways
+            </a>
+          </li>
+        </ol>
+      </nav> <!-- /. nhsuk-content-list -->
+
+      <!-- Rule logic -->
+
+      <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+      <h2 class="nhsuk-heading-l" id="rule-logic">Rule logic</h2>
+      <p>The information below shows the digital pathway rule logic for the conditions that have been identified for call and recall for the flu season winter 2022 to 2023.</p>
+      <p>These conditions are detailed in <a href="https://www.gov.uk/government/publications/influenza-the-green-book-chapter-19" title="External website">chapter 19 of the influenza Green Book</a>.</p>
+
+      <h3 class="nhsuk-heading-m">Condition description</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>cirrhosis</li>
+        <li>biliary atresia</li>
+        <li>chronic hepatitis</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-m">Ruleset</h3>
+      <p>People who are:</p>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>over 6 months of age</li>
+        <li>recorded with a chronic liver disease</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-m">Data used</h3>
+      <p>GPES v4 and GDPPR</p>
+
+      <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+      <!-- Non-digital pathways -->
+
+      <h2 class="nhsuk-heading-l" id="non-digital-pathways">Non-digital pathways</h2>
+      <p>All conditions are included in the digital pathway.</p>
+
+      <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
+        Last updated: 10 October 2022
+      </p>
+
+    </div> <!-- /. nhsuk-grid-column-two-thirds -->
+  </form> <!-- /. form -->
+</div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
