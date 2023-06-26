@@ -18,8 +18,11 @@
   <form action="#" method="POST">
       <div class="nhsuk-grid-column-full">
         <h1 class="nhsuk-heading-xl">Influenza vaccinations 2022 to 2023: Cohort identification methodology</h1>
+      </div> <!-- /. nhsuk-grid-column-full -->
 
-        <nav class="nhsuk-contents-list" role="navigation" aria-label="Content list of this condition group">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <nav class="nhsuk-contents-list" role="navigation" aria-label="Influenza vaccinations 2022 to 2023: Cohort identification methodology page content list">
           <h2 class="nhsuk-u-visually-hidden">Contents</h2>
           <ol class="nhsuk-contents-list__list">
             <li class="nhsuk-contents-list__item" aria-current="page">
@@ -31,13 +34,7 @@
               </a>
             </li>
             <li class="nhsuk-contents-list__item">
-              <a class="nhsuk-contents-list__link" href="#demographics">Demographics</a>
-            </li>
-            <li class="nhsuk-contents-list__item">
               <a class="nhsuk-contents-list__link" href="#code-list-rule-set">Code list and rule set</a>
-            </li>
-            <li class="nhsuk-contents-list__item">
-              <a class="nhsuk-contents-list__link" href="#cohort-details">Cohort details</a>
             </li>
             <li class="nhsuk-contents-list__item">
               <a class="nhsuk-contents-list__link" href="#more-information">More information</a>
@@ -45,21 +42,28 @@
           </ol>
         </nav>
 
-      </div> <!-- /. nhsuk-grid-column-full -->
-
-      <div class="nhsuk-grid-column-two-thirds">
-
         <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
 
         <!-- Summary -->
 
         <h2 class="nhsuk-heading-l" id="summary">Summary</h2>
 
-        <p>NHS England Vaccination Deployment Programme’s (VDP) Tech and Data Workstream commissioned the NHS Digital Vaccination Programme to flow <a href="https://digital.nhs.uk/services/national-data-opt-out/understanding-the-national-data-opt-out/confidential-patient-information">patient identifiable data</a> to the National Immunisation Management Service (NIMS). This will be used for influenza vaccine monitoring and call and recall within the 2022 to 2023 flu season that runs from 1 September 2022 to 31 March 2023.</p>
+        <p>As part of their vaccination programme, NHS Digital commissioned Cohorting as a Service (CaaS) to identify people that were eligible for the 2022 to 2023 winter flu vaccination.</p>
 
-        <p>NHS Digital Vaccination programme commissioned <a href="https://digital.nhs.uk/services/cohorting-as-a-service-caas">NHS Digital’s Cohorting as a Service (CaaS)</a> to provide patient identifiable cohorts to the NHS Digital Vaccination Programme to facilitate the identification of citizens who are eligible for flu vaccinations for the season's autumn and winter 2022 to 2023. This includes the defined clinical at-risk group criteria detailed in <a href="https://www.gov.uk/government/publications/influenza-the-green-book-chapter-19">Chapter 19 of the Green Book</a> ​​​​​​to enable the NHS Digital Vaccination Programme to flow that data to NIMS.</p>
+        <p>These people needed to be:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>6 months of age</li>
+          <li>in defined clinical risk groups shown in the <a href="" class="nhsuk-link">Green Book, chapter 19</a></li>
+        </ul>
 
-        <p>A patient cohort has been created and made available in Data Processing Services (DPS) within NHS Digital where the VDP within NHSD will transfer it to the NIMS. The data will be available to the NHS VDP to flow to the NIMS and Foundry for use in National Call/Recall and monitoring for the 2022 to 2023 flu vaccination season.</p>
+        <p>CaaS developed specific rules based on the conditions in the Green Book and used medical data to identify people who met the rules.</p>
+
+        <p>The data collected helped to:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>contact or remind people to receive their flu vaccination between 1 September 2022 and 31 March 2023</li>
+          <li>provide direct protection to those at clinical risk of flu</li>
+          <li>monitor the amount of people who received the flu vaccination</li>
+        </ul>
 
         <div class="nhsuk-inset-text">
           <span class="nhsuk-u-visually-hidden">Information: </span>
@@ -71,7 +75,7 @@
         <!-- Clinical at-risk groups -->
 
         <h2 class="nhsuk-heading-l" id="clinical-at-risk-groups">Clinical at-risk groups</h2>
-        <p>You can find the Green Book rules for each condition in the links below.</p>
+        <p>The links below contain detailed information on the rule logic used to determine who is included and excluded from the digital cohort.</p>
         <p>The list is not exhaustive, and decisions should be based on clinical judgement.</p>
         <p>The clinical at-risk groups within the Green Book are:</p>
         <ul class="nhsuk-list">
@@ -129,28 +133,13 @@
 
         <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
 
-        <!-- Demogprahics -->
-
-        <h2 class="nhsuk-heading-l" id="demographics">Demographics</h2>
-        <p>All people aged 6 months or older that are in the clinical risk groups shown in table 19.4, chapter 19 of the Green Book.</p>
-        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
-
         <!-- Code list and rule set -->
 
         <h2 class="nhsuk-heading-l" id="code-list-rule-set">Code list and rule set</h2>
-        <p>Use the link below to download the full list of the codes used for the flu vaccination cohort. The document details the data sets, coding systems, code values and code descriptions.</p>
+        <p>The document below provides a list of codes used for the flu vaccination cohort. It includes information about data sets, coding systems, code values, and code descriptions.</p>
         <p>
-          <a href="https://digital.nhs.uk/binaries/content/assets/website-assets/services/cohorting-as-a-service-caas/flu_methodology_cohorts.xlsx">Influenza vaccine winter 2022 to 2023 SNOMED code clusters (Excel document 370KB)</a>
+          <a href="https://digital.nhs.uk/binaries/content/assets/website-assets/services/cohorting-as-a-service-caas/flu_methodology_cohorts.xlsx">Flu vaccine winter 2022 to 2023 SNOMED code clusters (Excel document 370KB)</a>
         </p>
-        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
-
-        <!-- Cohort details -->
-
-        <h2 class="nhsuk-heading-l" id="cohort-details">Cohort details</h2>
-        <h3 class="nhsuk-heading-m">Purpose</h3>
-        <p>Direct care</p>
-        <h3 class="nhsuk-heading-m">Commissioner</h3>
-        <p>NHS-E vaccination programme’s Tech and Data workstream, delivered by NHS Digital.</p>
         <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
 
         <!-- More Information -->

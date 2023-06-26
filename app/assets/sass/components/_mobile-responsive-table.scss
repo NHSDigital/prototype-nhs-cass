@@ -6,7 +6,7 @@
 // - Stacking the header and content above one another rather than side by side
 // - Aligning content to the left
 
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 63em) {
     .rule-logic-table-desktop {
         display: none;
     }
@@ -28,7 +28,7 @@
     }
 }
 
-  @media screen and (min-width: 64.001em) {
+  @media screen and (min-width: 63.001em) {
     .nhsd-m-table__mobile-list {
       display: none;
     }
