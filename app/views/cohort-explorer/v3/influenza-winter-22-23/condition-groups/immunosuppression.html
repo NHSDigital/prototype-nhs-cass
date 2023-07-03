@@ -26,9 +26,9 @@
 
     <div class="nhsuk-grid-column-two-thirds">
 
-      <!-- Digital pathway rule logic -->
+      <!-- CaaS digital pathway rule logic -->
 
-      <h2 class="nhsuk-heading-l">Digital pathway rule logic</h2>
+      <h2 class="nhsuk-heading-l">CaaS digital pathway rule logic</h2>
       <p>The table below shows the digital cohort rules to determine who should be contacted or reminded to receive their flu vaccination based on specific medical conditions.</p>
       <p>These conditions are detailed in <a href="https://www.gov.uk/government/publications/influenza-the-green-book-chapter-19" title="External website">
         chapter 19 of the influenza Green Book</a>.
@@ -57,9 +57,26 @@
 
               <li class="m-table-content-wrapper">
                 <p class="m-table-header">Condition description</p>
-                <p class="m-table-content">
-                  Asthma that requires continuous or repeated use of inhaled or systemic steroids.
-                </p>
+                <p class="m-table-content">People with immunosuppression due to disease such as:</p>
+                <p class="bullet-list-item">immunosuppression</p>
+                <p class="bullet-list-item">bone marrow transplant</p>
+                <p class="bullet-list-item">HIV infection at all stages</p>
+                <p class="bullet-list-item">multiple myeloma</p>
+                <p class="bullet-list-item">genetic disorders affecting the immune system (for example, IRAK-4, NEMO, complement disorder)</p>
+                <!-- -->
+                <div class="nhsuk-u-padding-bottom-3"></div>
+                <!-- -->
+                <p class="m-table-content">People with asplenia or dysfunction of the spleen including conditions such as:</p>
+                <p class="bullet-list-item">homozygous sickle cell disease</p>
+                <p class="bullet-list-item">hereditary spherocytosis</p>
+                <p class="bullet-list-item">thalassemia major</p>
+                <p class="bullet-list-item">coeliac syndrome that may lead to splenic dysfunction</p>
+                <!-- -->
+                <div class="nhsuk-u-padding-bottom-3"></div>
+                <!-- -->
+                <p class="m-table-content">It’s difficult to define at what level of immunosuppression a patient could be considered to be at a greater risk of the serious consequences of flu and should be offered a vaccination.</p>
+                <p class="m-table-content">This decision is best made on an individual basis.</p>
+                <p class="m-table-content">Clinicians should use their clinical judgement to inform their decision.</p>
               </li>
 
               <!--
@@ -70,13 +87,19 @@
                 <p class="m-table-header">Ruleset</p>
                 <p class="m-table-content">People who are:</p>
                 <p class="bullet-list-item">over 6 months of age</p>
-                <p class="bullet-list-item">recorded with asthma diagnosis and not recovered since</p>
+                <p class="bullet-list-item">recorded with immunosuppression (persisting) and not recovered since</p>
+                <!-- -->
+                <div class="nhsuk-u-padding-bottom-5"></div>
+                <!-- -->
+                <p class="m-table-content">And who are also:</p>
+                <p class="bullet-list-item">over 6 months of age</p>
+                <p class="bullet-list-item">recorded with immunosuppression (expiring) within the last 12 months and not recovered since</p>
+                <!-- -->
+                <div class="nhsuk-u-padding-bottom-5"></div>
+                <!-- -->
                 <p class="m-table-content">And also people who are:</p>
                 <p class="bullet-list-item">over 6 months of age</p>
-                <p class="bullet-list-item">
-                  recorded with asthma inhaled corticosteroids within the last 12 months
-                </p>
-                <div class="nhsuk-u-padding-bottom-3"></div>
+                <p class="bullet-list-item">recorded with immunosuppression procedure</p>
               </li>
 
               <!--
@@ -104,9 +127,10 @@
 
               <li class="m-table-content-wrapper">
                 <p class="m-table-header">Condition description</p>
-                <p class="m-table-content">
-                  Asthma with previous exacerbations requiring hospital admission.
-                </p>
+                <p class="m-table-content">People with immunosuppression due to treatment such as:</p>
+                <p class="bullet-list-item">people undergoing chemotherapy</p>
+                <p class="bullet-list-item">people treated with or likely to be treated with systemic steroids for more than a month at a dose equivalent to prednisolone at 20mg or more per day (any age)</p>
+                <p class="bullet-list-item">children under 20kg, with a dose of 1mg or more per kg per day</p>
               </li>
 
               <!--
@@ -117,61 +141,7 @@
                 <p class="m-table-header">Ruleset</p>
                 <p class="m-table-content">People who are:</p>
                 <p class="bullet-list-item">over 6 months of age</p>
-                <p class="bullet-list-item">recorded with asthma emergency admissions between 1 September 202 and 31 March 2023</p>
-                <div class="nhsuk-u-padding-bottom-3"></div>
-              </li>
-
-              <!--
-                Datasets used
-              -->
-
-              <li class="m-table-content-wrapper">
-                <p class="m-table-header">Datasets used</p>
-                <p class="m-table-content"><a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a> and <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research" title="External website">GDPPR</a></p>
-              </li>
-
-            </ul> <!-- /. nhsd-m-table__mobile-list-item -->
-          </li> <!-- /. li -->
-
-          <!--
-            Row 3
-          -->
-
-          <li>
-            <ul class="nhsd-m-table__mobile-list-item">
-
-              <!--
-                Condition description
-              -->
-
-              <li class="m-table-content-wrapper">
-                <p class="m-table-header">Condition description</p>
-                <p class="m-table-content">
-                  Chronic obstructive pulmonary disease (COPD) including:
-                </p>
-                <p class="bullet-list-item">chronic bronchitis and emphysema</p>
-                <p class="bullet-list-item">bronchiectasis</p>
-                <p class="bullet-list-item">cystic fibrosis</p>
-                <p class="bullet-list-item">interstitial lung fibrosis</p>
-                <p class="bullet-list-item">pneumoconiosis</p>
-                <p class="bullet-list-item">bronchopulmonary dysplasia (BPD)</p>
-              </li>
-
-              <!--
-                Ruleset
-              -->
-
-              <li class="m-table-content-wrapper">
-                <p class="m-table-header">Ruleset</p>
-                <p class="m-table-content">People who are:</p>
-                <p class="bullet-list-item">over 6 months of age</p>
-                <p class="bullet-list-item">recorded with asthma diagnosis and not recovered since</p>
-                <div class="nhsuk-u-padding-bottom-3"></div>
-                <p class="m-table-content">And also people who are:</p>
-                <p class="bullet-list-item">over 6 months of age</p>
-                <p class="bullet-list-item">
-                  recorded with asthma inhaled corticosteroids within the last 12 months
-                </p>
+                <p class="bullet-list-item">recorded with immunosuppression drugs in the last 12 months</p>
                 <div class="nhsuk-u-padding-bottom-3"></div>
               </li>
 
@@ -218,14 +188,14 @@
 
           <tr role="row" class="nhsuk-table__row">
 
-            <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-third">
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-half">
 
               <!-- 
                 Condition Description 
               -->
 
               <span class="nhsuk-table-responsive__heading">Condition description </span>
-              <p>Immunosuppression due to disease leading to:</p>
+              <p>People with immunosuppression due to disease such as:</p>
               <ul class="nhsuk-list nhsuk-list--bullet">
                 <li>immunosuppression</li>
                 <li>bone marrow transplant</li>
@@ -233,13 +203,23 @@
                 <li>multiple myeloma</li>
                 <li>genetic disorders affecting the immune system (for example, IRAK-4, NEMO, complement disorder)</li>
               </ul>
+              <p>People with asplenia or dysfunction of the spleen including conditions such as:</p>
+              <ul class="nhsuk-list nhsuk-list--bullet">
+                <li>homozygous sickle cell disease</li>
+                <li>hereditary spherocytosis</li>
+                <li>thalassemia major</li>
+                <li>coeliac syndrome that may lead to splenic dysfunction</li>
+              </ul>
+              <p>It’s difficult to define at what level of immunosuppression a patient could be considered to be at a greater risk of the serious consequences of flu and should be offered a vaccination.</p>
+              <p>This decision is best made on an individual basis.</p>
+              <p>Clinicians should use their clinical judgement to inform their decision.</p>
             </td>
 
             <!-- 
               Rulset 
             -->
             
-            <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-third">
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-half">
               <span class="nhsuk-table-responsive__heading">Rulset </span>
               <p>People who are:</p>
               <ul class="nhsuk-list nhsuk-list--bullet">
@@ -262,7 +242,7 @@
               Datasets used 
             -->
 
-            <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-third">
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-quarter">
               <span class="nhsuk-table-responsive__heading">Datasets used </span>
               <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a> and <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research" title="External website">GDPPR</a>
             </td>
@@ -281,9 +261,12 @@
               -->
 
               <span class="nhsuk-table-responsive__heading">Condition description </span>
-              <p>Immunosuppression due to treatment leading to immunosuppression.</p>
-              <p>This includes patients undergoing chemotherapy and individuals treated with or likely to be treated with systemic steroids for more than a month at a dose equivalent to prednisolone at 20mg or more per day (any age).</p>
-              <p>For children under 20kg, a dose of 1mg or more per kg per day.</p>
+              <p>People with immunosuppression due to treatment such as:</p>
+              <ul class="nhsuk-list nhsuk-list--bullet">
+                <li>people undergoing chemotherapy</li>
+                <li>people treated with or likely to be treated with systemic steroids for more than a month at a dose equivalent to prednisolone at 20mg or more per day (any age)</li>
+                <li>children under 20kg, with a dose of 1mg or more per kg per day</li>
+              </ul>
             </td>
 
             <!-- 
@@ -317,9 +300,16 @@
       Non-digital pathways
     -->
 
-    <div class="nhsuk-grid-column-full">
+    <div class="nhsuk-grid-column-two-thirds">
       <div class="nhsuk-u-padding-bottom-6"></div>
-      <h2 class="nhsuk-heading-l">Non-digital pathways</h2>
+      <h2 class="nhsuk-heading-l">Conditions that may not be included in the CaaS digital pathway</h2>
+      <p>Some people identified in the clinical policy may not have been included in the digital pathway. This is because a complete medical record is not always held in a GP’s clinical system.</p>
+      <p>The GP record will need to be updated manually using any communication received from other healthcare providers.</p>
+      <p>This means that some people identified in the clinical policy may not have been included in the digital pathway.</p>
+      <p>If you believe you're eligible for a vaccination but have not been included in the digital cohort, <a href="https://www.nhs.uk/conditions/vaccinations/flu-influenza-vaccine/" title="External website">visit the NHS website on the flu vaccine</a> for more information.</p>
+    </div>
+
+    <div class="nhsuk-grid-column-full">
 
       <!-- 
         Mobile Table < 1024px viewport 
@@ -341,19 +331,26 @@
 
               <li class="m-table-content-wrapper">
                 <p class="m-table-header">Condition description</p>
-                <p class="m-table-content">
-                  Asthma that requires continuous or repeated use of inhaled or systemic steroids.
-                </p>
+                <p class="m-table-content">People with immunosuppression due to disease such as:</p>
+                <p class="bullet-list-item">bone marrow transplant</p>
+                <p class="bullet-list-item">HIV infection at all stages</p>
+                <p class="bullet-list-item">multiple myeloma</p>
+                <p class="bullet-list-item">genetic disorders affecting the immune system (for example, IRAK-4, NEMO, complement disorder)</p>
+                <div class="nhsuk-u-padding-bottom-5"></div>
+                <p class="m-table-content">It’s difficult to define at what level of immunosuppression a patient could be considered to be at a greater risk of the serious consequences of flu and should be offered a vaccination.</p>
+                <p class="m-table-content">This decision is best made on an individual basis.</p>
+                <p class="m-table-content">Clinicians should use their clinical judgement to inform their decision.</p>
               </li>
 
               <!--
-                Conditions following a non-digital pathway
+                Condition information
               -->
 
               <li class="m-table-content-wrapper">
-                <p class="m-table-header">Conditions following a non-digital pathway</p>
-                <p class="m-table-content">The prescribing data for systemic steroids is not maintained centrally on GP records, so it’s not possible to determine the duration and dose of treatment.</p>
-                <p class="m-table-content">People identified as being on asthma treatment with systemic steroids, may not be included in the digital cohort unless a GP practice uses a SNOMED CT administrative code to show eligibility for flu vaccination.</p>
+                <p class="m-table-header">Condition information</p>
+                <p class="m-table-content">NHS Digital clinicians have worked hard to include all conditions that may cause asplenia or splenic dysfunction.</p>
+                <p class="m-table-content">There is no clinically agreed list of these conditions, so the code clusters may be incomplete.</p>
+                <p class="m-table-content">People with immunocompromise due to disease, may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.</p>
               </li>
 
             </ul> <!-- /. nhsd-m-table__mobile-list-item -->
@@ -372,19 +369,22 @@
 
               <li class="m-table-content-wrapper">
                 <p class="m-table-header">Condition description</p>
-                <p class="m-table-content">
-                  Asthma with previous exacerbations requiring hospital admission.
-                </p>
+                <p class="m-table-content">People with immunosuppression due to treatment such as:</p>
+                <p class="bullet-list-item">homozygous sickle cell disease</p>
+                <p class="bullet-list-item">hereditary spherocytosis</p>
+                <p class="bullet-list-item">thalassemia major</p>
+                <p class="bullet-list-item">coeliac syndrome that may lead to splenic dysfunction</p>
               </li>
 
               <!--
-                Conditions following a non-digital pathway
+                Condition information
               -->
 
               <li class="m-table-content-wrapper">
-                <p class="m-table-header">Conditions following a non-digital pathway</p>
-                <p class="m-table-content">When it comes to data around hospital admissions, GP records, are not reliable.</p>
-                <p class="m-table-content">People identified based only on hospital admission data, may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.</p>
+                <p class="m-table-header">Condition information</p>
+                <p class="m-table-content">NHS Digital clinicians have worked hard to include all conditions that may cause asplenia or splenic dysfunction.</p>
+                <p class="m-table-content">There is no clinically agreed list of these conditions, so the code clusters may be incomplete.</p>
+                <p class="m-table-content">People with asplenia or splenic dysfunction due to diseases, may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.</p>
               </li>
 
             </ul> <!-- /. nhsd-m-table__mobile-list-item -->
@@ -403,24 +403,22 @@
 
               <li class="m-table-content-wrapper">
                 <p class="m-table-header">Condition description</p>
-                <p class="m-table-content">
-                  Chronic obstructive pulmonary disease (COPD) including:
-                </p>
-                <p class="bullet-list-item">chronic bronchitis and emphysema</p>
-                <p class="bullet-list-item">bronchiectasis</p>
-                <p class="bullet-list-item">cystic fibrosis</p>
-                <p class="bullet-list-item">interstitial lung fibrosis</p>
-                <p class="bullet-list-item">pneumoconiosis</p>
-                <p class="bullet-list-item">bronchopulmonary dysplasia (BPD)</p>
+                <p class="m-table-content">People with immunosuppression due to treatment such as:</p>
+                <p class="bullet-list-item">people undergoing chemotherapy</p>
+                <p class="bullet-list-item">people treated with or likely to be treated with systemic steroids for more than a month at a dose equivalent to prednisolone at 20mg or more per day (any age) </p>
+                <p class="bullet-list-item">children under 20kg, with a dose of 1mg or more per kg per day</p>
               </li>
 
               <!--
-                Conditions following a non-digital pathway
+                Condition information
               -->
 
               <li class="m-table-content-wrapper">
-                <p class="m-table-header">Conditions following a non-digital pathway</p>
-                <p class="m-table-content">All conditions are included in digital pathway.</p>
+                <p class="m-table-header">Condition information</p>
+                <p class="m-table-content">Data about medication prescribed in hospitals and systemic steroid prescriptions in the community is not centrally stored in a way that allows us to determine treatment duration and dose.</p>
+                <p class="m-table-content">If a person is taking systemic steroids prescribed by a GP or hospital-prescribed immunosuppressants, they might not be part of the digital pathway unless a GP practice indicates their eligibility for flu vaccination using a SNOMED CT code.</p>
+                <p class="m-table-content">Patient data held in GP records generally does not identify people on chemotherapy.</p>
+                <p class="m-table-content">People who are currently or have recently received chemotherapy and are immunosuppressed might not be part of the digital group unless a GP practice uses a SNOMED CT code to indicate their eligibility for flu vaccination.</p>
               </li>
 
             </ul> <!-- /. nhsd-m-table__mobile-list-item -->
@@ -441,7 +439,7 @@
               Condition description
             </th>
             <th role="columnheader" class="" scope="col">
-              Ruleset
+              Condition information
             </th>
           </tr>
         </thead>
@@ -461,19 +459,29 @@
               -->
 
               <span class="nhsuk-table-responsive__heading">Condition description </span>
-              <p>Asthma that requires continuous or repeated use of inhaled or systemic steroids.</p>
+              <p>People with immunosuppression due to disease such as:</p>
+              <ul class="nhsuk-list nhsuk-list--bullet">
+                <li>bone marrow transplant</li>
+                <li>HIV infection at all stages</li>
+                <li>multiple myeloma</li>
+                <li>genetic disorders affecting the immune system (for example, IRAK-4, NEMO, complement disorder)</li>
+              </ul>
+              <p>It’s difficult to define at what level of immunosuppression a patient could be considered to be at a greater risk of the serious consequences of flu and should be offered a vaccination.</p>
+              <p>This decision is best made on an individual basis.</p>
+              <p>Clinicians should use their clinical judgement to inform their decision.</p>
             </td>
 
             <!-- 
-              Conditions following a non-digital pathway 
+              Condition information
             -->
             
             <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-half">
               <span class="nhsuk-table-responsive__heading">
-                Conditions following a non-digital pathway
+                Condition information
               </span>
-              <p>The prescribing data for systemic steroids is not maintained centrally on GP records, so it’s not possible to determine the duration and dose of treatment.</p>
-              <p>People identified as being on asthma treatment with systemic steroids, may not be included in the digital cohort unless a GP practice uses a SNOMED CT administrative code to show eligibility for flu vaccination.</p>
+              <p>NHS Digital clinicians have worked hard to include all conditions that may cause asplenia or splenic dysfunction.</p>
+              <p>There is no clinically agreed list of these conditions, so the code clusters may be incomplete.</p>
+              <p>People with immunocompromise due to disease, may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.</p>
             </td>
 
           </tr>
@@ -490,20 +498,29 @@
                 Condition Description 
               -->
 
-              <span class="nhsuk-table-responsive__heading">Condition description </span>
-              <p>Asthma with previous exacerbations requiring hospital admission.</p>
+              <span class="nhsuk-table-responsive__heading">
+                Condition description
+              </span>
+              <p>People with immunosuppression due to treatment such as:</p>
+              <ul class="nhsuk-list nhsuk-list--bullet">
+                <li>homozygous sickle cell disease</li>
+                <li>hereditary spherocytosis</li>
+                <li>thalassemia major</li>
+                <li>coeliac syndrome that may lead to splenic dysfunction</li>
+              </ul>
             </td>
 
             <!-- 
-              Conditions following a non-digital pathway 
+              Condition information 
             -->
             
             <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-half">
               <span class="nhsuk-table-responsive__heading">
-                Conditions following a non-digital pathway
+                Condition information
               </span>
-              <p>When it comes to data around hospital admissions, GP records, are not reliable.</p>
-              <p>People identified based only on hospital admission data, may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.</p>
+              <p>NHS Digital clinicians have worked hard to include all conditions that may cause asplenia or splenic dysfunction.</p>
+              <p>There is no clinically agreed list of these conditions, so the code clusters may be incomplete.</p>
+              <p>People with asplenia or splenic dysfunction due to diseases, may not be included in the digital cohort unless a GP practice uses a SNOMED CT code to show eligibility for flu vaccination.</p>
             </td>
 
           </tr>
@@ -520,26 +537,29 @@
                 Condition Description 
               -->
 
-              <span class="nhsuk-table-responsive__heading">Condition description </span>
-              <p>Chronic obstructive pulmonary disease (COPD) including:</p>
+              <span class="nhsuk-table-responsive__heading">
+                Condition description
+              </span>
+              <p>People with immunosuppression due to treatment such as:</p>
               <ul class="nhsuk-list nhsuk-list--bullet">
-                <li>over 6 months of age</li>
-                <li>chronic bronchitis and emphysema</li>
-                <li>bronchiectasis</li>
-                <li>cystic fibrosis</li>
-                <li>interstitial lung fibrosis</li>
-                <li>pneumoconiosis</li>
-                <li>bronchopulmonary dysplasia (BPD)</li>
+                <li>people undergoing chemotherapy</li>
+                <li>people treated with or likely to be treated with systemic steroids for more than a month at a dose equivalent to prednisolone at 20mg or more per day (any age)</li>
+                <li>children under 20kg, with a dose of 1mg or more per kg per day</li>
               </ul>
             </td>
 
             <!-- 
-              Conditions following a non-digital pathway 
+              Condition information
             -->
             
             <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-half">
-              <span class="nhsuk-table-responsive__heading">Conditions following a non-digital pathway</span>
-              <p>All conditions are included in digital pathway.</p>
+              <span class="nhsuk-table-responsive__heading">
+                Condition information
+              </span>
+              <p>Data about medication prescribed in hospitals and systemic steroid prescriptions in the community is not centrally stored in a way that allows us to determine treatment duration and dose.</p>
+              <p>If a person is taking systemic steroids prescribed by a GP or hospital-prescribed immunosuppressants, they might not be part of the digital pathway unless a GP practice indicates their eligibility for flu vaccination using a SNOMED CT code.</p>
+              <p>Patient data held in GP records generally does not identify people on chemotherapy.</p>
+              <p>People who are currently or have recently received chemotherapy and are immunosuppressed might not be part of the digital group unless a GP practice uses a SNOMED CT code to indicate their eligibility for flu vaccination.</p>
             </td>
 
           </tr>
