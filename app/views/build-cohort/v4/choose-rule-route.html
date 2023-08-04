@@ -1,0 +1,56 @@
+{% extends 'custom-layouts/caas-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Cohorting as a Service (CaaS) - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="/choose-rule-route" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+        <div class="nhsuk-form-group">
+
+          <h1 class="nhsuk-heading-xl">Cohort definition</h1>
+
+          <fieldset class="nhsuk-fieldset">
+        
+            <div class="nhsuk-radios">
+        
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="rule-creation-route-1" name="rule-creation-route" type="radio" value="new-rule">
+                <label class="nhsuk-label nhsuk-radios__label" for="rule-creation-route-1">
+                  Create a new cohort definition
+                </label>
+              </div>
+        
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="rule-creation-route-2" name="rule-creation-route" type="radio" value="existing-rule">
+                <label class="nhsuk-label nhsuk-radios__label" for="rule-creation-route-2">
+                  Re-purpose an existing cohort
+                </label>
+              </div>
+        
+            </div>
+
+          </fieldset>
+        
+        </div>
+
+        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+          Continue
+        </button>
+
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

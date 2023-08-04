@@ -129,58 +129,24 @@
   {{ footer({
     "links": [
       {
-        "URL": "",
-        "label": "Home"
-      },
-      {
-        "URL": "",
-        "label": "NHS sites"
-      },
-      {
-        "URL": "",
-        "label": "NHS App"
-      },
-      {
-        "URL": "",
-        "label": "About us"
-      },
-      {
-        "URL": "",
-        "label": "Contact us"
-      },
-      {
-        "URL": "",
-        "label": "Profile editor login"
-      },
-      {
-        "URL": "",
-        "label": "Site map"
-      },
-      {
-        "URL": "",
-        "label": "Accessibility statement"
-      },
-      {
-        "URL": "",
-        "label": "Our policies"
-      },
-      {
-        "URL": "",
-        "label": "Cookies"
-      },
-      {
         "URL": "/examples/passing-data/clear-data",
-        "label": "Clear data"
+        "label": "Clear prototype data"
       }
     ]
-  })}}
-{% endblock %}
-
-{% block bodyEnd %}
-  {% block scripts %}
-    <!-- Custom JavaScript files can be added to this file -->
-    {% include "includes/scripts.html" %}
-    <!-- For adding page specific JavsScript -->
-    {% block pageScripts %}{% endblock %}
-  {% endblock %}
-{% endblock %}
+    })}}
+    {% endblock %}
+    
+    {% block bodyEnd %}
+    
+    {% if data['devMode'] === 'true' %}
+        {% include "includes/devmode.html" %}
+      {% endif %}
+    
+      {% block scripts %}
+        <!-- Custom JavaScript files can be added to this file -->
+        {% include "includes/scripts.html" %}
+        <!-- For adding page specific JavsScript -->
+        {% block pageScripts %}{% endblock %}
+      {% endblock %}
+    {% endblock %}
+    

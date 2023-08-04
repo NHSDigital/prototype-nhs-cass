@@ -1,0 +1,31 @@
+{% extends 'custom-layouts/caas-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Cohorting as a Service (CaaS) - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+          <h1 class="nhsuk-heading-xl">Existing rule</h1>
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="example">
+              Search
+            </label>
+            <input class="nhsuk-input" id="example" name="example" type="text">
+          </div>
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

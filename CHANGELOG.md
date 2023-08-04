@@ -1,5 +1,20 @@
 # NHS.UK prototype kit Changelog
 
+## 4.9.0 - 1 June 2023
+
+:pencil2: **Content**
+
+- Fix styling on confirmation page
+- Add character count and tab components
+- Update guidance on setting a password in 'Publish your prototype online'
+- Change references to NHS Digital to NHS England
+- Enhance deployment instructions and test note in README
+- Fix link in README
+
+:wrench: **Maintenance**
+
+- Install NHS.UK frontend v7.0.0
+
 ## 4.8.6 - 24 January 2023
 
 :pencil2: **Content**

@@ -102,6 +102,26 @@ function devModeRoute(req, res, next) {
   next()
 }
 
+// Cohort Explorer - v4 choose-rule-route.html
+
+// Run this code when a form is submitted to 'juggling-balls-answer'
+router.post('/choose-rule-route', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var ruleRoute = req.session.data['rule-creation-route']
+
+  // Check whether the variable matches a condition
+  if (ruleRoute == "new-rule"){
+    // Send user to next page
+    res.redirect('/build-cohort/v4/repurpose-rule')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/build-cohort/v4/repurpose-cohort')
+  }
+
+})
+
+
 router.get('/*', devModeRoute)
 
 module.exports = router;

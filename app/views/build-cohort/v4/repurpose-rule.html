@@ -1,0 +1,661 @@
+{% extends 'custom-layouts/caas-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+Cohorting as a Service (CaaS) - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1 class="nhsuk-heading-xl">Repurpose existing rules</h1>
+
+    <!-- 
+      Add basic details -->
+
+    <h2>Add basic details</h2>
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="basic-details">
+        Rule name
+      </label>
+      <input class="nhsuk-input" id="rule-name" name="basic-details" type="text">
+    </div>
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="basic-details">
+        Summary
+      </label>
+      <textarea class="nhsuk-textarea" id="rule-summary" name="basic-details" rows="5" aria-describedby="summary-hint"></textarea>
+    </div>
+
+    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+    <!-- 
+      Age Constraints -->
+
+    <div class="nhsuk-form-group">
+      <fieldset class="nhsuk-fieldset" aria-describedby="age-hint">
+        <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+          <h2 class="nhsuk-fieldset__heading">
+            Age
+          </h2>
+        </legend>
+
+        <div class="nhsuk-radios nhsuk-radios--conditional" id="relative-age-constraints">
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="age-now" name="age-radios" type="radio" value="age-now"
+              aria-controls="conditional-age-1" aria-expanded="false">
+            <label class="nhsuk-label nhsuk-radios__label" for="age-1">
+              Age now
+            </label>
+          </div>
+
+          <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-1">
+
+            <div class="nhsuk-form-group">
+              <fieldset class="nhsuk-fieldset" aria-describedby="age-now-hint" role="group">
+
+                <div class="nhsuk-date-input" id="age-now">
+                  <div class="nhsuk-date-input__item">
+                    <div class="nhsuk-form-group">
+                      <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                        Day
+                      </label>
+                      <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day"
+                        name="example-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                  </div>
+                  <div class="nhsuk-date-input__item">
+                    <div class="nhsuk-form-group">
+                      <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                        Month
+                      </label>
+                      <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month"
+                        name="example-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                  </div>
+                  <div class="nhsuk-date-input__item">
+                    <div class="nhsuk-form-group">
+                      <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                        Year
+                      </label>
+                      <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year"
+                        name="example-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+            </div>
+
+          </div>
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="age-by" name="age-radios" type="radio" value="age-by"
+              aria-controls="conditional-age-2" aria-expanded="false">
+            <label class="nhsuk-label nhsuk-radios__label" for="age-2">
+              Age by
+            </label>
+          </div>
+
+          <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-2">
+
+            <div class="nhsuk-form-group">
+              <fieldset class="nhsuk-fieldset" aria-describedby="age-hint" role="group">
+
+                <div class="nhsuk-date-input" id="age-by">
+                  <div class="nhsuk-date-input__item">
+                    <div class="nhsuk-form-group">
+                      <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                        Day
+                      </label>
+                      <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day"
+                        name="example-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                  </div>
+                  <div class="nhsuk-date-input__item">
+                    <div class="nhsuk-form-group">
+                      <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                        Month
+                      </label>
+                      <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month"
+                        name="example-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                  </div>
+                  <div class="nhsuk-date-input__item">
+                    <div class="nhsuk-form-group">
+                      <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                        Year
+                      </label>
+                      <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year"
+                        name="example-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                  </div>
+                </div>
+
+              </fieldset> <!-- /. nhsuk-fieldset -->
+            </div> <!-- /. nhsuk-form-group -->
+          </div> <!-- /. nhsuk-radios-conditional -->
+        </div> <!-- /. nhsuk-radios -->
+      </fieldset> <!-- /. nhsuk-fieldset -->
+    </div> <!-- /. nhsuk-form-group -->
+
+    <p>
+      <a href="#!" class="nhsuk-link" onclick="showAgeMinMax()" id="minMaxLink">
+        Add minimum and maximum age constraints
+      </a>
+    </p>
+
+    <div id="age-min-max">
+      <div class="nhsuk-form-group">
+        <div class="floating-input-fields">
+          <label class="nhsuk-label" for="input-width-2">
+            Minimum age
+          </label>
+          <input class="nhsuk-input nhsuk-input--width-2 float-left" id="input-width-2" name="test-width-2" type="text"> <div class="nhsuk-form-group">
+            <select class="nhsuk-select float-left age-select-range" id="select-1" name="select-1">
+              <option value="Day">Day/s</option>
+              <option value="Month">Month/s</option>
+              <option value="Year">Year/s</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+  
+      <div class="nhsuk-form-group">
+        <div class="floating-input-fields">
+          <label class="nhsuk-label" for="input-width-2">
+            Maximum age
+          </label>
+          <input class="nhsuk-input nhsuk-input--width-2 float-left" id="input-width-2" name="test-width-2" type="text"> <div class="nhsuk-form-group">
+            <select class="nhsuk-select float-left age-select-range" id="select-1" name="select-1">
+              <option value="Day">Day/s</option>
+              <option value="Month">Month/s</option>
+              <option value="Year">Year/s</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+
+    <p>
+      <a href="#!" class="nhsuk-link" onclick="removeMinMax()" id="removeMinMaxRule">
+        Remove minimum and maximum age constraints
+      </a>
+    </p>
+
+    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible" id="section-break-add">
+
+    <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible" id="section-break-remove">
+
+  </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+  <!-- 
+      Condition Description -->
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label nhsuk-label--l" for="example-heading">
+        Condition group
+      </label>
+      <input id="conditionDesc" type="text" name="conditionDesc" class="nhsuk-input" onchange="displayCondDescTable()">
+    </div>
+
+  </div>
+
+  <div class="nhsuk-grid-column-full">
+
+    <table class="nhsuk-table" id="condition-group-table">
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" class="" scope="col">
+            Condition group
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Ruleset
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Datasets used
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Actions
+          </th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr role="row" class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">
+            <p>People with:</p>
+            <ul class="nhsuk-list nhsuk-list--bullet">
+              <li>congenital heart disease with cardiac complications</li>
+              <li>chronic heart failure</li>
+              <li>regular medication and/or follow-up for ischaemic heart disease</li>
+            </ul>
+          </td>
+          <td class="nhsuk-table__cell ">
+            <p>People who are:</p>
+            <ul class="nhsuk-list nhsuk-list--bullet">
+              <li>over 6 months of age</li>
+              <li>recorded with a chronic heart condition</li>
+            </ul>
+          </td>
+          <td class="nhsuk-table__cell ">GPES v4 and GDPPR</td>
+          <td class="nhsuk-table__cell ">
+            <div class="table-actions">
+              <a href="#!" class="condition-desc-table-action" onclick="displayCondGroupList()">Add</a>
+              <a href="#!" class="condition-desc-table-action">Edit</a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="nhsuk-u-padding-bottom-2"></div>
+
+    <h5 class="nhsuk-heading-xs condDescGroupEmptyState" id="condDescGroupEmptyState">No existing rules have been selected</h5>
+
+  </div> <!-- /. nhsuk-grid-column-full -->
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <dl class="nhsuk-summary-list snomed-table" id="condGroupList">
+
+    <h5 class="nhsuk-heading-xs">Existing rules selected</h5>
+
+      <div class="nhsuk-summary-list__row">
+        
+        <dt class="nhsuk-summary-list__value">
+          Chronic heart disease
+        </dt>
+
+        <dt class="nhsuk-summary-list__value"></dt>
+    
+        <dd class="nhsuk-summary-list__actions">
+          <a href="#!">
+            Remove<span class="nhsuk-u-visually-hidden"> HES code</span>
+          </a>
+        </dd>
+
+      </div>
+    </dl>
+
+    <div class="nhsuk-u-padding-bottom-5"></div>
+
+  </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+  <!-- 
+    SNOMED -->
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label nhsuk-label--l" for="example-heading">
+        SNOMED codes
+      </label>
+      <input id="SNOMED" type="text" name="SNOMEDinput" class="nhsuk-input" onchange="displaySNOMEDlist()">
+    </div>
+
+    <dl class="nhsuk-summary-list snomed-table" id="SNOMEDlist">
+      <div class="nhsuk-summary-list__row">
+        
+        <dt class="nhsuk-summary-list__value">
+          SICKLE_COD
+        </dt>
+
+        <dt class="nhsuk-summary-list__value">
+          
+        </dt>
+    
+        <dd class="nhsuk-summary-list__actions">
+          <a href="#!">
+            Remove<span class="nhsuk-u-visually-hidden"> code cluster</span>
+          </a>
+        </dd>
+
+      </div>
+    </dl>
+
+    <div class="nhsuk-u-padding-bottom-5"></div>
+
+  </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+  <!-- 
+    HES Codes -->
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label nhsuk-label--l" for="example-heading">
+        HES codes
+      </label>
+      <input id="HES" type="text" name="HESinput" class="nhsuk-input" onchange="displayHESlist()">
+    </div>
+
+    <dl class="nhsuk-summary-list snomed-table" id="HESlist">
+      <div class="nhsuk-summary-list__row">
+        
+        <dt class="nhsuk-summary-list__value">
+          D570 D571
+        </dt>
+
+        <dt class="nhsuk-summary-list__value">
+          
+        </dt>
+    
+        <dd class="nhsuk-summary-list__actions">
+          <a href="#!">
+            Remove<span class="nhsuk-u-visually-hidden"> HES code</span>
+          </a>
+        </dd>
+
+      </div>
+    </dl>
+
+    <div class="nhsuk-u-padding-bottom-5"></div>
+
+  </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+  <!-- 
+    Rule Reference -->
+
+  <div class="nhsuk-grid-column-two-thirds">
+  
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label nhsuk-label--l" for="example-heading">
+          Rule reference codes
+        </label>
+        <input id="ruleReference" type="text" name="ruleReferenceInput" class="nhsuk-input" onchange="displayRuleReferenceList()">
+      </div>
+  
+      <dl class="nhsuk-summary-list snomed-table" id="ruleReferenceList">
+        <div class="nhsuk-summary-list__row">
+          
+          <dt class="nhsuk-summary-list__value nhsuk-u-width-three-quarters">
+            COVID_2023_ASPLENIA_SICKLE
+          </dt>
+  
+          <dt class="nhsuk-summary-list__value">
+            
+          </dt>
+      
+          <dd class="nhsuk-summary-list__actions">
+            <a href="#!">
+              Remove<span class="nhsuk-u-visually-hidden"> HES code</span>
+            </a>
+          </dd>
+  
+        </div>
+      </dl>
+
+      <div class="nhsuk-u-padding-bottom-5"></div>
+
+  </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+  <!-- 
+    NIMS Labels -->
+
+  <div class="nhsuk-grid-column-two-thirds">
+  
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label nhsuk-label--l" for="example-heading">
+          NIMS labels
+        </label>
+        <input id="NIMS" type="text" name="NIMSinput" class="nhsuk-input" onchange="displayNIMSList()">
+      </div>
+  
+      <dl class="nhsuk-summary-list snomed-table" id="NIMSlist">
+        <div class="nhsuk-summary-list__row">
+          
+          <dt class="nhsuk-summary-list__value nhsuk-u-width-three-quarters">
+            COVID_16+ASPLENIA
+          </dt>
+  
+          <dt class="nhsuk-summary-list__value">
+            
+          </dt>
+      
+          <dd class="nhsuk-summary-list__actions">
+            <a href="#!">
+              Remove<span class="nhsuk-u-visually-hidden"> NIMS label</span>
+            </a>
+          </dd>
+  
+        </div>
+      </dl>
+
+      <div class="nhsuk-u-padding-bottom-9"></div>
+
+  </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+  <!--
+    Page actions -->
+
+  <div class="nhsuk-grid-column-two-thirds">
+    <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+      Add to cohort
+    </button>
+  </div>
+
+</div> <!-- /. nhsuk-grid-row -->
+
+<!-- onChange Functions -->
+
+<script>
+  function showAgeMinMax() {
+    document.getElementById("age-min-max").style.display = "block";
+    document.getElementById("minMaxLink").style.display = "none";
+    document.getElementById("removeMinMaxRule").style.display = ""
+    document.getElementById("removeMinMaxRule").style.display = "block";
+  }
+  function removeMinMax() {
+    document.getElementById("age-min-max").style.display = "none";
+    document.getElementById("minMaxLink").style.display = "none";
+    document.getElementById("removeMinMaxRule").style.display = "none";
+    document.getElementById("minMaxLink").style.display = "block";
+  }
+  function displayCondDescTable() {
+    document.getElementById("condition-group-table").style.display = "block";
+  }
+  function displayCondGroupList() {
+    document.getElementById("condGroupList").style.display = "block";
+    document.getElementById("condDescGroupEmptyState").style.display = "none";
+  }
+  function displaySNOMEDlist() {
+    document.getElementById("SNOMEDlist").style.display = "block";
+  }
+  function displayHESlist() {
+    document.getElementById("HESlist").style.display = "block";
+  }
+  function displayRuleReferenceList() {
+    document.getElementById("ruleReferenceList").style.display = "block";
+  }
+  function displayNIMSList() {
+    document.getElementById("NIMSlist").style.display = "block";
+  }
+</script>
+
+<!-- Autocomplete Function -->
+
+<script>
+  function autocomplete(inp, arr) {
+    /*the autocomplete function takes two arguments,
+    the text field element and an array of possible autocompleted values:*/
+    var currentFocus;
+    /*execute a function when someone writes in the text field:*/
+    inp.addEventListener("input", function (e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) {
+        return false;
+      }
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function (e) {
+            /*insert the value for the autocomplete text field:*/
+            inp.value = this.getElementsByTagName("input")[0].value;
+            /*close the list of autocompleted values,
+            (or any other open lists of autocompleted values:*/
+            closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+    });
+    /*execute a function presses a key on the keyboard:*/
+    inp.addEventListener("keydown", function (e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+    });
+
+    function addActive(x) {
+      /*a function to classify an item as "active":*/
+      if (!x) return false;
+      /*start by removing the "active" class on all items:*/
+      removeActive(x);
+      if (currentFocus >= x.length) currentFocus = 0;
+      if (currentFocus < 0) currentFocus = (x.length - 1);
+      /*add class "autocomplete-active":*/
+      x[currentFocus].classList.add("autocomplete-active");
+    }
+
+    function removeActive(x) {
+      /*a function to remove the "active" class from all autocomplete items:*/
+      for (var i = 0; i < x.length; i++) {
+        x[i].classList.remove("autocomplete-active");
+      }
+    }
+
+    function closeAllLists(elmnt) {
+      /*close all autocomplete lists in the document,
+      except the one passed as an argument:*/
+      var x = document.getElementsByClassName("autocomplete-items");
+      for (var i = 0; i < x.length; i++) {
+        if (elmnt != x[i] && elmnt != inp) {
+          x[i].parentNode.removeChild(x[i]);
+        }
+      }
+    }
+    /*execute a function when someone clicks in the document:*/
+    document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+    });
+  }
+</script>
+
+<!-- An array containing Condition Descriptions -->
+
+<script>
+  var conditionDescriptionsArray = [
+    "Asplenia or dysfunction of the spleen",
+    "Chronic heart disease",
+    "Chronic kidney disease",
+    "Chronic liver disease",
+    "Chronic neurological disease",
+    "Chronic respiratory disease",
+    "Clinically coded eligibility",
+    "Diabetes and adrenal insufficiency",
+    "Immunosuppression",
+    "Morbid obesity (class 3 obesity)",
+    "Pregnancy"
+  ];
+</script>
+
+<!-- An array containing SNOMED codes -->
+
+<script>
+  var SNOMEDcodesArray = [
+    "SICKLE_COD", 
+    "SPLENX_COD"
+  ];
+</script>
+
+<!-- An array containing HES codes -->
+
+<script>
+  var HEScodesArray = [
+    "D570 D571", 
+    "D560"
+  ];
+</script>
+
+<!-- An array containing Rule References -->
+
+<script>
+  var ruleReferenceArray = [
+    "COVID_2023_ASPLENIA_SICKLE"
+  ];
+</script>
+
+<!-- An array containing NIMS labels -->
+
+<script>
+  var NIMSlabelsArray = [
+    "COVID_16+ASPLENIA"
+  ];
+</script>
+
+<!-- Initiate the autocomplete function on the "id" elements, and pass along the arrays as possible autocomplete values -->
+
+<script>
+  autocomplete(document.getElementById("conditionDesc"), conditionDescriptionsArray);
+  autocomplete(document.getElementById("SNOMED"), SNOMEDcodesArray);
+  autocomplete(document.getElementById("HES"), HEScodesArray);
+  autocomplete(document.getElementById("ruleReference"), ruleReferenceArray);
+  autocomplete(document.getElementById("NIMS"), NIMSlabelsArray);
+</script>
+
+{% endblock %} 
