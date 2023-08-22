@@ -35,7 +35,7 @@
       <a class="nhsuk-header__transactional-service-name--link" href="#">CaaS (Cohorting as a Service)</a>
     </div>
 
-    <p class="logout-link">
+    <p class="username nhsuk-u-font-size-16">
       John Smith <a href="#" class="logout-link nhsuk-u-margin-left-3">Logout</a>
     </p>
 
@@ -71,10 +71,6 @@
       },
       {
         "URL": "",
-        "label": "Profile editor login"
-      },
-      {
-        "URL": "",
         "label": "Site map"
       },
       {
@@ -92,12 +88,21 @@
       {
         "URL": "/examples/passing-data/clear-data",
         "label": "Clear data"
+      },
+      {
+        "URL": "?devMode=true",
+        "label": "Turn on devMode"
       }
     ]
   })}}
 {% endblock %}
 
 {% block bodyEnd %}
+    
+{% if data['devMode'] === 'true' %}
+    {% include "includes/devmode.html" %}
+  {% endif %}
+
   {% block scripts %}
     <!-- Custom JavaScript files can be added to this file -->
     {% include "includes/scripts.html" %}
