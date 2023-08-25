@@ -1,0 +1,27 @@
+{% extends 'custom-layouts/enquirer/header-logged-in.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Search results - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="landing" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Search results</h1>
+        <p class="nhsuk-body nhsuk-u-font-weight-bold">No cohorts are associated with this NHS number.</p>
+        <p>If this information is not correct, you can <a href="landing">check the patient details you have entered</a> or <a href="landing">start a new search</a>.</p>
+      </div>
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

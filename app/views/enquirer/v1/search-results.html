@@ -1,9 +1,9 @@
-{% extends 'custom-layouts/caas-header-logged-in.html' %}
+{% extends 'custom-layouts/enquirer/header-logged-in.html' %}
 
 {% set mainClasses = "nhsuk-main-wrapper--s" %}
 
 {% block pageTitle %}
-  Search result - NHS England
+  Search results - NHS England
 {% endblock %}
 
 {% block beforeContent %}
@@ -18,9 +18,8 @@
     <form action="landing" method="POST">
 
       <div class="nhsuk-grid-column-two-thirds">
-        <h1 class="nhsuk-heading-xl">Search result</h1>
+        <h1 class="nhsuk-heading-xl">Search results</h1>
         <p class="nhsuk-body nhsuk-u-font-weight-bold">The patient is in a cohort.</p>
-        <p class="nhsuk-body">The table below contains the DPS information associated with your search.</p>
       </div>
 
       <div class="nhsuk-grid-column-full">
@@ -34,7 +33,10 @@
                   Cohorted condition
                 </th>
                 <th role="columnheader" class="" scope="col">
-                  Patient cohorted date
+                  Status
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Date cohorted or removed
                 </th>
                 <th role="columnheader" class="" scope="col">
                   Data and code used
@@ -42,6 +44,11 @@
               </tr>
             </thead>
             <tbody class="nhsuk-table__body">
+
+              <!--
+                Row 1
+              -->
+
               <tr role="row" class="nhsuk-table__row">
                 <td role="cell" class="nhsuk-table__cell">
                   <span class="nhsuk-table-responsive__heading">NHS number </span>
@@ -52,22 +59,81 @@
                   Immunosuppression
                 </td>
                 <td role="cell" class="nhsuk-table__cell">
-                  <span class="nhsuk-table-responsive__heading">Patient cohorted date </span>
-                  {{ data['day'] }} {{ data['month'] }} {{ data['year'] }}
+                  <span class="nhsuk-table-responsive__heading">Status </span>
+                  Cohorted
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">Date cohorted or removed </span>
+                  14 March 2022
                 </td>
                 <td role="cell" class="nhsuk-table__cell">
                     <span class="nhsuk-table-responsive__heading">data and code used </span>
-                    SNOMED 276665006
+                    SNOMED - 276665006
                   </td>
               </tr>
+
+              <!--
+                Row 2
+              -->
+
+              <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">NHS number </span>
+                  {{ data['nhsNumber'] }}
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">Cohorted condition </span>
+                  Immunosuppression
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">Status </span>
+                  Cohorted
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">Date cohorted or removed </span>
+                  02 February 2022
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                    <span class="nhsuk-table-responsive__heading">data and code used </span>
+                    SNOMED - 276665006
+                </td>
+              </tr>
+
+              <!--
+                Row 3
+              -->
+
+              <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">NHS number </span>
+                  {{ data['nhsNumber'] }}
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">Cohorted condition </span>
+                  Immunosuppression
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">Status </span>
+                  Removed
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">Date cohorted or removed </span>
+                  12 December 2021
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                    <span class="nhsuk-table-responsive__heading">data and code used </span>
+                    Not applicable
+                  </td>
+              </tr>
+
             </tbody>
         </table>
-
         <div class="nhsuk-u-padding-bottom-6"></div>
+      </div>
 
-        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
-            Search again
-        </button>
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <p>If this information is not correct, you can <a href="landing-empty">check the patient details you have entered</a> or <a href="landing-empty">start a new search</a>.</p>
 
       </div>
 
