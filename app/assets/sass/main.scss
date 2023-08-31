@@ -13,48 +13,8 @@
 @import 'components/navigation';
 @import 'components/dev-mode';
 @import 'components/autocomplete';
+@import 'components/buildCohort-v4';
 
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
-
-#age-min-max, #removeMinMaxRule, #condition-group-table, #section-break-remove, #SNOMEDlist, #HESlist, #ruleReferenceList, #NIMSlist, #condGroupList {
-    display: none;
-}
-
-.check-icon__input + .check-icon__label::after {
-    background: transparent;
-    border: solid;
-    border-top-color: transparent;
-    border-width: 0 0 4px 4px;
-    content: "";
-    height: 7px;
-    left: 10px;
-    opacity: 0; /* 2 */
-    position: absolute;
-    top: 12px;
-    -ms-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    width: 18px;
-}
-
-.condition-desc-table-action {
-    display: block !important;
-}
-
-.condition-desc-table-action:nth-child(2) {
-    margin-top: 15px;
-}
-
-.float-left {
-    float: left;
-}
-
-.age-select-range {
-    border-left: 0px !important;
-}
-
-.condDescGroupEmptyState {
-    color: $nhsuk-secondary-text-color;
-}

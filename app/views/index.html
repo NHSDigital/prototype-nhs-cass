@@ -28,7 +28,7 @@
   <div class="nhsuk-grid-column-two-thirds">
 
     <p class="nhsuk-u-font-size-24 h1-caption">Cohorting as a Service</p>
-    <h1>CaaS Prototype</h1>
+    <h1>CaaS Prototypes</h1>
   
   </div>
 
@@ -113,13 +113,13 @@
           <!-- Table Rows -->
   
           <tbody class="nhsuk-table__body">
-  
+
             <!-- Row 1 -->
   
             <tr role="row" class="nhsuk-table__row">
   
               <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading">Version</span>v4
+                <span class="nhsuk-table-responsive__heading">Version</span>v5
               </td>
   
               <td role="cell" class="nhsuk-table__cell">
@@ -129,14 +129,61 @@
                 </strong>
               </td>
   
-              <td role="cell" class="nhsuk-table__cell">
+              <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-half">
                 <span class="nhsuk-table-responsive__heading">Notes</span>
-                <a href="#" target="_blank">Feedback (TBC)</a>
+                <p>This iteration includes:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>Designs based on the scoping requirements carried out by the team</li>
+                  <li>
+                    <a href="https://nhsd-jira.digital.nhs.uk/browse/CAAS-1658" target="_blank">CAAS-1658 (opens new tab)</a>
+                  </li>
+                  <li>An initial understanding of viewing and searching for existing cohorts</li>
+                </ul>
               </td>
   
               <td role="cell" class="nhsuk-table__cell">
                 <span class="nhsuk-table-responsive__heading">Action</span>
-                <a href="build-cohort/v4/choose-rule-route">Launch</a>
+                <a href="build-cohort/v5/view-search-cohorts">
+                  <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+                    Launch
+                  </button>
+                </a>
+              </td>
+  
+            </tr> <!-- /. nhsuk-table__row -->
+  
+            <!-- Row 2 -->
+  
+            <tr role="row" class="nhsuk-table__row">
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Version</span>v4
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Status</span>
+                <strong class="nhsuk-tag nhsuk-tag--blue">
+                  Concept design
+                </strong>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-half">
+                <span class="nhsuk-table-responsive__heading">Notes</span>
+                <p>This iteration includes:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>Designs based on high level feedback gathered from previous design check-ins</li>
+                  <li>Giving the option of creating a new rule or re-purposing an existing rule</li>
+                  <li>Free-form input fields allowing the user to name a rule, summary, provide constraints and search for datasets and codes</li>
+                </ul>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Action</span>
+                <a href="build-cohort/v4/choose-rule-route">
+                  <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
+                    Launch
+                  </button>
+                </a>
               </td>
   
             </tr> <!-- /. nhsuk-table__row -->
@@ -156,14 +203,23 @@
                 </strong>
               </td>
   
-              <td role="cell" class="nhsuk-table__cell">
+              <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-half">
                 <span class="nhsuk-table-responsive__heading">Notes</span>
-                <a href="https://hscic365.sharepoint.com/:p:/r/sites/RiskStratification/Shared%20Documents/Cohorting%20as%20a%20Service%20(CaaS)/User%20Research/6.%20Build%20and%20Save%20(Nov%202022)/Create%20and%20save%20-%20Round%201%20playback.pptx?d=w1b89ee22ab824eed9ee6ec57daa27800&csf=1&web=1&e=1QkSQx" target="_blank">Research summary (opens new tab)</a>
+                <a href="https://nhs.sharepoint.com/:p:/r/sites/msteams_79fdad/Shared%20Documents/Cohorting%20as%20a%20Service%20(CaaS)/User%20Research/6.%20Build%20and%20Save%20(Nov%202022)/Create%20and%20save%20-%20Round%201%20playback.pptx?d=w556f8575665c40bfab1771ba76b8ca6c&csf=1&web=1&e=CdCrbO" target="_blank">Research summary (opens new tab)</a>
+                <div class="nhsuk-u-padding-bottom-3"></div>
+                <p>This iteration included:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>Testing designs inherited from SPARCK</li>
+                </ul>
               </td>
   
               <td role="cell" class="nhsuk-table__cell">
                 <span class="nhsuk-table-responsive__heading">Action</span>
-                <a href="build-save-cohort/v14/intro">Launch</a>
+                <a href="build-cohort/v14/intro">
+                  <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
+                    Launch
+                  </button>
+                </a>
               </td>
   
             </tr> <!-- /. nhsuk-table__row -->
@@ -316,154 +372,6 @@
 
     <!-- 
       
-      Submit a Cohort Expander 
-    
-    -->
-
-    <details class="nhsuk-details nhsuk-expander">
-
-      <summary class="nhsuk-details__summary">
-        <span class="nhsuk-details__summary-text">
-          Submit a cohort
-        </span>
-      </summary>
-
-      <div class="nhsuk-details__text">
-        <p>Once a cohort has been built, users can amend or submit the cohort for approval.</p>
-
-        <table role="table" class="nhsuk-table-responsive">
-
-          <!-- Table Headers -->
-  
-          <thead role="rowgroup" class="nhsuk-table__head">
-            <tr role="row">
-              <th role="columnheader" class="" scope="col">
-                Version
-              </th>
-              <th role="columnheader" class="" scope="col">
-                Status
-              </th>
-              <th role="columnheader" class="" scope="col">
-                Notes
-              </th>
-              <th role="columnheader" class="" scope="col">
-                Action
-              </th>
-            </tr>
-          </thead> <!-- /. nhsuk-table__head -->
-  
-          <!-- Table Rows -->
-  
-          <tbody class="nhsuk-table__body">
-  
-            <!-- Row 1 -->
-  
-            <tr role="row" class="nhsuk-table__row">
-  
-              <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading">Version</span>v1
-              </td>
-  
-              <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading">Status</span>
-                <strong class="nhsuk-tag nhsuk-tag--green">
-                  Research complete
-                </strong>
-              </td>
-  
-              <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading">Notes</span>
-                <a href="https://hscic365.sharepoint.com/:p:/r/sites/RiskStratification/Shared%20Documents/Cohorting%20as%20a%20Service%20(CaaS)/User%20Research/7.%20Submit%20a%20Cohort%20for%20Approval%20(Jan%202023)/UR%20Playback%20-%20Submit%20a%20cohort%20for%20approval%20-%20Sprint%20review.pptx?d=w44905c643d9e4dcdbf234ced5c710510&csf=1&web=1" target="_blank">Research summary (opens new tab)</a>
-              </td>
-  
-              <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading">Action</span>
-                <a href="cohort-submit/v1/cohort-manager">Launch</a>
-              </td>
-  
-            </tr> <!-- /. nhsuk-table__row -->
-          </tbody> <!-- /. nhsuk-table__body -->
-        </table> <!-- /. nhsuk-table-responsive -->
-      </div> <!-- /. nhsuk-details-text -->
-    </details> <!-- /. nhsuk-details -->
-
-
-    <!-- 
-      
-      Approve a Cohort Expander 
-    
-    -->
-
-    <details class="nhsuk-details nhsuk-expander">
-
-      <summary class="nhsuk-details__summary">
-        <span class="nhsuk-details__summary-text">
-          Approve a cohort
-        </span>
-      </summary>
-
-      <div class="nhsuk-details__text">
-        <p>When a user submits the cohort, it will be reviewed by the CaaS team to approve or reject.</p>
-
-        <table role="table" class="nhsuk-table-responsive">
-
-          <!-- Table Headers -->
-  
-          <thead role="rowgroup" class="nhsuk-table__head">
-            <tr role="row">
-              <th role="columnheader" class="" scope="col">
-                Version
-              </th>
-              <th role="columnheader" class="" scope="col">
-                Status
-              </th>
-              <!-- <th role="columnheader" class="" scope="col">
-                Notes
-              </th> -->
-              <th role="columnheader" class="" scope="col">
-                Action
-              </th>
-            </tr>
-          </thead> <!-- /. nhsuk-table__head -->
-  
-          <!-- Table Rows -->
-          <tbody class="nhsuk-table__body">
-  
-            <!-- Row 1 -->
-  
-            <tr role="row" class="nhsuk-table__row">
-  
-              <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading">Version</span>v1
-              </td>
-  
-              <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading">Status</span>
-                <strong class="nhsuk-tag nhsuk-tag--grey">
-                  On hold
-                </strong>
-              </td>
-  
-              <!-- <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading">Notes</span>
-                <a href="https://hscic365.sharepoint.com/:p:/r/sites/RiskStratification/Shared%20Documents/Cohorting%20as%20a%20Service%20(CaaS)/User%20Research/7.%20Submit%20a%20Cohort%20for%20Approval%20(Jan%202023)/UR%20Playback%20-%20Submit%20a%20cohort%20for%20approval%20-%20Sprint%20review.pptx?d=w44905c643d9e4dcdbf234ced5c710510&csf=1&web=1" target="_blank">Research summary</a>
-              </td> -->
-  
-              <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading">Action</span>
-                <!--
-                <a href="cohort-approve/v1/cohort-manager">Launch</a>
-                -->
-              </td>
-  
-            </tr> <!-- /. nhsuk-table__row -->
-          </tbody> <!-- /. nhsuk-table__body -->
-        </table> <!-- /. nhsuk-table-responsive -->
-      </div> <!-- /. nhsuk-details-text -->
-    </details> <!-- /. nhsuk-details -->
-
-    <!-- 
-      
       Enquirer Expander 
     
     -->
@@ -498,9 +406,9 @@
               <th role="columnheader" class="" scope="col">
                 Status
               </th>
-              <!-- <th role="columnheader" class="" scope="col">
+              <th role="columnheader" class="" scope="col">
                 Notes
-              </th> -->
+              </th>
               <th role="columnheader" class="" scope="col">
                 Action
               </th>
@@ -525,17 +433,132 @@
                 </strong>
               </td>
   
-              <!-- <td role="cell" class="nhsuk-table__cell">
+              <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-half">
                 <span class="nhsuk-table-responsive__heading">Notes</span>
-                <a href="https://hscic365.sharepoint.com/:p:/r/sites/RiskStratification/Shared%20Documents/Cohorting%20as%20a%20Service%20(CaaS)/User%20Research/7.%20Submit%20a%20Cohort%20for%20Approval%20(Jan%202023)/UR%20Playback%20-%20Submit%20a%20cohort%20for%20approval%20-%20Sprint%20review.pptx?d=w44905c643d9e4dcdbf234ced5c710510&csf=1&web=1" target="_blank">Research summary</a>
-              </td> -->
+                <a href="#" target="_blank">Research summary (TBC)</a>
+                <div class="nhsuk-u-padding-bottom-3"></div>
+                <p>This iteration included:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet" style="padding-right: 20px;">
+                  <li>Expanding on initial testing of CIS2 authentication</li>
+                  <li>Terms of service page before continuing on to using Enquirer, users expectations around security and access</li>
+                  <li>Front-end refresh to Enquirer tool</li>
+                  <li>Front-end refresh to search results</li>
+                  <li>Testing of positive search results as well as a null search result</li>
+                </ul>
+              </td>
   
               <td role="cell" class="nhsuk-table__cell">
                 <span class="nhsuk-table-responsive__heading">Action</span>
-                <a href="enquirer/v1/cis2-login">Launch</a>
+                <a href="enquirer/v1/cis2-login">
+                  <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+                    Launch
+                  </button>
+                </a>
               </td>
   
             </tr> <!-- /. nhsuk-table__row -->
+          </tbody> <!-- /. nhsuk-table__body -->
+        </table> <!-- /. nhsuk-table-responsive -->
+      </div> <!-- /. nhsuk-details-text -->
+    </details> <!-- /. nhsuk-details -->
+
+    <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible">
+
+    <!-- 
+      
+      Archive
+    
+    -->
+
+    <details class="nhsuk-details nhsuk-expander">
+
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Archive
+        </span>
+      </summary>
+
+      <div class="nhsuk-details__text">
+        <p>Graveyard for all previous prototypes and ideation.</p>
+
+        <table role="table" class="nhsuk-table-responsive">
+
+          <!-- Table Headers -->
+  
+          <thead role="rowgroup" class="nhsuk-table__head">
+            <tr role="row">
+              <th role="columnheader" class="" scope="col">
+                Version
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Status
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Notes
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Action
+              </th>
+            </tr>
+          </thead> <!-- /. nhsuk-table__head -->
+  
+          <!-- Table Rows -->
+          <tbody class="nhsuk-table__body">
+  
+            <!-- Row 1 -->
+  
+            <tr role="row" class="nhsuk-table__row">
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Version</span> Approve a cohort v1
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Status</span>
+                <strong class="nhsuk-tag nhsuk-tag--grey">
+                  Archived
+                </strong>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Notes</span>
+                <a href="https://hscic365.sharepoint.com/:p:/r/sites/RiskStratification/Shared%20Documents/Cohorting%20as%20a%20Service%20(CaaS)/User%20Research/7.%20Submit%20a%20Cohort%20for%20Approval%20(Jan%202023)/UR%20Playback%20-%20Submit%20a%20cohort%20for%20approval%20-%20Sprint%20review.pptx?d=w44905c643d9e4dcdbf234ced5c710510&csf=1&web=1" target="_blank">Research summary</a>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Action</span>
+                <a href="cohort-approve/v1/cohort-manager">Launch</a>
+              </td>
+  
+            </tr> <!-- /. nhsuk-table__row -->
+
+            <!-- Row 2 -->
+  
+            <tr role="row" class="nhsuk-table__row">
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Version</span> Submit a cohort v1
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Status</span>
+                <strong class="nhsuk-tag nhsuk-tag--grey">
+                  Archived
+                </strong>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Notes</span>
+                <a href="https://hscic365.sharepoint.com/:p:/r/sites/RiskStratification/Shared%20Documents/Cohorting%20as%20a%20Service%20(CaaS)/User%20Research/7.%20Submit%20a%20Cohort%20for%20Approval%20(Jan%202023)/UR%20Playback%20-%20Submit%20a%20cohort%20for%20approval%20-%20Sprint%20review.pptx?d=w44905c643d9e4dcdbf234ced5c710510&csf=1&web=1" target="_blank">Research summary</a>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Action</span>
+                <a href="cohort-submit/v1/cohort-manager">Launch</a>
+              </td>
+  
+            </tr> <!-- /. nhsuk-table__row -->
+
           </tbody> <!-- /. nhsuk-table__body -->
         </table> <!-- /. nhsuk-table-responsive -->
       </div> <!-- /. nhsuk-details-text -->

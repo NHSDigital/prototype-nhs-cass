@@ -1,3 +1,23 @@
+.nhsuk-search__input {
+    border-radius: 0px;
+    width: 585px;
+    margin-left: 0px !important;
+}
+
+.nhsuk-header__search {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.nhsuk-search__submit {
+    border: 2px solid white;
+    background: white;
+}
+
+/*
+
+The following styles were applied to the build-cohort v14 protototype on the add-condition-group page
+
 .nhsuk-hub__search {
     display: flex;
     justify-content: left;
@@ -11,12 +31,12 @@
     margin-bottom: 30px;
     background-color: $color_nhsuk-white;
     border-bottom: 1px solid #aeb7bd;
-    border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0;
     border-right: 0;
     border-left: 1px solid #aeb7bd;
     border-top: 1px solid #aeb7bd;
-    border-top-right-radius: 4px;
+    border-top-right-radius: 0px;
     border-top-left-radius: 0;
   }
   
@@ -29,12 +49,12 @@
     background-color: $color_nhsuk-grey-5;
     border-bottom: 1px solid #aeb7bd;
     border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0px;
     border-right: 1px solid #aeb7bd;
     border-left: 1px solid #aeb7bd;
     border-top: 1px solid #aeb7bd;
     border-top-right-radius: 4px;
-    border-top-left-radius: 0;
+    border-top-left-radius: 0px;
   }
   
   @media (max-width: 40.0525em) {
@@ -64,3 +84,5 @@
         padding-bottom: 20px;
     }
   }
+
+*/
