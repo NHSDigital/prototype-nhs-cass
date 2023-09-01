@@ -1,0 +1,42 @@
+{% extends 'custom-layouts/enquirer/header-logged-in.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Cohort Enquirer - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="landing" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <h1 class="nhsuk-heading-xl">About cohort Enquirer</h1>
+        <p class="nhsuk-body">Cohort Enquirer is a self-service tool that can help you find out if a patient is eligible for vaccination.</p>
+        <p class="nhsuk-body">The tool uses the NHS <a href="https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/improving-our-data-processing-services">Data Processing Services</a> to find out if the they are in a cohort, based on the information you enter.</p>
+        <p class="nhsuk-body">This information can be used to answer questions about the patient’s vaccination status.</p>
+
+        <h2>Before you start</h2>
+        <p>To search for a patient's information, you will need their:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>nhs number</li>
+          <li>date of birth</li>
+        </ul>
+
+        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+            Start now
+        </button>
+
+        <p class="nhsuk-body">By using this tool, you are agreeing to our <a href="#!">terms and conditions</a> and <a href="#!">transparency notice</a>. You are also agreeing to the <a href="#!">terms of release</a> for processing confidential patient information.</p>
+
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
