@@ -1,0 +1,1234 @@
+{% extends 'custom-layouts/caas-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+Cohorting as a Service (CaaS) - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+        <div class="nhsuk-grid-column-two-thirds">
+
+            <h1 class="nhsuk-heading-xl">Flu cohort 2022 to 2023</h1>
+
+            <h2 class="nhsuk-heading-l">Summary [TBC]</h2>
+            <p>As part of their vaccination programme, NHS Digital commissioned Cohorting as a Service (CaaS) to
+                identify people that were eligible for the 2022 to 2023 winter flu vaccination.</p>
+
+            <p>These people needed to be:</p>
+            <ul class="nhsuk-list nhsuk-list--bullet">
+                <li>6 months of age or older</li>
+                <li>in defined clinical risk groups shown in the <a href="" class="nhsuk-link">Green Book, chapter
+                        19</a></li>
+            </ul>
+
+            <p>CaaS developed specific rules based on the conditions in the Green Book and used medical data to identify
+                people who met those rules.</p>
+
+            <p>The data collected helped to:</p>
+            <ul class="nhsuk-list nhsuk-list--bullet">
+                <li>contact or remind people to receive their flu vaccination between 1 September 2022 and 31 March 2023
+                </li>
+                <li>provide direct protection to those at clinical risk of flu</li>
+                <li>monitor the number of people who received the flu vaccination</li>
+            </ul>
+
+        </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+        <div class="nhsuk-grid-column-full">
+
+            <h2 class="nhsuk-heading-l">Condition groups [TBC]</h2>
+
+            <h3 class="nhsuk-heading-m">Design option 1</h3>
+
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Chronic respiratory disease
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                    <!--
+                        Asthma
+                    -->
+
+                    <dl class="nhsuk-summary-list">
+
+                        <!-- Summary List #1 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Rule name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                Asthma
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!--<a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a> -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #2 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Dataset
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                ASTADMSN_COD
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #3 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Codelists
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #4 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Resolved Code
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                No
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #5 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Minimum age
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                60 months
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #6 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Maximum age
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #7 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Occured within
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                24 months
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                    </dl>
+
+                    <!--
+                        COPD including Chronic bronchitis and Emphysema
+                    -->
+
+                    <dl class="nhsuk-summary-list">
+
+                        <!-- Summary List #1 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Rule name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                COPD including Chronic bronchitis and Emphysema
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!--<a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a> -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #2 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Dataset
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                ICD10
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #3 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Codelists
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                J41, J42, J43, J44, J684
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #4 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Resolved Code
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                No
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #5 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Minimum age
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                192 months
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #6 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Maximum age
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #7 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Occured within
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                    </dl>
+
+                    <!--
+                        Bronchiectasis
+                    -->
+
+                    <dl class="nhsuk-summary-list">
+
+                        <!-- Summary List #1 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Rule name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                Bronchiectasis
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!--<a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a> -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #2 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Dataset
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                ICD10
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #3 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Codelists
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                J47
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #4 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Resolved Code
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                No
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #5 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Minimum age
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                192 months
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #6 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Maximum age
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #7 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Occured within
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                    </dl>
+
+                    <!--
+                        Cystic fibrosis bronchopulmonary dysplasia (BPD)
+                    -->
+
+                    <dl class="nhsuk-summary-list">
+
+                        <!-- Summary List #1 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Rule name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                Cystic fibrosis bronchopulmonary dysplasia (BPD)
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!--<a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a> -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #2 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Dataset
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                ICD10
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #3 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Codelists
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                E84, P271
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #4 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Resolved Code
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                No
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #5 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Minimum age
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                60 months
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #6 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Maximum age
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #7 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Occured within
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                    </dl>
+
+                    <!--
+                        Interstitial Lung Fibrosis
+                    -->
+
+                    <dl class="nhsuk-summary-list">
+
+                        <!-- Summary List #1 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Rule name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                Interstitial Lung Fibrosis
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!--<a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a> -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #2 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Dataset
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                ILD_COD, ICD10
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #3 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Codelists
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                J84, J701
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #4 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Resolved Code
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                No
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #5 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Minimum age
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                192 months
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #6 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Maximum age
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #7 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Occured within
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                    </dl>
+
+                    <!--
+                        Pneumoconiosis
+                    -->
+
+                    <dl class="nhsuk-summary-list">
+
+                        <!-- Summary List #1 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Rule name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                Pneumoconiosis
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!--<a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a> -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #2 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Dataset
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                ICD10
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #3 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Codelists
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                J60, J61, J62, J63, J64, J65, J66, J67
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #4 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Resolved Code
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                No
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #5 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Minimum age
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #6 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Maximum age
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                        <!-- Summary List #7 -->
+        
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Occured within
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                
+                            </dd>
+        
+                            <dd class="nhsuk-summary-list__actions">
+        
+                                <!-- <a href="#">
+                                    Change<span class="nhsuk-u-visually-hidden"> name</span>
+                                </a>  -->
+        
+                            </dd>
+        
+                        </div>
+        
+                    </dl>
+
+                </div>
+            </details>
+
+
+            <div class="nhsuk-u-padding-bottom-3"></div>
+
+            <!--
+            Chronic Respiratory Disease
+            -->
+
+            <h3 class="nhsuk-heading-m">Design option 2</h3>
+
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                        Chronic respiratory disease
+                    </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                    <table role="table" class="nhsuk-table-responsive">
+                        <thead role="rowgroup" class="nhsuk-table__head">
+                            <tr role="row">
+                                <th role="columnheader" class="" scope="col">
+                                    Rule name
+                                </th>
+                                <th role="columnheader" class="" scope="col">
+                                    Datasets and Codelists
+                                </th>
+                                <th role="columnheader" class="" scope="col">
+                                    Resolved
+                                </th>
+                                <th role="columnheader" class="" scope="col">
+                                    Min age
+                                </th>
+                                <th role="columnheader" class="" scope="col">
+                                    Max age
+                                </th>
+                                <th role="columnheader" class="" scope="col">
+                                    Occurences
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="nhsuk-table__body">
+
+                            <!--
+                         Row 1
+                     -->
+
+                            <tr role="row" class="nhsuk-table__row">
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Rule name </span>
+                                    Asthma
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Datasets and Codelists </span>
+                                    ASTADMSN_COD
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Resolved </span>
+                                    No
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Min age (months) </span>
+                                    60 months
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span span class="nhsuk-table-responsive__heading">Max age (months) </span>
+
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Occurences (months) </span>
+                                    24 months
+                                </td>
+                            </tr>
+
+                            <!--
+                         Row 2
+                     -->
+
+                            <tr role="row" class="nhsuk-table__row">
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Rule name </span>
+                                    COPD including Chronic bronchitis and Emphysema
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Datasets and Codelists </span>
+                                    ICD10 J41, J42, J43, J44, J684
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Resolved </span>
+                                    No
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Min age (months) </span>
+                                    192 months
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span span class="nhsuk-table-responsive__heading">Max age (months) </span>
+
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Occurences (months) </span>
+
+                                </td>
+                            </tr>
+
+                            <!--
+                         Row 3
+                     -->
+
+                            <tr role="row" class="nhsuk-table__row">
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Rule name </span>
+                                    Bronchiectasis
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Datasets and Codelists </span>
+                                    ICD10 J47
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Resolved </span>
+                                    No
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Min age (months) </span>
+                                    192 months
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span span class="nhsuk-table-responsive__heading">Max age (months) </span>
+
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Occurences (months) </span>
+
+                                </td>
+                            </tr>
+
+                            <!--
+                         Row 4
+                     -->
+
+                            <tr role="row" class="nhsuk-table__row">
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Rule name </span>
+                                    Cystic fibrosis bronchopulmonary dysplasia (BPD)
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Datasets and Codelists </span>
+                                    ICD10 E84, P271
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Resolved </span>
+                                    No
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Min age (months) </span>
+                                    60 months
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span span class="nhsuk-table-responsive__heading">Max age (months) </span>
+
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Occurences (months) </span>
+
+                                </td>
+                            </tr>
+
+                            <!--
+                         Row 5
+                     -->
+
+                            <tr role="row" class="nhsuk-table__row">
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Rule name </span>
+                                    Interstitial Lung Fibrosis
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Datasets and Codelists </span>
+                                    ILD_COD, ICD10 J84, J701
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Resolved </span>
+                                    No
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Min age (months) </span>
+                                    192 months
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span span class="nhsuk-table-responsive__heading">Max age (months) </span>
+
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Occurences (months) </span>
+
+                                </td>
+                            </tr>
+
+                            <!--
+                         Row 6
+                     -->
+
+                            <tr role="row" class="nhsuk-table__row">
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Rule name </span>
+                                    Pneumoconiosis
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Datasets and Codelists </span>
+                                    ICD10 J60, J61, J62, J63, J64, J65, J66, J67
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Resolved </span>
+                                    No
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Min age (months) </span>
+
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span span class="nhsuk-table-responsive__heading">Max age (months) </span>
+
+                                </td>
+                                <td role="cell" class="nhsuk-table__cell">
+                                    <span class="nhsuk-table-responsive__heading">Occurences (months) </span>
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+
+            <!--
+            Chronic Heart Disease
+        -->
+
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                        Chronic heart disease
+                    </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                </div>
+            </details>
+
+            <!--
+            Chronic Kidney Disease
+        -->
+
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                        Chronic kidney disease
+                    </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                </div>
+            </details>
+
+            <!--
+            Chronic Liver Disease
+        -->
+
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                        Chronic liver disease
+                    </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                </div>
+            </details>
+
+        </div> <!-- /. nhsuk-grid-column-full -->
+    </form> <!-- /. form -->
+</div> <!-- /. nhsuk-grid-row -->
+
+
+{% endblock %}
