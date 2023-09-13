@@ -1,0 +1,1060 @@
+{% extends 'custom-layouts/caas-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+Cohorting as a Service (CaaS) - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+        <div class="nhsuk-grid-column-two-thirds">
+
+            <h1 class="nhsuk-heading-xl">Flu cohort 2022 to 2023</h1>
+
+            <h2 class="nhsuk-heading-l">Summary [TBC]</h2>
+            <p>As part of their vaccination programme, NHS Digital commissioned Cohorting as a Service (CaaS) to
+                identify people that were eligible for the 2022 to 2023 winter flu vaccination.</p>
+
+            <p>These people needed to be:</p>
+            <ul class="nhsuk-list nhsuk-list--bullet">
+                <li>6 months of age or older</li>
+                <li>in defined clinical risk groups shown in the <a href="" class="nhsuk-link">Green Book, chapter
+                        19</a></li>
+            </ul>
+
+            <p>CaaS developed specific rules based on the conditions in the Green Book and used medical data to identify
+                people who met those rules.</p>
+
+            <p>The data collected helped to:</p>
+            <ul class="nhsuk-list nhsuk-list--bullet">
+                <li>contact or remind people to receive their flu vaccination between 1 September 2022 and 31 March 2023
+                </li>
+                <li>provide direct protection to those at clinical risk of flu</li>
+                <li>monitor the number of people who received the flu vaccination</li>
+            </ul>
+
+        </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+        <div class="nhsuk-grid-column-full">
+
+            <h2 class="nhsuk-heading-l">Condition groups [TBC]</h2>
+
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                        Chronic respiratory disease
+                    </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                    <a href="#!" class="nhsuk-link" id="modal_create">
+                        View expanded condition group table
+                    </a>
+
+                    <div class="nhsuk-u-padding-bottom-5"></div>
+
+                    <div class="table-wrapper">
+                        <div class="table-wrapper-responsive">
+                            <table role="table" class="nhsuk-table-responsive">
+                                <thead role="rowgroup" class="nhsuk-table__head">
+                                    <tr role="row">
+                                        <th role="columnheader" class="" scope="col">
+                                            Rule name
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Datasets and Codelists
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Resolved
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="nhsuk-table__body">
+
+                                    <!-- Row 1 -->
+
+                                    <tr role="row" class="nhsuk-table__row">
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Rule name </span>
+                                            Asthma
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Datasets and Codelists </span>
+                                            ASTADMSN_COD
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Resolved </span>
+                                            No
+                                        </td>
+                                    </tr>
+
+                                    <!-- Row 2 -->
+
+                                    <tr role="row" class="nhsuk-table__row">
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Rule name </span>
+                                            COPD including Chronic bronchitis and Emphysema
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Datasets and Codelists </span>
+                                            ICD10 J41, J42, J43, J44, J684
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Resolved </span>
+                                            No
+                                        </td>
+                                    </tr>
+
+                                    <!-- Row 3 -->
+
+                                    <tr role="row" class="nhsuk-table__row">
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Rule name </span>
+                                            Bronchiectasis
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Datasets and Codelists </span>
+                                            ICD10 J47
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Resolved </span>
+                                            No
+                                        </td>
+                                    </tr>
+
+                                    <!-- Row 4  -->
+
+                                    <tr role="row" class="nhsuk-table__row">
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Rule name </span>
+                                            Cystic fibrosis bronchopulmonary dysplasia (BPD)
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Datasets and Codelists </span>
+                                            ICD10 E84, P271
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Resolved </span>
+                                            No
+                                        </td>
+                                    </tr>
+
+                                    <!-- Row 5 -->
+
+                                    <tr role="row" class="nhsuk-table__row">
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Rule name </span>
+                                            Interstitial Lung Fibrosis
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Datasets and Codelists </span>
+                                            ILD_COD, ICD10 J84, J701
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Resolved </span>
+                                            No
+                                        </td>
+                                    </tr>
+
+                                    <!-- Row 6 -->
+
+                                    <tr role="row" class="nhsuk-table__row">
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Rule name </span>
+                                            Pneumoconiosis
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Datasets and Codelists </span>
+                                            ICD10 J60, J61, J62, J63, J64, J65, J66, J67
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Resolved </span>
+                                            No
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> <!-- /. table-wrapper-responsive -->
+                    </div> <!-- /. table-wrapper -->
+                </div> <!-- /. nhsuk-details_text -->
+            </details> <!-- /. nhsuk-details -->
+
+            <!-- Chronic Heart Disease -->
+
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                        Chronic heart disease
+                    </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                </div>
+            </details>
+
+            <!-- Chronic Kidney Disease -->
+
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                        Chronic kidney disease
+                    </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                </div>
+            </details>
+
+            <!-- Chronic Liver Disease -->
+
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                        Chronic liver disease
+                    </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                </div>
+            </details>
+
+        </div> <!-- /. nhsuk-grid-column-full -->
+    </form> <!-- /. form -->
+</div> <!-- /. nhsuk-grid-row -->
+
+<div class="modal-overlay" id="modal_window" aria-hidden="true" role="dialog" aria-labelledby="modal_title">
+    <div class="modal-content" id="modal_holder" role="document">
+
+        <a href="#" id="modal_close" class="btn-close">Close</a>
+
+        <div class="table-wrapper-modal">
+            <div class="table-wrapper-responsive">
+
+                <table role="table" class="nhsuk-table-responsive" id="modal-table">
+                    <thead role="rowgroup" class="nhsuk-table__head">
+                        <tr role="row">
+                            <th role="columnheader" class="modal-table-header" scope="col">
+                                Condition
+                            </th>
+                            <th role="columnheader" class="modal-table-header" scope="col">
+                                Datasets
+                            </th>
+                            <th role="columnheader" class="modal-table-header" scope="col">
+                                Codelists
+                            </th>
+                            <th role="columnheader" class="modal-table-header" scope="col">
+                                Resolved by
+                            </th>
+                            <th role="columnheader" class="modal-table-header" scope="col">
+                                Resolve code
+                            </th>
+                            <th role="columnheader" class="modal-table-header" scope="col">
+                                Min age (months)
+                            </th>
+                            <th role="columnheader" class="modal-table-header" scope="col">
+                                Max age (months)
+                            </th>
+                            <th role="columnheader" class="modal-table-header" scope="col">
+                                Ruleset
+                            </th>
+                            <th role="columnheader" class="modal-table-header" scope="col">
+                                Occured within (month)
+                            </th>
+                            <th role="columnheader" class="modal-table-header" scope="col">
+                                Label 1
+                            </th>
+                            <th role="columnheader" class="modal-table-header" scope="col">
+                                Label 2
+                            </th>
+                            <th role="columnheader" class="modal-table-header" scope="col">
+                                Rule reference
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="nhsuk-table__body">
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>Asthma</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                GPESv4, GDPPR
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                ASTADMSN_COD
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                N
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                60
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within (month)</span>
+                                24
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_asthma_hospital_adm
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>COPD including Chronic bronchitis and Emphysema</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                ICD10
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                J41 J42 J43 J44 J684
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                N
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                192
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within (month)</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_copd
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>Bronchiectasis</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                ICD10
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                J47
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                N
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                192
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within (month)</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_bronchiectaisis
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>Cystic fibrosis bronchopulmonary dysplasia (BPD)</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                ICD10
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                E84, P271
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                N
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                60
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within (month)</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_cystic_fibrosis
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>Interstitial Lung Fibrosis</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                ICD10, ILD_COD
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                J84, J701
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                N
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                192
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within (month)</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_lung_fibrosis
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>Pneumoconiosis</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                ICD10
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                J60, J61, J62, J63, J64, J65, J660, J67
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                N
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                192
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within (month)</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_pneumoconiosis
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>Asthma therapy</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                GPESv4, GDPPR
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                AST_COD
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                ASTRES_COD
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                6
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                AND
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_asthma_hospital_adm
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                GPESv4, GDPPR
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                ASTTRTATRISK_1_COD
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                6
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within</span>
+                                12
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_asthma_hospital_adm
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>Asthma Admissions</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                GPESv4, GDPPR
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                ASTADMSN_COD
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                6
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_asthma_hospital_adm
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>Condition name</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                GPESv4, GDPPR
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                CRDATRISK2_COD
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                6
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_asthma_hospital_adm
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>Condition name</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                GPESv4, GDPPR
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                CRDATRISK2_COD
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                6
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_asthma_hospital_adm
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>Condition name</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                GPESv4, GDPPR
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                CRDATRISK2_COD
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                6
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_asthma_hospital_adm
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>Condition name</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                GPESv4, GDPPR
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                CRDATRISK2_COD
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                6
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_asthma_hospital_adm
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>Condition name</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                GPESv4, GDPPR
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                CRDATRISK2_COD
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                6
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_asthma_hospital_adm
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Condition</span>
+                                <strong>Condition name</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Datasets</span>
+                                GPESv4, GDPPR
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Codelists </span>
+                                CRDATRISK2_COD
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved by</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Resolved code</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span span class="nhsuk-table-responsive__heading">Min age (months)</span>
+                                6
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Max age (months)</span>
+
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Ruleset</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Occured within</span>
+                                
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 1</span>
+                                covid_16+_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Label 2</span>
+                                covid_under16_asplenia
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell modal-table-row">
+                                <span class="nhsuk-table-responsive__heading">Rule reference</span>
+                                rule_crd_asthma_hospital_adm
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div> <!-- end .modal-content -->
+</div> <!-- end .modal-overlay -->
+
+
+{% endblock %}
