@@ -57,25 +57,48 @@ Cohorting as a Service (CaaS) - NHS England
                 </summary>
                 <div class="nhsuk-details__text">
 
-                    <a href="#!" class="nhsuk-link" id="modal_create">
-                        View expanded condition group table
-                    </a>
+                    <div class="nhsuk-u-padding-bottom-1"></div>
 
-                    <div class="nhsuk-u-padding-bottom-5"></div>
+                    <button class="nhsuk-button" data-module="nhsuk-button" id="modal_create">
+                        Expand view
+                    </button>
+
+                    <div class="nhsuk-u-padding-bottom-1"></div>
 
                     <div class="table-wrapper">
                         <div class="table-wrapper-responsive">
                             <table role="table" class="nhsuk-table-responsive">
                                 <thead role="rowgroup" class="nhsuk-table__head">
                                     <tr role="row">
-                                        <th role="columnheader" class="" scope="col">
-                                            Rule name
+                                        <th role="columnheader" class="modal-table-header" scope="col">
+                                            Condition
                                         </th>
                                         <th role="columnheader" class="" scope="col">
-                                            Datasets and Codelists
+                                            Condition description
                                         </th>
                                         <th role="columnheader" class="" scope="col">
-                                            Resolved
+                                            Dataset
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Age range
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Codelist
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Resolved by
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Min age
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Max age
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Ruleset
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Occurred within
                                         </th>
                                     </tr>
                                 </thead>
@@ -182,6 +205,24 @@ Cohorting as a Service (CaaS) - NHS England
                                             No
                                         </td>
                                     </tr>
+
+                                    <!-- Row 6 -->
+
+                                    <tr role="row" class="nhsuk-table__row">
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Rule name </span>
+                                            Pneumoconiosis
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Datasets and Codelists </span>
+                                            ICD10 J60, J61, J62, J63, J64, J65, J66, J67
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Resolved </span>
+                                            No
+                                        </td>
+                                    </tr>
+
                                 </tbody>
                             </table>
                         </div> <!-- /. table-wrapper-responsive -->
