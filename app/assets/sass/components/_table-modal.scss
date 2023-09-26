@@ -35,8 +35,6 @@
     Modal Content Area
   */
 
-    /* overrides goes here to get table 100% width  */
-
   .modal-content {
     background: #efefef;
     margin: auto;
@@ -104,10 +102,6 @@
     outline: 1px dotted;
   }
 
-/* 
-  Sticky First Column
-*/
-
 .table-wrapper {
   width: 100%;
   max-height: 50vh;
@@ -146,12 +140,16 @@
   font-size: 16px;
 }
 
+/* 
+  Sticky First Column
+*/
+
 #modal-table tr th:first-child, #modal-table td:first-child {
   position: sticky;
   left: 0;
   z-index: 10;
   background: $color_nhsuk-grey-5;
-  border-bottom: 1px solid  $nhsuk-border-color;
+  /* border-bottom: 1px solid  $nhsuk-border-color; */
 }
 
 #modal-table tr th:first-child {
@@ -162,4 +160,15 @@
   position: sticky;
   top: 0;
   z-index: 9;
+}
+
+/* 
+  Sticky table header
+*/
+
+thead tr:nth-child(1) th {
+  background: $color_nhsuk-grey-5;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
