@@ -36,7 +36,7 @@
   */
 
   .modal-content {
-    background: #efefef;
+    background: $color_nhsuk-grey-5;
     margin: auto;
     max-width: 100%;
     overflow: auto;
@@ -82,8 +82,8 @@
   }
   
   /*
-    Close Modal Button
-  */
+    Close Modal close link (alt design)
+
   .btn-close {
     background: none;
     border: none;
@@ -102,12 +102,25 @@
     outline: 1px dotted;
   }
 
+  */
+
+.modal_table-caption {
+  margin-top: 10px;
+  float: left;
+}
+
+.btn-close {
+    cursor: pointer;
+    position: relative;
+    float: right;
+    z-index: 2;
+}
+
 .table-wrapper {
   width: 100%;
   max-height: 50vh;
   box-sizing: border-box;
   overflow-y: auto;
-  padding-right: 15px;
 }
 
 .table-wrapper-modal {
@@ -116,11 +129,11 @@
   box-sizing: border-box;
   overflow-y: auto;
   overflow-x: auto;
-  padding-right: 15px;
   body {
       overflow: hidden;
       position: fixed;
   }
+  background: white;
 }
 
 .table-wrapper-responsive {

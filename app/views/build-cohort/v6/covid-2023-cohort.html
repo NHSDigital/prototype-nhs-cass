@@ -97,7 +97,7 @@ Cohorting as a Service (CaaS) - NHS England
 
             <div class="nhsuk-inset-text">
                 <span class="nhsuk-u-visually-hidden">Information: </span>
-                <p><a href="#!" id="modal_create">View all the rules in this cohort</a>.</p>
+                <p><a href="#!" id="modal_create">View all the rule logic in this cohort</a>.</p>
             </div>
 
         </div> <!-- /. nhsuk-grid-column-two-thirds -->
@@ -638,7 +638,15 @@ Cohorting as a Service (CaaS) - NHS England
 <div class="modal-overlay" id="modal_window" aria-hidden="true" role="dialog" aria-labelledby="modal_title">
     <div class="modal-content" id="modal_holder" role="document">
 
-        <a href="#" id="modal_close" class="btn-close">Close</a>
+        <!-- <a href="#" id="modal_close" class="btn-close">Close</a> -->
+
+        <div class="modal_table-header">
+            <h4 class="modal_table-caption">COVID-19 clinical risk groups cohort 2023 rule logic</h4>
+
+            <button class="nhsuk-button nhsuk-button--secondary btn-close" id="modal_close" data-module="nhsuk-button">
+                Close
+            </button>
+        </div>
 
         <div class="table-wrapper-modal">
             <div class="table-wrapper-responsive">
