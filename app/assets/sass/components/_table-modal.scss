@@ -46,8 +46,9 @@
   transform: scale(.8);
   transition: transform .3s;
   width: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
   height: 100%;
+  padding-bottom: 100px;
 
   *+* {
     //margin-top: 32px;
@@ -119,11 +120,7 @@
   background: white;
 }
 
-.modal-table-header {
-  font-size: 16px;
-}
-
-.modal-table-row {
+.modal-table-header, .modal-table-row, .modal-list-text, .modal-list-item {
   font-size: 16px;
 }
 
@@ -174,4 +171,8 @@ thead tr:nth-child(1) th {
 .modal-table-header,
 .expander-th {
   padding-left: 10px;
+}
+
+.expander-th {
+  padding-right: 20px !important;
 }
