@@ -1,0 +1,41 @@
+{% extends 'custom-layouts/enquirer/header-logged-in.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Search results - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="patient-lookup" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Search results</h1>
+        <h2>Patient details</h2>
+        <p><strong>NHS number:</strong> {{ data['nhsNumber'] }}</p>
+        <p><strong>Date of birth:</strong> {{ data['day'] }} {{ data['month'] }} {{ data['year'] }}</p>
+
+        <p class="nhsuk-body nhsuk-u-font-weight-bold">No cohorts are associated with this patient’s details.</p>
+
+        <p>Patients are not part of a digital cohort if:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>they do not have a condition that makes them eligible</li>
+          <li>their medical information is not recorded and stored in a digital <a href="https://www.nhs.uk/using-the-nhs/about-the-nhs/your-health-records/">health and care record</a></li>
+        </ul>
+
+        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+          Start new search
+        </button>
+
+      </div>
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

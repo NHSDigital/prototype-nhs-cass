@@ -469,8 +469,47 @@
   
           <!-- Table Rows -->
           <tbody class="nhsuk-table__body">
+
+            <!-- Row 2 -->
   
-            <!-- Row 1 -->
+            <tr role="row" class="nhsuk-table__row">
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Version</span>v2
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Status</span>
+                <strong class="nhsuk-tag nhsuk-tag--yellow">
+                  In design
+                </strong>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell nhsuk-u-width-one-half">
+                <span class="nhsuk-table-responsive__heading">Notes</span>
+                <a href="#!" target="_blank">Research playback (TBC)</a>
+                <div class="nhsuk-u-padding-bottom-3"></div>
+                <p>This iteration includes:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet" style="padding-right: 20px;">
+                  <li>Starting the journey from an email (reflecting what will be MVP launch)</li>
+                  <li>Minor content changes to the patient lookup page, mainly around the DOB and its format</li>
+                  <li>Search results page - now reflects a latest cohort run and a cohort history layout, two seperate tables telling two different stories</li>
+                  <li>Search results page - no infomration found, content changes to provide more context as to why a patient isn't included in a run</li>
+                </ul>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Action</span>
+                <a href="cohort-enquirer/v2/start-email">
+                  <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+                    Launch
+                  </button>
+                </a>
+              </td>
+  
+            </tr> <!-- /. nhsuk-table__row -->
+  
+            <!-- Row 2 -->
   
             <tr role="row" class="nhsuk-table__row">
   
@@ -502,13 +541,14 @@
               <td role="cell" class="nhsuk-table__cell">
                 <span class="nhsuk-table-responsive__heading">Action</span>
                 <a href="cohort-enquirer/v1/cis2-login">
-                  <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+                  <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
                     Launch
                   </button>
                 </a>
               </td>
   
             </tr> <!-- /. nhsuk-table__row -->
+
           </tbody> <!-- /. nhsuk-table__body -->
         </table> <!-- /. nhsuk-table-responsive -->
       </div> <!-- /. nhsuk-details-text -->

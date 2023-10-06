@@ -1,0 +1,377 @@
+{% extends 'custom-layouts/enquirer/header-logged-in.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Search results - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="patient-lookup-none" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <h1 class="nhsuk-heading-xl">Search results</h1>
+        <h2>Patient and cohort details</h2>
+        <p><strong>NHS number:</strong> {{ data['nhsNumber'] }}</p>
+        <p><strong>Date of birth:</strong> {{ data['day'] }} {{ data['month'] }} {{ data['year'] }}</p>
+        <p><strong>Cohort:</strong> COVID-19 autumn booster vaccinations 2022 to 2023</p>
+        <p><strong>Cohort first run date:</strong> 1 October 2022</p>
+        <p><strong>Status:</strong> <strong class="nhsuk-tag nhsuk-tag--green">
+          Cohorted
+        </strong></p>
+
+      </div>
+
+      <div class="nhsuk-grid-column-full">
+        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+        <h2>Last cohort run</h2>
+
+        <table role="table" class="nhsuk-table-responsive">
+            <thead role="rowgroup" class="nhsuk-table__head">
+              <tr role="row">
+                <th role="columnheader" class="" scope="col">
+                  Cohort run date
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Condition group
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Dataset and codelist
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Added to patient medical record
+                </th>
+              </tr>
+            </thead>
+            <tbody class="nhsuk-table__body">
+
+              <!--
+                Row 1
+              -->
+
+              <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Cohort run date
+                  </span>
+                    1 March 2023
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Condition group
+                  </span>
+                    Chronic respiratory disease
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Dataset and codelist
+                  </span>
+                    HES - ICD-10 N18.1
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Added to patient medical record
+                  </span>
+                    25 January 2023
+                </td>
+              </tr>
+
+              <!--
+                Row 2
+              -->
+
+              <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell" aria-label="1 March 2023">
+                  <span class="nhsuk-table-responsive__heading">
+                    Cohort run date
+                  </span>
+                    
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Condition group
+                  </span>
+                    Morbid obesity
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Dataset and codelist
+                  </span>
+                    GPES - SNOMED: 819948005
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Added to patient medical record
+                  </span>
+                    28 December 2022
+                </td>
+              </tr>
+
+              <!--
+                Row 3
+              -->
+
+              <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell" aria-label="1 March 2023">
+                  <span class="nhsuk-table-responsive__heading">
+                    Cohort run date
+                  </span>
+                    
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Condition group
+                  </span>
+                    Chronic kidney disease
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Dataset and codelist
+                  </span>
+                    HES - ICD-10 N18.1
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Added to patient medical record
+                  </span>
+                    12 September  2022
+                </td>
+              </tr>
+
+            </tbody>
+        </table>
+
+        <div class="nhsuk-u-padding-bottom-9"></div>
+
+        <h2>Cohort history</h2>
+
+        <table role="table" class="nhsuk-table-responsive">
+          <thead role="rowgroup" class="nhsuk-table__head">
+            <tr role="row">
+              <th role="columnheader" class="" scope="col">
+                Cohort run date
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Condition group
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Dataset and codelist
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Added to patient medical record
+              </th>
+              <th role="columnheader" class="" scope="col">
+                Change type
+              </th>
+            </tr>
+          </thead>
+          <tbody class="nhsuk-table__body">
+
+            <!--
+              Row 1
+            -->
+
+            <tr role="row" class="nhsuk-table__row">
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Cohort run date
+                </span>
+                1 February 2023
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Condition group
+                </span>
+                  Chronic respiratory disease
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Dataset and codelist
+                </span>
+                  HES - ICD-10 J99.1
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Added to patient medical record
+                </span>
+                  25 January 2023
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Change type
+                </span>
+                  Added
+              </td>
+            </tr>
+
+            <!--
+              Row 2
+            -->
+
+            <tr role="row" class="nhsuk-table__row">
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Cohort run date
+                </span>
+                1 January 2023
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Condition group
+                </span>
+                  Morbid obesity
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Dataset and codelist
+                </span>
+                  GPES - SNOMED: 819948005
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Added to patient medical record
+                </span>
+                  28 December 2022
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Change type
+                </span>
+                  Re-added
+              </td>
+            </tr>
+
+            <!--
+              Row 3
+            -->
+
+            <tr role="row" class="nhsuk-table__row">
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Cohort run date
+                </span>
+                1 November 2023
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Condition group
+                </span>
+                  Morbid obesity
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Dataset and codelist
+                </span>
+                  GPES - SNOMED: 819948005
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Added to patient medical record
+                </span>
+                  Not applicable
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Change type
+                </span>
+                  Removed
+              </td>
+            </tr>
+
+            <!--
+              Row 4
+            -->
+
+            <tr role="row" class="nhsuk-table__row">
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Cohort run date
+                </span>
+                1 October 2023
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Condition group
+                </span>
+                  Chronic kidney disease
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Dataset and codelist
+                </span>
+                  HES - ICD-10 N18.1
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Added to patient medical record
+                </span>
+                  12 September 2022
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Change type
+                </span>
+                  Added
+              </td>
+            </tr>
+
+            <!--
+              Row 5
+            -->
+
+            <tr role="row" class="nhsuk-table__row">
+              <td role="cell" class="nhsuk-table__cell" aria-label="1 October 2022">
+                <span class="nhsuk-table-responsive__heading">
+                  Cohort run date
+                </span>
+                
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Condition group
+                </span>
+                  Morbid obesity
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Dataset and codelist
+                </span>
+                  GPES - SNOMED: 819948005
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Added to patient medical record
+                </span>
+                  22 August 2022
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">
+                  Change type
+                </span>
+                  Added
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <div class="nhsuk-u-padding-bottom-9"></div>
+
+        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+          Start new search
+        </button>
+
+      </div> <!-- /. nhsuk-grid-column-full -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

@@ -1,0 +1,113 @@
+{% extends 'custom-layouts/enquirer/header-logged-in.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Check cohort information - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="search-results-empty" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Enter patient details</h1>
+        <p class="nhsuk-body">Enter the patient's NHS number and date of birth below to find out if they are in a cohort.</p>
+
+        <!--
+            NHS Number
+        -->
+
+        <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="nhsNumber">
+                <h2 class="nhsuk-heading-l" style="margin-bottom: 15px;">NHS number</h2>
+            </label>
+            <div class="nhsuk-hint" id="nhs-number-hint-text">
+              This is a 10 digit number. For example, 485 777 3456.
+            </div>
+            <input class="nhsuk-input nhsuk-input--width-10" id="nhsNumber" name="nhsNumber" type="text" aria-describedby="NHS-Number" inputmode="numeric">
+        </div>
+
+      <!--
+        Date of Birth
+      -->
+
+      <div class="nhsuk-form-group">
+        <fieldset class="nhsuk-fieldset" aria-describedby="date-hint" role="group">
+          <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+            <h2 class="nhsuk-fieldset__heading">
+              Date of birth
+            </h2>
+          </legend>
+          <div class="nhsuk-hint" id="date-hint">
+            For example, 15 11 1984
+          </div>
+      
+          <div class="nhsuk-date-input" id="example">
+            <div class="nhsuk-date-input__item">
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label nhsuk-date-input__label" for="day">
+                  Day
+                </label>
+                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="day" name="day" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="nhsuk-date-input__item">
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label nhsuk-date-input__label" for="month">
+                  Month
+                </label>
+                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="month" name="month" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="nhsuk-date-input__item">
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label nhsuk-date-input__label" for="year">
+                  Year
+                </label>
+                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="year" name="year" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      
+      </div>
+
+      <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+        Find patient
+      </button>
+
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+  {% if data['devMode'] === 'true' %}
+
+      {# DEVMODE SCENARIOS #}
+
+      <details class="nhsuk-details dev-mode govuk-!-margin-bottom-5" role="group">
+        <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-0" aria-expanded="true">
+          <span class="nhsuk-details__summary-text">
+            Front-end validation error scenarios
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <h5>NHS number errors</h5>
+          <ul class="nhsuk-list">
+            <li><a href="#">Updated contact us form (Post Pilot WIP)</a></li>
+          </ul>
+          <h5>Date of birth errors</h5>
+          <ul class="nhsuk-list">
+            <li><a href="#">Updated contact us form (Post Pilot WIP)</a></li>
+          </ul>
+        </div>
+      </details>
+
+  {% endif %}
+
+{% endblock %}
