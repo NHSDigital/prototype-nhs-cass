@@ -20,8 +20,22 @@
 
         <h1 class="nhsuk-heading-xl">Search results</h1>
         <h2>Patient and cohort details</h2>
-        <p><strong>NHS number:</strong> {{ data['nhsNumber'] }}</p>
-        <p><strong>Date of birth:</strong> {{ data['day'] }} {{ data['month'] }} {{ data['year'] }}</p>
+        <p>
+          <strong>NHS number:</strong>
+          {% if data['nhsNumber'] %}
+            {{ data['nhsNumber'] }}
+          {% else %}
+            {{ data['nhsNumber'] or '485 777 3456' }}
+          {% endif %}
+        </p>
+        <p>
+          <strong>Date of birth:</strong>
+          {% if data['day'] %}
+            {{ data['day'] }} {{ data['month'] }} {{ data['year'] }}
+          {% else %}
+            {{ '15 11 1984' }}
+          {% endif %}
+        </p>
         <p><strong>Cohort:</strong> COVID-19 autumn booster vaccinations 2022 to 2023</p>
         <p><strong>Status:</strong> <strong class="nhsuk-tag nhsuk-tag--green">
           Cohorted
