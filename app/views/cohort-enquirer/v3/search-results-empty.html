@@ -52,29 +52,4 @@
     </form> <!-- /. form -->
   </div> <!-- /. nhsuk-grid-row -->
 
-  {% if data['devMode'] === 'true' %}
-
-  {# DEVMODE SCENARIOS #}
-
-  <details class="nhsuk-details dev-mode" style="float: left;" role="group">
-    <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-0" aria-expanded="true">
-      <span class="nhsuk-details__summary-text">
-        Search result scenarios
-      </span>
-    </summary>
-    <div class="nhsuk-details__text">
-      <h5>Scenarios</h5>
-      <ul class="nhsuk-list">
-        <li><a href="search-results-basic">Basic search results</a></li>
-        <li><a href="search-results-complex">Complex search results</a></li>
-        <li>
-          <a href="search-results-not-cohorted">No longer cohorted search results</a>
-        </li>
-        <li><a href="search-results-empty">No match</a></li>
-      </ul>
-    </div>
-  </details>
-
-{% endif %}
-
 {% endblock %}
