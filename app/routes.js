@@ -20,69 +20,88 @@ const router = express.Router();
 
 // Contextual routing - add-cohort-details.html
 
-router.post("/build-cohort/v14/add-cohort-details-answer", function (req, res) {
+router.post("/cohort-build/v14/add-cohort-details-answer", function (req, res) {
     // grab value from the data store
     let complete = req.session.data.complete
     // if the journey is complete send back to the 'check-your-cohort' page
     console.log(req.session.data)
     if (complete === 'true') {
-      res.redirect('/build-cohort/v14/check-cohort')  
+      res.redirect('/cohort-build/v14/check-cohort')  
     } else {  
-      res.redirect('/build-cohort/v14/add-demographic-rules')  
+      res.redirect('/cohort-build/v14/add-demographic-rules')  
     }
 })
 
 // Contextual routing - add-demographic-rules.html
 
-router.post("/build-cohort/v14/add-demographic-rules-answer", function (req, res) {
+router.post("/cohort-build/v14/add-demographic-rules-answer", function (req, res) {
     // grab value from the data store
     let complete = req.session.data.complete
     // if the journey is complete send back to the 'check-your-cohort' page
     console.log(req.session.data)
     if (complete === 'true') {
-      res.redirect('/build-cohort/v14/check-cohort')  
+      res.redirect('/cohort-build/v14/check-cohort')  
     } else {  
-      res.redirect('/build-cohort/v14/add-condition-group')  
+      res.redirect('/cohort-build/v14/add-condition-group')  
     }
 })
 
 // Contextual routing - add-condition-group.html
 
-router.post("/build-cohort/v14/add-condition-group-answer", function (req, res) {
+router.post("/cohort-build/v14/add-condition-group-answer", function (req, res) {
   // grab value from the data store
   let complete = req.session.data.complete
   // if the journey is complete send back to the 'check-your-cohort' page
   console.log(req.session.data)
   if (complete === 'true') {
-    res.redirect('/build-cohort/v14/check-cohort')  
+    res.redirect('/cohort-build/v14/check-cohort')  
   } else {  
-    res.redirect('/build-cohort/v14/check-condition-groups')  
+    res.redirect('/cohort-build/v14/check-condition-groups')  
   }
 })
 
 // Contextual routing - check-condition-group.html
 
-router.post("/build-cohort/v14/check-condition-group-answer", function (req, res) {
+router.post("/cohort-build/v14/check-condition-group-answer", function (req, res) {
   // grab value from the data store
   let complete = req.session.data.complete
   // if the journey is complete send back to the 'check-your-cohort' page
   console.log(req.session.data)
   if (complete === 'true') {
-    res.redirect('/build-cohort/v14/check-cohort')  
+    res.redirect('/cohort-build/v14/check-cohort')  
   } else {  
-    res.redirect('/build-cohort/v14/check-cohort')  
+    res.redirect('/cohort-build/v14/check-cohort')  
   }
+})
+
+// Build Cohort - v4 choose-rule-route.html
+
+// Run this code when a form is submitted to 'juggling-balls-answer'
+router.post('/choose-rule-route', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var ruleRoute = req.session.data['rule-creation-route']
+
+  // Check whether the variable matches a condition
+  if (ruleRoute == "new-rule"){
+    // Send user to next page
+    res.redirect('/cohort-build/v4/repurpose-rule')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/cohort-build/v4/repurpose-cohort')
+  }
+
 })
 
 // Set journey as complete - check-cohort.html
 
-router.get("/build-cohort/v14/check-cohort", function (req, res) {  
+router.get("/cohort-build/v14/check-cohort", function (req, res) {  
     // set data store variable
     console.log("BEFORE", req.session.data)
     req.session.data.complete = 'true'
     console.log("AFTER", req.session.data)
     // render the page
-    return res.render('build-cohort/v14/check-cohort')
+    return res.render('cohort-build/v14/check-cohort')
 })
 
 // DevMode
@@ -103,26 +122,6 @@ function devModeRoute(req, res, next) {
   }
   next()
 }
-
-// Cohort Explorer - v4 choose-rule-route.html
-
-// Run this code when a form is submitted to 'juggling-balls-answer'
-router.post('/choose-rule-route', function (req, res) {
-
-  // Make a variable and give it the value from 'how-many-balls'
-  var ruleRoute = req.session.data['rule-creation-route']
-
-  // Check whether the variable matches a condition
-  if (ruleRoute == "new-rule"){
-    // Send user to next page
-    res.redirect('/build-cohort/v4/repurpose-rule')
-  } else {
-    // Send user to ineligible page
-    res.redirect('/build-cohort/v4/repurpose-cohort')
-  }
-
-})
-
 
 router.get('/*', devModeRoute)
 

@@ -19,8 +19,22 @@
       <div class="nhsuk-grid-column-two-thirds">
         <h1 class="nhsuk-heading-xl">Search results</h1>
         <h2>Patient details</h2>
-        <p><strong>NHS number:</strong> {{ data['nhsNumber'] }}</p>
-        <p><strong>Date of birth:</strong> {{ data['day'] }} {{ data['month'] }} {{ data['year'] }}</p>
+        <p>
+          <strong>NHS number:</strong>
+          {% if data['nhsNumber'] %}
+            {{ data['nhsNumber'] }}
+          {% else %}
+            {{ data['nhsNumber'] or '485 777 3456' }}
+          {% endif %}
+        </p>
+        <p>
+          <strong>Date of birth:</strong>
+          {% if data['day'] %}
+            {{ data['day'] }} November {{ data['year'] }}
+          {% else %}
+            {{ '15 November 1984' }}
+          {% endif %}
+        </p>
 
         <p class="nhsuk-body nhsuk-u-font-weight-bold">No cohorts are associated with this patient’s details.</p>
 
