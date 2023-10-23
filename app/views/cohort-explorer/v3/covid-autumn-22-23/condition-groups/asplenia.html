@@ -1,0 +1,266 @@
+{% extends 'custom-layouts/explorer-v3/exp-default-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Chronic heart disease - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <form action="#" method="POST">
+    <div class="nhsuk-grid-column-full">
+      <p class="nhsuk-u-font-size-24 nhsuk-u-secondary-text-color nhsuk-u-margin-bottom-2">COVID-19 autumn booster 2022 to 2023</p>
+      <h1 class="nhsuk-heading-xl">Asplenia or dysfunction of the spleen (COVID-19 2022 to 2023)</h1>
+    </div> <!-- /. nhsuk-grid-column-full -->
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- CaaS digital pathway rule logic -->
+
+      <h2 class="nhsuk-heading-l">CaaS digital pathway rule logic</h2>
+      <p>The table below shows the clinical rules used to determine who should be contacted or reminded to receive their COVID-19 autumn booster vaccinations based on specific medical conditions.</p>
+      <p>These conditions are detailed in the COVID-19 <a href="https://www.gov.uk/government/publications/covid-19-the-green-book-chapter-14a" class="nhsuk-link">Green Book, chapter 14a</a></a>.
+      </p>
+    </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+    <div class="nhsuk-grid-column-full">
+
+      <table role="table" class="nhsuk-table-responsive">
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col">
+              Condition description
+            </th>
+            <th role="columnheader" class="" scope="col">
+              Ruleset
+            </th>
+            <th role="columnheader" class="" scope="col">
+              Datasets used
+            </th>
+          </tr>
+        </thead>
+        <tbody class="nhsuk-table__body">
+
+          <!-- Row 1 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People with asplenia or dysfunction of the spleen.</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People who are:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>over 5 years of age</li>
+                  <li>recorded with hereditary spherocytosis diagnosis</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>, <a href="https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics" title="External website">HES</a>
+              </span>
+            </td>
+          </tr>
+
+          <!-- Row 2 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People with asplenia; splenic dysfunction such as thalassemia major and celiac syndrome.</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People over 5 years of age and recorded with any of the following:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>asplenia and splenic dysfunction</li>
+                  <li>thalassaemia</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>, <a href="https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics" title="External website">HES</a>
+              </span>
+            </td>
+          </tr>
+
+          <!-- Row 3 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People with:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>hereditary spherocytosis</li>
+                  <li>homozygous sickle cell disease</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People who are:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>over 5 years of age</li>
+                  <li>recorded with sickle cell disease</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>, <a href="https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics" title="External website">HES</a>
+              </span>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div> <!-- /.nhsuk-grid-column-full -->
+
+    <!--
+      Non-digital pathways
+    -->
+
+    <div class="nhsuk-grid-column-two-thirds">
+      <div class="nhsuk-u-padding-bottom-6"></div>
+      <h2 class="nhsuk-heading-l">Conditions that may not be included in the CaaS digital pathway</h2>
+      <p>If a person receives care from another healthcare provider, for example a hospital, specialist, or community clinic, their GP record is not automatically updated.</p>
+      <p>If a person’s GP record is not up-to-date when creating a cohort, they may not be included in the digital pathway.</p>
+      <p>This may result in a person not receiving the invite for their vaccination.</p>
+      <p>If you believe you're eligible for a vaccination, but have not received your invite, then <a href="https://www.nhs.uk/conditions/vaccinations/flu-influenza-vaccine/" title="External website">visit the NHS website on the flu vaccine</a> for more information.</p>
+    </div>
+    
+    <div class="nhsuk-grid-column-full">
+
+      <table role="table" class="nhsuk-table-responsive">
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col">
+              Condition description
+            </th>
+            <th role="columnheader" class="" scope="col">
+              Condition information
+            </th>
+          </tr>
+        </thead>
+        <tbody class="nhsuk-table__body">
+
+          <!-- Row 1 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People with asplenia or dysfunction of the spleen</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition information 
+              </span>
+              <p class="nhsuk-table-responsive__content">There is no clinically agreed list of these conditions, so the code clusters may be incomplete.</p>
+              <p class="nhsuk-table-responsive__content">This means that some people with these conditions may not be included in the CaaS digital pathway.</p>
+            </td>
+          </tr>
+
+          <!-- Row 2 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People with asplenia; splenic dysfunction such as thalassemia major and coeliac syndrome</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition information 
+              </span>
+              <p class="nhsuk-table-responsive__content">There is no clinically agreed list of these conditions, so the code clusters may be incomplete.</p>
+              <p class="nhsuk-table-responsive__content">This means that some people with these conditions may not be included in the CaaS digital pathway.</p>
+            </td>
+          </tr>
+
+          <!-- Row 3 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People with:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>homozygous sickle cell disease</li>
+                  <li>hereditary spherocytosis</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition information 
+              </span>
+              <p class="nhsuk-table-responsive__content">All conditions are included in the CaaS digital pathway.</p>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
+        Last updated: 25 October 2022
+      </p>
+
+    </div> <!-- /. nhsuk-grid-column-full -->
+  </form> <!-- /. form -->
+</div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

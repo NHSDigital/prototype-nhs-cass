@@ -1,0 +1,720 @@
+{% extends 'custom-layouts/explorer-v3/exp-default-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Chronic heart disease - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <form action="#" method="POST">
+    <div class="nhsuk-grid-column-full">
+      <p class="nhsuk-u-font-size-24 nhsuk-u-secondary-text-color nhsuk-u-margin-bottom-2">COVID-19 autumn booster vaccinations 2022 to 2023</p>
+      <h1 class="nhsuk-heading-xl">
+        Immunosuppression (COVID-19 2022 to 2023) 
+      </h1>
+    </div> <!-- /. nhsuk-grid-column-full -->
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- CaaS digital pathway rule logic -->
+
+      <h2 class="nhsuk-heading-l">CaaS digital pathway rule logic</h2>
+      <p>The table below shows the clinical rules used to determine who should be contacted or reminded to receive their COVID-19 autumn booster vaccinations based on specific medical conditions.</p>
+      <p>These conditions are detailed in the COVID-19 <a href="https://www.gov.uk/government/publications/covid-19-the-green-book-chapter-14a" class="nhsuk-link">Green Book, chapter 14a</a></a>.
+      </p>
+    </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+    <div class="nhsuk-grid-column-full">
+
+      <table role="table" class="nhsuk-table-responsive">
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col">
+              Condition description
+            </th>
+            <th role="columnheader" class="" scope="col">
+              Ruleset
+            </th>
+            <th role="columnheader" class="" scope="col">
+              Datasets used
+            </th>
+          </tr>
+        </thead>
+        <tbody class="nhsuk-table__body">
+
+          <!-- Row 1 -->
+
+           <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People on immunosuppressive or immunomodulating therapy - first 3 months</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People over 5 years of age and recorded with any of the following within the last 3 months:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>biologic immune modulators systemic medication</li>
+                  <li>interleukin receptor inhibitors systemic medication</li>
+                  <li>janus kinase inhibitors and other small-molecule inhibitors systemic medication</li>
+                  <li>monoclonal tumour necrosis factor inhibitors systemic medication</li>
+                  <li>
+                    soluble tumour necrosis factor receptors systemic medication
+                  </li>
+                  <li>T-cell co-stimulation modulators systemic medication</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>
+              </span>
+            </td>
+          </tr>
+
+          <!-- Row 2 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People on immunosuppressive or immunomodulating therapy - first 6 months</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People who are:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>over 5 years of age</li>
+                  <li>recorded with B-cell depleting therapies systemic medication within the last 6 months</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>
+              </span>
+            </td>
+          </tr>
+
+          <!-- Row 3 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People prescribed steroids</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People who are:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>over 5 years of age</li>
+                  <li>recorded with COVID-19 corticosteroid medication 4 times on different days within the last 6 months</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>
+              </span>
+            </td>
+          </tr>
+
+          <!-- Row 4 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People receiving any dose of non-biological oral immune modulating drugs such as:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>methotrexate</li>
+                  <li>azathioprine</li>
+                  <li>6-mercaptopurine</li>
+                  <li>mycophenolate</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People over 5 years of age and recorded with any of the following within the last 12 months:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>ciclosporin systemic medication</li>
+                  <li>cyclophosphamide systemic medication</li>
+                  <li>disease-modifying antirheumatic non-drug concept</li>
+                  <li>enhanced services GP extraction - immunosuppressant drugs</li>
+                  <li>mycophenolate mofetil and mycophenolic sodium systemic medication</li>
+                  <li>phosphoinositide 3-kinase inhibitor systemic medication</li>
+                  <li>poly adenosine diphosphate-ribose polymerase inhibitors systemic medication</li>
+                  <li>sirolimus systemic medication</li>
+                  <li>sphingosine-1-phosphate receptor modulator systemic medication</li>
+                  <li>steroid sparing systemic medication</li>
+                  <li>tacrolimus systemic medication</li>
+                  <li>tyrosine kinase inhibitor systemic medication</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>
+              </span>
+            </td>
+          </tr>
+
+          <!-- Row 5 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People receiving:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>chemotherapy</li>
+                  <li>radiotherapy</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People over 5 years of age and recorded with any of the following within the last 12 months:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>chemotherapy non-drug concept</li>
+                  <li>chemotherapy systemic medication</li>
+                  <li>radiotherapy treatment</li>
+                  <li>recorded within SACT or RTDS datasets</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>, <a href="https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics" title="External website">HES</a>, <a href="http://www.ncin.org.uk/collecting_and_using_data/rtds" title="External website">RTDS</a>, <a href="http://www.chemodataset.nhs.uk/home" title="External website">SACT</a> 
+              </span>
+            </td>
+          </tr>
+
+          <!-- Row 6 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People receiving immunosuppressive or immunomodulating biological therapy</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People over 5 years of age and recorded with any of the following within the last 12 months:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>B-cell depleting therapies systemic medication</li>
+                  <li>biologic immune modulators systemic medication</li>
+                  <li>interleukin receptor inhibitors systemic medication</li>
+                  <li>janus kinase inhibitors and other small-molecule inhibitors systemic medication</li>
+                  <li>monoclonal tumour necrosis factor inhibitors systemic medication</li>
+                  <li>
+                    soluble tumour necrosis factor receptors systemic medication
+                  </li>
+                  <li>T-cell co-stimulation modulators systemic medication</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>
+              </span>
+            </td>
+          </tr>
+
+          <!-- Row 7 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People who, for any reason in the 6 months before vaccination, were receiving or had received:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>immunosuppressive chemotherapy</li>
+                  <li>radiotherapy</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People over 5 years of age and recorded with any of the following within the last 6 months:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>chemotherapy non-drug concept</li>
+                  <li>chemotherapy systemic medication</li>
+                  <li>radiotherapy treatment</li>
+                  <li>recorded within SACT or RTDS datasets</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>, <a href="https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics" title="External website">HES</a>, <a href="http://www.ncin.org.uk/collecting_and_using_data/rtds" title="External website">RTDS</a>, <a href="http://www.chemodataset.nhs.uk/home" title="External website">SACT</a>
+              </span>
+            </td>
+          </tr>
+
+          <!-- Row 8 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People who have received a solid organ transplant</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People who are:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>over 5 years of age</li>
+                  <li>recorded with solid organ transplant</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>, <a href="https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics" title="External website">HES</a>
+              </span>
+            </td>
+          </tr>
+
+          <!-- Row 9 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People with:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>chromosome disorders</li>
+                  <li>primary or acquired immune deficiencies</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People over 5 years of age and recorded with any of the following:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>chromosomal disorders affecting immune competence</li>
+                  <li>primary immunodeficiency disorder</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>, <a href="https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics" title="External website">HES</a>
+              </span>
+            </td>
+          </tr>
+
+          <!-- Row 10 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People with:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>
+                    human immunodeficiency virus (HIV) infection at all stages
+                  </li>
+                  <li>other specified immunodeficiencies</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People over 5 years of age and recorded with any of the following:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>acquired immune deficiency syndrome (AIDS)</li>
+                  <li>human immunodeficiency virus (HIV)</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>, <a href="https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics" title="External website">HES</a>
+              </span>
+            </td>
+          </tr>
+
+          <!-- Row 11 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People with primary or acquired immune deficiencies</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People who are:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>over 5 years of age</li>
+                  <li>recorded with COVID-19 corticosteroid medication 4 times on different days within the last 6 months</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>, <a href="https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics" title="External website">HES</a>
+              </span>
+            </td>
+          </tr>
+
+          <!-- Row 12 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People with serious genetic abnormalities that affect a number of systems</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Ruleset 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People who are:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>over 5 years to 16 years</li>
+                  <li>recorded with mitochondrial disease</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Datasets used
+              </span>
+              <span class="nhsuk-table-responsive__content datasets-column">
+                <a href="https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/data-provision-notices-dpns/gpes-data-for-pandemic-planning-and-research">GDPPR</a>,
+                <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v4</a>, <a href="https://digital.nhs.uk/services/general-practice-extraction-service" title="External website">GPES v5</a>, <a href="https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics" title="External website">HES</a>
+              </span>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div> <!-- /.nhsuk-grid-column-full -->
+
+    <!--
+      Non-digital pathways
+    -->
+
+    <div class="nhsuk-grid-column-two-thirds">
+      <div class="nhsuk-u-padding-bottom-6"></div>
+      <h2 class="nhsuk-heading-l">Conditions that may not be included in the CaaS digital pathway</h2>
+      <p>If a person receives care from another healthcare provider, for example a hospital, specialist, or community clinic, their GP record is not automatically updated.</p>
+      <p>If a person’s GP record is not up-to-date when creating a cohort, they may not be included in the digital pathway.</p>
+      <p>This may result in a person not receiving the invite for their vaccination.</p>
+      <p>If you believe you're eligible for a vaccination, but have not received your invite, then <a href="https://www.nhs.uk/conditions/vaccinations/flu-influenza-vaccine/" title="External website">visit the NHS website on the flu vaccine</a> for more information.</p>
+    </div>
+    
+    <div class="nhsuk-grid-column-full">
+
+      <table role="table" class="nhsuk-table-responsive">
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col">
+              Condition description
+            </th>
+            <th role="columnheader" class="" scope="col">
+              Condition information
+            </th>
+          </tr>
+        </thead>
+        <tbody class="nhsuk-table__body">
+
+          <!-- Row 1 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People on immunosuppressive or immunomodulating therapy - first 3 months</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition information 
+              </span>
+              <p class="nhsuk-table-responsive__content">NHS England are unable to extract prescribed medication information from hospitals. This means that those who only qualify based on this requirement will not be identified in the CaaS digital pathway.</p>
+            </td>
+          </tr>
+
+          <!-- Row 2 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People on immunosuppressive or immunomodulating therapy - first 6 months</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition information 
+              </span>
+              <p class="nhsuk-table-responsive__content">NHS England are unable to extract prescribed medication information from hospitals. This means that those who only qualify based on this requirement will not be identified in the CaaS digital pathway.</p>
+            </td>
+          </tr>
+
+          <!-- Row 3 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People prescribed steroids</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition information 
+              </span>
+              <p class="nhsuk-table-responsive__content">All conditions are included in the CaaS digital pathway</p>
+            </td>
+          </tr>
+
+          <!-- Row 4 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People receiving any dose of non-biological oral immune modulating drugs such as:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>methotrexate</li>
+                  <li>azathioprine</li>
+                  <li>6-mercaptopurine</li>
+                  <li>mycophenolate</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition information 
+              </span>
+              <p class="nhsuk-table-responsive__content">NHS England are unable to extract prescribed medication information from hospitals. This means that those who only qualify based on this requirement will not be identified in the CaaS digital pathway.</p>
+            </td>
+          </tr>
+
+          <!-- Row 5 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People who have received a solid organ transplant</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition information 
+              </span>
+              <p class="nhsuk-table-responsive__content">All conditions are included in the CaaS digital pathway.</p>
+            </td>
+          </tr>
+
+          <!-- Row 6 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People with:</p>
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                  <li>chromosome disorders</li>
+                  <li>primary or acquired immune deficiencies</li>
+                </ul>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition information 
+              </span>
+              <p class="nhsuk-table-responsive__content">All conditions are included in the CaaS digital pathway.</p>
+            </td>
+          </tr>
+
+          <!-- Row 7 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People with primary or acquired immune deficiencies</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition information 
+              </span>
+              <p class="nhsuk-table-responsive__content">All conditions are included in the CaaS digital pathway.</p>
+            </td>
+          </tr>
+
+          <!-- Row 8 -->
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition description 
+              </span>
+              <div class="nhsuk-table-responsive__content">
+                <p>People with serious genetic abnormalities that affect a number of systems</p>
+              </div>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-table__stack_columns">
+              <span class="nhsuk-table-responsive__heading">
+                Condition information 
+              </span>
+              <p class="nhsuk-table-responsive__content">All conditions are included in the CaaS digital pathway.</p>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
+        Last updated: 25 October 2022
+      </p>
+
+    </div> <!-- /. nhsuk-grid-column-full -->
+  </form> <!-- /. form -->
+</div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
