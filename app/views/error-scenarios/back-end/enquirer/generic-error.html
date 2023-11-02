@@ -1,4 +1,4 @@
-{% extends 'custom-layouts/explorer/exp-default-header.html' %}
+{% extends 'custom-layouts/enquirer/enquirer-header.html' %}
 
 {% set mainClasses = "nhsuk-main-wrapper--s" %}
 
@@ -15,8 +15,13 @@
   <form action="#" method="POST">
     <div class="nhsuk-grid-column-two-thirds">
         <h1 class="nhsuk-heading-xl">Something went wrong</h1>
-        <p class="nhsuk-body">Please try again.</p>
-        <a href="#">Return to homepage</a>
+        <h2>What you can do:</h2>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>refresh the page</li>
+          <li>
+            <a href="#">return to the Cohort Enquirer homepage</a> and try again
+          </li>
+        </ul>
     </div> <!-- /. nhsuk-grid-column-two-thirds -->
   </form> <!-- /. form -->
 </div> <!-- /. nhsuk-grid-row -->
