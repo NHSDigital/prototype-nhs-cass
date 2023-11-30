@@ -1,0 +1,27 @@
+{% extends 'custom-layouts/enquirer/enquirer-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  CaaS prototype
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <form action="#" method="POST">
+    <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">You have been logged out</h1>
+        <p>Your session ends if you’re inactive for 15 minutes.</p>
+        <p>We do this to protect patient security.</p>
+        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+            Log in again
+        </button>
+    </div> <!-- /. nhsuk-grid-column-two-thirds -->
+  </form> <!-- /. form -->
+</div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
