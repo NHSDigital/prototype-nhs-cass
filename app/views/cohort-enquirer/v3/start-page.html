@@ -44,27 +44,4 @@
     </form> <!-- /. form -->
   </div> <!-- /. nhsuk-grid-row -->
 
-  {% if data['devMode'] === 'true' %}
-
-  {# DEVMODE SCENARIOS #}
-
-  <details class="nhsuk-details dev-mode" role="group">
-    <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-0" aria-expanded="true">
-      <span class="nhsuk-details__summary-text">
-        Error scenarios
-      </span>
-    </summary>
-    <div class="nhsuk-details__text">
-      <h5>Start page error scenarios</h5>
-      <ul class="nhsuk-list">
-        <li>
-          <a href="../../error-scenarios/front-end/cohort-enquirer/start-page">
-          Checkbox not checked</a>
-        </li>
-      </ul>
-    </div>
-  </details>
-
-  {% endif %}
-
 {% endblock %}
