@@ -1,0 +1,125 @@
+{% extends 'custom-layouts/enquirer/header-logged-in.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Search results - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="patient-lookup-empty" method="POST">
+      <div class="nhsuk-grid-column-full">
+
+        <h1 class="nhsuk-heading-xl">Search results</h1>
+        <h2>Patient and cohort details</h2>
+        <p>
+          <strong>NHS number:</strong>
+          {% if data['nhsNumber'] %}
+            {{ data['nhsNumber'] }}
+          {% else %}
+            {{ data['nhsNumber'] or '485 777 3456' }}
+          {% endif %}
+        </p>
+        <p>
+          <strong>Date of birth:</strong>
+          {% if data['day'] %}
+            {{ data['day'] }} November {{ data['year'] }}
+          {% else %}
+            {{ '15 November 1984' }}
+          {% endif %}
+        </p>
+        <p><strong>Cohort:</strong> COVID-19 autumn booster vaccinations 2022 to 2023</p>
+        <p><strong>Status:</strong> <strong class="nhsuk-tag nhsuk-tag--green">
+          Cohorted
+        </strong></p>
+
+        <div class="nhsuk-u-padding-bottom-5"></div>
+
+      </div>
+
+      <div class="nhsuk-grid-column-two-thirds">
+        <h2>Last cohort run information</h2>
+        <p>The table below shows the reason why a patient is part of a cohort. The information is based on the last time the cohort was run.</p>
+      </div>
+
+      <div class="nhsuk-grid-column-full">
+
+        <table role="table" class="nhsuk-table-responsive">
+            <thead role="rowgroup" class="nhsuk-table__head">
+              <tr role="row">
+                <th role="columnheader" class="" scope="col">
+                  Cohort run date
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Condition group
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Dataset and code list
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Added to patient medical record
+                </th>
+              </tr>
+            </thead>
+            <tbody class="nhsuk-table__body">
+
+              <!--
+                Row 1
+              -->
+
+              <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Cohort run date
+                  </span>
+                  1 March 2023
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Condition group
+                  </span>
+                    covid_16+_chronic_respiratory_disease
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Dataset and code list
+                  </span>
+                    HES - ICD-10 N30.2
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Added to patient medical record
+                  </span>
+                    25 January 2023
+                </td>
+              </tr>
+
+            </tbody>
+        </table>
+
+        <div class="nhsuk-u-padding-bottom-9"></div>
+
+      </div>
+
+      <div class="nhsuk-grid-column-two-thirds">
+        <p>The search results are based on patient information processed on or after September 2023.</p>
+        <p>If you need information from before September 2023, create a request through <a href="https://nhsdigitallive.service-now.com/nhs_digital">ServiceNow</a>.</p>
+
+        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+          Start new search
+        </button>
+      </div> <!-- /. govuk-grid-column-two-thirds -->
+
+      </div> <!-- /. nhsuk-grid-column-full -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
