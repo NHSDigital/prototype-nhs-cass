@@ -16,23 +16,10 @@
 @import 'components/buildCohort-v4';
 @import 'components/search-bar-v14-build-cohort';
 @import 'components/table-modal';
+@import 'components/cookies-banner';
+@import 'components/email-replica';
+
 
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
-
-.email-container {
-    border: 1px solid $nhsuk-border-color;
-    padding: 20px;
-}
-
-.nhs-header-email {
-    margin-bottom: 30px;
-    .nhs-header-email-logo {
-        padding-left: 20px;
-    }
-}
-
-.seconary-color-text {
-    color: #4C6272;
-}
