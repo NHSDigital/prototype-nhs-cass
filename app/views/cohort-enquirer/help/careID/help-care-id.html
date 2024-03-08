@@ -1,0 +1,60 @@
+{% extends 'custom-layouts/enquirer/enquirer-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Your cookie settings have been saved - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block outerContent %}
+
+    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+        <div class="nhsuk-width-container">
+            <ol class="nhsuk-breadcrumb__list">
+            
+            <!-- Level 1 -->
+
+                <li class="nhsuk-breadcrumb__item">
+                    <a class="nhsuk-breadcrumb__link" href="../v4/start-page">Home</a>
+                </li>
+
+            <!-- Level 2 -->
+
+                <li class="nhsuk-breadcrumb__item">
+                    <a class="nhsuk-breadcrumb__link" href="../help-landing">Find out why a patient is in a cohort help</a>
+                </li>
+
+            <!-- Level 3 -->
+
+                <li class="nhsuk-breadcrumb__item">
+                    <a class="nhsuk-breadcrumb__link" href="help-care-id">Care ID</a>
+                </li>
+
+            </ol>
+        </div>
+    </nav>
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Care ID</h1>
+        <p>Help and advice on the Care ID service.</p>
+
+        <ul class="nhsuk-list">
+            <li><a href="care-id-access">How to get CareID access</a></li>
+            <li><a href="smartcard-issues">Help with smartcard issues</a></li>
+        </ul>
+
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

@@ -1,0 +1,101 @@
+{% extends 'custom-layouts/enquirer/enquirer-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Your cookie settings have been saved - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+
+
+{% endblock %}
+
+{% block outerContent %}
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        
+        <!-- Level 1 -->
+
+          <li class="nhsuk-breadcrumb__item">
+              <a class="nhsuk-breadcrumb__link" href="../../v4/start-page">Home</a>
+          </li>
+
+        <!-- Level 2 -->
+
+          <li class="nhsuk-breadcrumb__item">
+              <a class="nhsuk-breadcrumb__link" href="../help-landing">Find out why a patient is in a cohort help</a>
+          </li>
+
+        <!-- Level 3 -->
+
+          <li class="nhsuk-breadcrumb__item">
+              <a class="nhsuk-breadcrumb__link" href="reporting-incidents">Reporting incidents and raising requests</a>
+          </li>
+
+        <!-- Level 4 -->
+
+        <li class="nhsuk-breadcrumb__item">
+          <a class="nhsuk-breadcrumb__link" href="raising-a-request">Raising a request</a>
+        </li>
+
+      </ol>
+  </div>
+</nav>
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Raising a request</h1>
+        <p>Only a line manager or Service owner can raise a request through ServiceNow.</p>
+        <p>They can raise a request to:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>add a new user (the user will need to have <a href="https://corporateforms.digital.nhs.uk/CDAAssetRequest/CDAAssetRequestForm">Clinical Document Architecture (CDA)</a> and <a href="https://digital.nhs.uk/services/care-identity-service/applications-and-services/apply-for-care-id/support-with-applying-for-my-care-id">Care ID</a> approval first)</li>
+          <li>select <span class="nhsuk-u-font-weight-bold">'something is broken'</span> on the homepage</li>
+          <li>remove a user</li>
+          <li>request an audit report (only service owners can do this)</li>
+          <li>obtain patient cohort information prior to September 2023</li>
+        </ul>
+
+        <h2 class="nhsuk-heading-l">How to raise a request</h2>
+        <ol class="nhsuk-list nhsuk-list--number">
+          <li>log in to <a href="https://nhsdigitallive.service-now.com/nhs_digital">ServiceNow</a></li>
+          <li>select <span class="nhsuk-u-font-weight-bold">'request something'</span> on the homepage</li>
+          <li>on the Service catalogue page select <span class="nhsuk-u-font-weight-bold">'general request'</span></li>
+        </ol>
+
+        <h2 class="nhsuk-heading-l">Before you submit your report</h2>
+
+        <p>You need to make sure that the request is sent to the correct team.</p>
+
+        <p>To do this, you need to enter the following information in the corresponding fields:</p>
+
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li><span class="nhsuk-u-font-weight-bold">Which department you want to report the issue to.</span> Select 'live services' in the drop-down menu</li>
+          <li><span class="nhsuk-u-font-weight-bold">Service option.</span> Type CaaS into the field and choose Cohorting as a Service</li>
+          <li><span class="nhsuk-u-font-weight-bold">Service offering.</span> Choose Find out why a patient is in a cohort in the drop-down menu</li>
+        </ul>
+
+        <h2 class="nhsuk-heading-l">What happens after you submit your report</h2>
+        <p>Once you submit the form, you will receive an email with a ticket number. You will also be sent an email once your problem has been resolved or if any further information is needed.</p>
+
+        <h2 class="nhsuk-heading-l">Reviewing or updating a ticket</h2>
+        <p>To review or update a ticket you need to:</p>
+        <ol class="nhsuk-list nhsuk-list--number">
+          <li><a href="https://nhsdigitallive.service-now.com/nhs_digital">log in to ServiceNow</a></li>
+          <li>navigate to top right of the homepage</li>
+          <li>select ‘my tickets’</li>
+          <li>select the ‘requested items’ tab to see your open or closed tickets</li>
+        </ol> 
+
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

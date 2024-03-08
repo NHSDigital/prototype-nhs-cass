@@ -1,4 +1,4 @@
-{% extends 'custom-layouts/caas-header.html' %}
+{% extends 'custom-layouts/enquirer/enquirer-header.html' %}
 
 {% set mainClasses = "nhsuk-main-wrapper--s" %}
 
@@ -8,31 +8,31 @@
 
 {% block beforeContent %}
 
-  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-    <div class="nhsuk-width-container">
-        <ol class="nhsuk-breadcrumb__list">
-        
-        <!-- Level 1 -->
-
-            <li class="nhsuk-breadcrumb__item">
-                <a class="nhsuk-breadcrumb__link" href="../v4/start-page">Home</a>
-            </li>
-
-        <!-- Level 2 -->
-
-            <li class="nhsuk-breadcrumb__item">
-                <a class="nhsuk-breadcrumb__link" href="accessibility-statement">
-                Accessibility statement
-                </a>
-            </li>
-
-        </ol>
-    </div>
-  </nav>
-
 {% endblock %}
 
 {% block outerContent %}
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+      
+      <!-- Level 1 -->
+
+          <li class="nhsuk-breadcrumb__item">
+              <a class="nhsuk-breadcrumb__link" href="../v4/start-page">Home</a>
+          </li>
+
+      <!-- Level 2 -->
+
+          <li class="nhsuk-breadcrumb__item">
+              <a class="nhsuk-breadcrumb__link" href="accessibility-statement">
+              Accessibility statement
+              </a>
+          </li>
+
+      </ol>
+  </div>
+</nav>
 
 {% endblock %}
 

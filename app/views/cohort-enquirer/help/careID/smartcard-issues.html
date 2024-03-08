@@ -1,0 +1,91 @@
+{% extends 'custom-layouts/enquirer/enquirer-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+    How to get Care ID access - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+
+
+{% endblock %}
+
+{% block outerContent %}
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        
+        <!-- Level 1 -->
+
+          <li class="nhsuk-breadcrumb__item">
+              <a class="nhsuk-breadcrumb__link" href="../../v4/start-page">Home</a>
+          </li>
+
+        <!-- Level 2 -->
+
+          <li class="nhsuk-breadcrumb__item">
+              <a class="nhsuk-breadcrumb__link" href="../help-landing">Find out why a patient is in a cohort help</a>
+          </li>
+
+        <!-- Level 3 -->
+
+          <li class="nhsuk-breadcrumb__item">
+              <a class="nhsuk-breadcrumb__link" href="help-care-id">Care ID</a>
+          </li>
+
+        <!-- Level 4 -->
+
+        <li class="nhsuk-breadcrumb__item">
+          <a class="nhsuk-breadcrumb__link" href="smartcard-issues">Help with your smartcard</a>
+        </li>
+
+      </ol>
+  </div>
+</nav>
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Help with your smartcard</h1>
+        <p>If you are having difficulty authenticating with your smartcard, visit the <a href="https://digital.nhs.uk/services/care-identity-service/smartcard-and-authentication-users">smartcard and authenticator users webpage</a>.</p>
+
+        <p>This webpage will give you help and support if you:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+            <li>need your smartcard unlocked</li>
+            <li>have forgotten your passcode or want to change it</li>
+            <li>have to renew a smartcard certificate</li>
+            <li>lose your smartcard</li>
+        </ul>
+
+        <h2 class="nhsuk-heading-l">
+            Check that your device is configured correctly
+        </h2>
+        <p>You can <a href="https://am.nhsidentity.spineservices.nhs.uk/openam/XUI/#/smartcardDiagnostics">check your smartcard set up</a> to find out if your device is set up to work with Care Identity Authentication.</p>
+
+        <p>The tool will perform a check to detect whether the device's operating system and browser are supported.</p>
+
+        <h2 class="nhsuk-heading-l">Common issues and errors</h2>
+
+        <p>Sometimes you may experience an error when trying to use your smartcard.</p>
+
+        <p>The <a href="https://digital.nhs.uk/services/care-identity-service/setting-up-and-troubleshooting/common-issues#troubleshooting-smartcard-management">smartcard troubleshooting webpage</a> gives you help and guidance on:</p>
+
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>understanding error codes</li>
+          <li>what to do if you get an error</li>
+          <li>how to contact support if the issue continues</li>
+        </ul>
+
+        <p>By following the guidance, you should be able to resolve most smartcard issues.</p>
+
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

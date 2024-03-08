@@ -1,0 +1,60 @@
+{% extends 'custom-layouts/enquirer/enquirer-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Your cookie settings have been saved - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block outerContent %}
+
+    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+        <div class="nhsuk-width-container">
+            <ol class="nhsuk-breadcrumb__list">
+            
+            <!-- Level 1 -->
+
+                <li class="nhsuk-breadcrumb__item">
+                    <a class="nhsuk-breadcrumb__link" href="../v4/start-page">Home</a>
+                </li>
+
+            <!-- Level 2 -->
+
+                <li class="nhsuk-breadcrumb__item">
+                    <a class="nhsuk-breadcrumb__link" href="../help-landing">Find out why a patient is in a cohort help</a>
+                </li>
+
+            <!-- Level 3 -->
+
+                <li class="nhsuk-breadcrumb__item">
+                    <a class="nhsuk-breadcrumb__link" href="reporting-incidents">Reporting incidents and raising requests</a>
+                </li>
+
+            </ol>
+        </div>
+    </nav>
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Reporting incidents and raising requests</h1>
+        <p>Read our guides on how to complete the online ServiceNow forms.</p>
+
+        <ul class="nhsuk-list">
+            <li><a href="how-to-report-an-incident">How to report an incident</a></li>
+            <li><a href="raising-a-request">How to raise a request</a></li>
+        </ul>
+
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

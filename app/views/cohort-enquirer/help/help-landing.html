@@ -1,0 +1,81 @@
+{% extends 'custom-layouts/enquirer/enquirer-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Your cookie settings have been saved - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block outerContent %}
+
+    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+        <div class="nhsuk-width-container">
+            <ol class="nhsuk-breadcrumb__list">
+            
+            <!-- Level 1 -->
+
+                <li class="nhsuk-breadcrumb__item">
+                    <a class="nhsuk-breadcrumb__link" href="../v4/start-page">Home</a>
+                </li>
+
+            <!-- Level 2 -->
+
+                <li class="nhsuk-breadcrumb__item">
+                    <a class="nhsuk-breadcrumb__link" href="help-landing">Find out why a patient is in a cohort help</a>
+                </li>
+
+            </ol>
+        </div>
+    </nav>
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Find out why a patient is in a cohort help</h1>
+        <p>We can help you if you’re having any problems using our tool.</p>
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+
+    <ul class="nhsuk-grid-row">
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item" style="padding: 0 14px;">
+      
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content">
+              <h5 class="nhsuk-card__heading nhsuk-heading-xs">
+                <a class="nhsuk-card__link" href="serviceNow/reporting-incidents">Report an incident or raise a request</a>
+              </h5>
+              <p>Use ServiceNow to report any problems or make a general request.</p>
+            </div>
+          </div>
+      
+        </li>
+    
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+      
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content">
+                <h5 class="nhsuk-card__heading nhsuk-heading-xs">
+                  <a class="nhsuk-card__link" href="careID/help-care-id">Care ID</a>
+                </h5>
+                <p>
+                    Find out how to get access and troubleshoot authentication issues.
+                </p>
+              </div>
+            </div>
+
+          </li>
+
+      </ul>
+
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

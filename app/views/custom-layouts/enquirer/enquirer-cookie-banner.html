@@ -21,7 +21,45 @@
 <!-- Header code examples can be found at https://service-manual.nhs.uk/design-system/components/header -->
 {% block header %}
 
+<div id="nhsuk-cookie-banner">
+    <div style="padding: 0 !important;">
+        <div class="nhsuk-cookie-banner" id="cookiebanner" aria-label="Cookie banner" role="banner">
+            <div class="page-section" style="padding: 0 !important;">
+                <div class="nhsuk-width-container">
+                    <h4 class="nhsuk-heading-s cookie-heading">Cookies on Find out why a patient is in a cohort</h4>
+                    <p class="nhsuk-body cookie-body">We've put some small files called cookies on your device to make Find out why a patient is in a cohort work.</p>
+                    <p class="nhsuk-body cookie-body">We would also like to use analytics cookies to improve our service.</p>
+                    <p>Let us know if this is OK. We'll use a cookie to save your choice. You can <a href="../../cohort-enquirer/legal-pages/cookies">read more about our cookies</a> before you choose.</p>
+
+                    <a href="#" tabindex="1">
+                        <button class="nhsuk-button full-width" id="nhsuk-cookie-banner__link_accept">
+                            i'm ok with analytics cookies
+                        </button>
+                    </a>
+
+                    <a href="" tabindex="2">
+                        <button class="nhsuk-button full-width" id="nhsuk-cookie-banner__link">
+                            Do not use analytics cookies
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="nhsuk-success-banner" id="nhsuk-cookie-confirmation-banner" style="display:none;" role="banner">
+            <div class="page-section" style="padding: 0px !important;">
+                <div class="nhsuk-width-container">
+                    <p class="nhsuk-body accepted-cookies">You can change your cookie settings at any time using our <a href="../../cohort-enquirer/legal-pages/cookies" class="nhsuk-link cookies-success-link">cookies page</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <header class="nhsuk-header" role="banner">
+
+
     <div class="nhsuk-width-container nhsuk-header__container">
         <div class="nhsuk-header__logo">
             <a class="nhsuk-header__link nhsuk-header__link--service nhsuk-header__link--service-short-name"

@@ -1,0 +1,82 @@
+{% extends 'custom-layouts/enquirer/enquirer-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+    How to get Care ID access - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+
+
+{% endblock %}
+
+{% block outerContent %}
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        
+        <!-- Level 1 -->
+
+          <li class="nhsuk-breadcrumb__item">
+              <a class="nhsuk-breadcrumb__link" href="../../v4/start-page">Home</a>
+          </li>
+
+        <!-- Level 2 -->
+
+          <li class="nhsuk-breadcrumb__item">
+              <a class="nhsuk-breadcrumb__link" href="../help-landing">Find out why a patient is in a cohort help</a>
+          </li>
+
+        <!-- Level 3 -->
+
+          <li class="nhsuk-breadcrumb__item">
+              <a class="nhsuk-breadcrumb__link" href="help-care-id">Care ID</a>
+          </li>
+
+        <!-- Level 4 -->
+
+        <li class="nhsuk-breadcrumb__item">
+          <a class="nhsuk-breadcrumb__link" href="care-id-access">How to get Care ID access</a>
+        </li>
+
+      </ol>
+  </div>
+</nav>
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">How to get Care ID access</h1>
+        <p>Care ID allows you to access patient data using a smartcard or other authentication methods.</p>
+        <p>To access this service, you will need to be invited by a Registration Authority or sponsor.</p>
+
+        <h2 class="nhsuk-heading-l">How to find your local Registration authority</h2>
+        <p>Finding your local RA can vary depending on your organisation or department.</p>
+
+        <p>It may be part of:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>an IT team</li>
+          <li>human resources</li>
+          <li>a completely seperate department</li>
+        </ul>
+
+        <p>It may also be called something other than RA, for example, Smartcard Team.</p>
+
+        <p>If you do not know who your local RA is, you can:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>ask a colleague</li>
+          <li>contact your IT helpdesk</li>
+          <li>check the <a href="https://digital.nhs.uk/services/care-identity-service/primary-care-service-provider-contact-details"> primary care service provider contact details</a> page to find out if your organisation is listed</li>
+        </ul>
+
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
