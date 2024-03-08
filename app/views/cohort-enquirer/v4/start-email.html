@@ -1,0 +1,62 @@
+{% extends 'custom-layouts/unbranded.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  CaaS prototype
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="email-container">
+
+          <header class="nhsuk-header nhsuk-header--transactional nhs-header-email" role="banner">
+            <div class="nhsuk-width-container nhsuk-header__container">
+              <div class="nhsuk-header__logo nhsuk-header__logo--only nhs-header-email-logo"><a class="nhsuk-header__link" href="/" aria-label="NHS homepage">
+          
+                  <svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" height="40" width="100">
+                    <path class="nhsuk-logo__background" fill="#005eb8" d="M0 0h40v16H0z"></path>
+                    <path class="nhsuk-logo__text" fill="#fff" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+                  </svg>
+          
+                </a>
+              </div>
+              <div class="nhsuk-header__transactional-service-name">
+                <a class="nhsuk-header__transactional-service-name--link" href="https://www.nhs.uk/nhs-services/gps/how-to-register-with-a-gp-surgery/">Cohort Enquirer</a>
+              </div>
+          
+            </div>
+          
+          </header>
+
+          <h1>Your request for access to Cohort Enquirer has been granted</h1>
+          <p>Dear [person's name],</p>
+          <p>You’ve been granted access to the Cohort Enquirer tool.</p>
+          <h2>How to access</h2>
+          <ol class="nhsuk-list nhsuk-list--number">
+            <li>Go to the start page at <a class="nhsuk-link" href="start-page">prod.enquirer.cohorting.national.nhs.uk</a></li>
+            <li>After reading the information, click the ‘start now’ button.</li>
+            <li>Select how you want to authenticate.</li>
+          </ol>
+
+          <h2>Contact us</h2>
+          <p>Contact your line manager If you’re having any problems accessing the tool, or you’ve received this email in error.</p>
+
+          <p>Thanks,</p>
+          <p>The Cohorting as a Service (CaaS) team</p>
+
+          <p class="nhsuk-body-s seconary-color-text">Do not reply. This email has been generated automatically.</p>
+        </div>
+      </div> <!-- /. nhsuk-grid-column-full -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'custom-layouts/enquirer/enquirer-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Your cookie settings have been saved - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+        <ol class="nhsuk-breadcrumb__list">
+          
+          <!-- Level 1 -->
+
+            <li class="nhsuk-breadcrumb__item">
+                <a class="nhsuk-breadcrumb__link" href="../v4/start-page">Home</a>
+            </li>
+
+          <!-- Level 2 -->
+
+            <li class="nhsuk-breadcrumb__item">
+                <a class="nhsuk-breadcrumb__link" href="cookies">Cookie policy</a>
+            </li>
+
+          <!-- Level 3 -->  
+
+            <li class="nhsuk-breadcrumb__item">
+              <a class="nhsuk-breadcrumb__link" href="#!">Your cookie settings have been saved</a>
+          </li>
+        </ol>
+    </div>
+  </nav>
+
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="#" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <h1 class="nhsuk-heading-xl">Your cookie settings have been saved</h1>
+
+        <p>We'll save your settings for a year.</p>
+
+        <p>We'll ask you if you're still OK with us using cookies when either:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>it's been a year since you last saved your settings</li>
+          <li>we add any new cookies or change the cookies we use</li>
+        </ul>
+
+        <p>You can also change your settings at any time using our <a href="cookies">cookies page</a>.</p>
+
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

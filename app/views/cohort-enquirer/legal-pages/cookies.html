@@ -1,0 +1,183 @@
+{% extends 'custom-layouts/enquirer/enquirer-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+    Cookie policy - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+
+    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+        <div class="nhsuk-width-container">
+            <ol class="nhsuk-breadcrumb__list">
+                
+                <!-- Level 1 -->
+
+                <li class="nhsuk-breadcrumb__item">
+                    <a class="nhsuk-breadcrumb__link" href="../v4/start-page">Home</a>
+                </li>
+
+                <!-- Level 2 -->
+
+                <li class="nhsuk-breadcrumb__item">
+                    <a class="nhsuk-breadcrumb__link" href="#!">
+                        Cookie policy
+                    </a>
+                </li>
+
+            </ol>
+        </div>
+    </nav> 
+
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="cookies-saved" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <h1 class="nhsuk-heading-xl">Cookie policy</h1>
+        <p>NHS England ("we" or "us") uses cookies to deliver the Find out why a patient is in a cohort tool and access to its services.</p>
+        
+        <p>The information set out in this policy is provided in addition to the <a href="https://www.england.nhs.uk/privacy-policy/">NHS England privacy policy</a> and should be read alongside it.</p>
+
+        <h2 class="nhsuk-heading-l">What are cookies?</h2>
+        <p>Cookies are widely used to make websites and apps work, or work more efficiently, as well as to provide services and functionalities for users.</p>
+
+        <p>Cookies are not viruses or computer programs. They are very small so do not take up much space.</p>
+
+        <p>Visit <a href="http://www.aboutcookies.org/">www.aboutcookies.org</a> for more information about cookies.</p>
+
+        <h2 class="nhsuk-heading-l">How we use cookies</h2>
+        <p>We only use cookies to:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+            <li>make our tool work (necessary cookies)/li>
+            <li>measure how you use our website, such as which links you click on (analytics cookies), if you give us permission</li>
+        </ul>
+
+        <p>We will ask for your consent before putting optional cookies on your device. Optional cookies will only be placed on your device when you request relevant added or alternative functionality.</p>
+
+        <h2 class="nhsuk-heading-l">Strictly necessary cookies</h2>
+        <p>Necessary cookies enable core functionality such as page navigation and access to secure areas. The tool cannot function properly without these cookies.</p>
+
+        <details class="nhsuk-details">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+                List of necessary cookies that make our tool work
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+                <table class="nhsuk-table">
+                    <thead role="rowgroup" class="nhsuk-table__head">
+                      <tr role="row">
+                        <th role="columnheader" class="" scope="col">
+                            Name
+                        </th>
+                        <th role="columnheader" class="" scope="col">
+                            Purpose
+                        </th>
+                        <th role="columnheader" class="" scope="col">
+                            Expires
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="nhsuk-table__body">
+                      <tr role="row" class="nhsuk-table__row">
+                        <td class="nhsuk-table__cell">_state</td>
+                        <td class="nhsuk-table__cell">Remembers unique reference to your login attempt. Used as part of the OpenID Connect login flow to ensure security.</td>
+                        <td class="nhsuk-table__cell">5 minutes after login attempt starts.</td>
+                      </tr>
+                      <tr role="row" class="nhsuk-table__row">
+                        <td class="nhsuk-table__cell">Access_token</td>
+                        <td class="nhsuk-table__cell">Gives authenticated and authorised users access to the system. Also remembers information about the user needed by the web app.</td>
+                        <td class="nhsuk-table__cell">12 hours</td>
+                      </tr>
+                      <tr role="row" class="nhsuk-table__row">
+                        <td class="nhsuk-table__cell">Logged_in</td>
+                        <td class="nhsuk-table__cell">Allows web pages to display a banner showing the username and log out option when a user is logged in.</td>
+                        <td class="nhsuk-table__cell">12 hours</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </details>
+
+        <h2 class="nhsuk-heading-l">Cookies that measure website use (analytics cookies)</h2>
+        <p>These cookies store information about how you use our tool, such as the links you click on.</p>
+
+        <details class="nhsuk-details">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+                List of Adobe analyics cookes we use
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+                <table class="nhsuk-table">
+                    <thead role="rowgroup" class="nhsuk-table__head">
+                      <tr role="row">
+                        <th role="columnheader" class="" scope="col">
+                            Name
+                        </th>
+                        <th role="columnheader" class="" scope="col">
+                            Purpose
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="nhsuk-table__body">
+                      <tr role="row" class="nhsuk-table__row">
+                        <td class="nhsuk-table__cell">_ga</td>
+                        <td class="nhsuk-table__cell">Used by Google Analytics. Tells us how you use our health campaigns sites.</td>
+                      </tr>
+                      <tr role="row" class="nhsuk-table__row">
+                        <td class="nhsuk-table__cell">_gat</td>
+                        <td class="nhsuk-table__cell">Used by Google Analytics. Helps stop Google Analytics web servers crashing when collecting information on how you use our health campaigns sites.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </details>
+        
+        <p>We'll only use these cookies if you say it's OK. We'll use a cookie to save your settings.</p>
+
+        <div class="nhsuk-form-group">
+            
+            <fieldset class="nhsuk-fieldset">
+          
+              <div class="nhsuk-radios">
+          
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="cookies-yes" name="cookies-radio" type="radio" value="yes">
+                  <label class="nhsuk-label nhsuk-radios__label" for="cookies-yes">
+                    Use cookies to measure my website use
+                  </label>
+                </div>
+          
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="cookies-no" name="cookies-radio" type="radio" value="no">
+                  <label class="nhsuk-label nhsuk-radios__label" for="cookies-no">
+                    Do not use cookies to measure my website use
+                  </label>
+                </div>
+          
+              </div>
+            </fieldset>
+          
+        </div>
+
+        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+            Save my cookie settings
+        </button>
+        
+        <h2 class="nhsuk-heading-l">Changes to cookies</h2>
+        <p>Our cookie policy may change. The latest version of our cookie policy will be accessible through the tool. We will inform you through the tool if we make any material changes to our cookies policy. This will allow you to refresh your consent if you wish to continue using the tool.</p>
+
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

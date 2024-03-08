@@ -22,8 +22,22 @@
   #nhsuk-cookie-banner__link {
     margin: 0px 0px 24px 0px;
   }
+
+  #nhsuk-cookie-confirmation-banner {
+    background-color: $color_nhsuk-green;
+    color: $color_nhsuk-white;
+  }
   
   .accepted-cookies {
-    background-color: $color_nhsuk-grey-5;
-    padding: 24px 0px 0px 0px !important;
+    background-color: $color_nhsuk-green;
+    padding: 15px 0px 15px 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .cookies-success-link {
+    color: $color_nhsuk-white;
+  }
+
+  .cookies-success-link:visited {
+    color: $color_nhsuk-white;
   }

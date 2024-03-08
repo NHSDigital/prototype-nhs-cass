@@ -1,0 +1,70 @@
+{% extends 'custom-layouts/cis2-header.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+CaaS prototype
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+  <form action="scne-1/patient-lookup" method="PUSH">
+    <h1>Select your login method</h1>
+    <p>Your choice will be saved as your preferred login method for this browser. You may have to repeat this step if you clear your browser's cookies.</p>
+    <div class="nhsuk-form-group">
+
+      <fieldset class="nhsuk-fieldset">
+
+        <div class="nhsuk-radios">
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+              Smartcard
+            </label>
+          </div>
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+              Windows Hello for Business
+            </label>
+          </div>
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-3" name="example" type="radio" value="no">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-3">
+              Security key
+            </label>
+          </div>
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-4" name="example" type="radio" value="no">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-4">
+              Microsoft Authenticator
+            </label>
+          </div>
+
+        </div>
+      </fieldset>
+
+    </div>
+
+    <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+      Continue
+    </button>
+  </form>
+
+  </div> <!-- /. nhsuk-grid-column-full -->
+</div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
