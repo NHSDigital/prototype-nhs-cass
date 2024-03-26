@@ -101,7 +101,7 @@
     <div class="nhsuk-details__text">
       <h5>Session timeout warning modal</h5>
       <ul class="nhsuk-list">
-        <li><a id="modal_create" href="#" class="">Open session timeout modal</a></li>
+        <li><a id="modal_create" href="#" class="">15 minute session timeout modal</a></li>  
       </ul>
       <h5>NHS number error scenarios (front-end validation)</h5>
       <ul class="nhsuk-list">
@@ -154,14 +154,14 @@
   <div class="modal-overlay" id="modal_window" aria-hidden="true" role="dialog" aria-labelledby="modal_title">
     <div class="modal-content" id="modal_holder" role="document">
   
-        <div id="modal-form">
+        <div id="modal-form_15min">
   
-          <h2 class="nhsuk-modal__heading">Your session is due to expire in 5 minutes</h2>
+          <h2 class="nhsuk-modal__heading">You have been inactive for a while</h2>
   
-          <p class="nhsuk-modal__description">You have not done anything on the service for a while.</p>
-          <p class="nhsuk-modal__description nhsuk-u-margin-bottom-5">Your session will end in 5 minutes if you do not do anything on the page. You'll need to start your application again if that happens.</p>
+          <p class="nhsuk-modal__description">You will be logged out in <b>2 minutes</b>.</p>
+          <p class="nhsuk-modal__description nhsuk-u-margin-bottom-5">This is to protect patient security. Any unfinished work will be lost.</p>
   
-          <button class="nhsuk-button" type="submit">Resume registration</button>
+          <button class="nhsuk-button" type="submit">Stay logged in</button>
   
         </div>
   
@@ -172,7 +172,7 @@
   
         </div>
 
-      <a id="modal_close" href="#">Skip</a>
+      <a id="modal_close" href="../../../error-scenarios/back-end/enquirer/logged-out">Log out now</a>
   
     </div> <!-- end .modal-content -->
   </div> <!-- end .modal-overlay -->
