@@ -101,7 +101,9 @@
     <div class="nhsuk-details__text">
       <h5>Session timeout warning modal</h5>
       <ul class="nhsuk-list">
-        <li><a id="modal_create" href="#" class="">15 minute session timeout modal</a></li>  
+        <li>
+          <a id="modal_create_timeout" href="#" class="">15 minute session timeout modal</a>
+        </li>  
       </ul>
       <h5>NHS number error scenarios (front-end validation)</h5>
       <ul class="nhsuk-list">
@@ -151,10 +153,10 @@
 
   {% endif %}
 
-  <div class="modal-overlay" id="modal_window" aria-hidden="true" role="dialog" aria-labelledby="modal_title">
-    <div class="modal-content" id="modal_holder" role="document">
+  <div class="modal-overlay_timeout" id="modal_window_timeout" aria-hidden="true" role="dialog" aria-labelledby="modal_title">
+    <div class="modal-content_timeout" id="modal_holder_timeout" role="document">
   
-        <div id="modal-form_15min">
+        <div id="modal-form">
   
           <h2 class="nhsuk-modal__heading">You have been inactive for a while</h2>
   
@@ -164,15 +166,8 @@
           <button class="nhsuk-button" type="submit">Stay logged in</button>
   
         </div>
-  
-        <div id="modal-thanks" style="display:none;">
-  
-          <h2 class="nhsuk-heading-l">Thank you for your feedback</h2>
-          <p class="nhsuk-card__description">Your feedback was successfully sent.</p>
-  
-        </div>
 
-      <a id="modal_close" href="../../../error-scenarios/back-end/enquirer/logged-out">Log out now</a>
+      <a id="modal_close_timeout" href="../../../error-scenarios/back-end/enquirer/logged-out">Log out now</a>
   
     </div> <!-- end .modal-content -->
   </div> <!-- end .modal-overlay -->
