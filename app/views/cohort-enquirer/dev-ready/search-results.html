@@ -1,0 +1,195 @@
+{% extends 'custom-layouts/enquirer/header-logged-in.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Search results - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="../scne-3/patient-lookup" method="POST">
+
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <h1 class="nhsuk-heading-xl">Search results</h1>
+
+        <h2 class="nhsuk-heading-l">Patient and cohort details</h2>
+
+        <p>
+          <strong>NHS number:</strong>
+          {% if data['nhsNumber'] %}
+            {{ data['nhsNumber'] }}
+          {% else %}
+            {{ data['nhsNumber'] or '450 557 7104' }}
+          {% endif %}
+        </p>
+
+        <p>
+          <strong>Date of birth:</strong>
+          {% if data['day'] %}
+            {{ data['day'] }} February {{ data['year'] }}
+          {% else %}
+            {{ '14 February 1992' }}
+          {% endif %}
+        </p>
+
+        <p><strong>Cohort:</strong> COVID-19 autumn booster vaccinations 2022 to 2023</p>
+
+        <p><strong>Status:</strong> <strong class="nhsuk-tag nhsuk-tag--green">
+          Cohorted
+        </strong></p>
+
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <p>It is important to verify that the patient's NHS number and date of birth match the details you have entered.</p>
+          <p>This will prevent any confidential or sensitive information from being sent incorrectly.</p>
+        </div>
+        
+        <h2>Last cohort run information</h2>
+        <p>The table below shows the reason why a patient is part of a cohort. The information is based on the last time the cohort was run.</p>
+      
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+      <div class="nhsuk-grid-column-full">
+
+        <table role="table" class="nhsuk-table-responsive">
+            <thead role="rowgroup" class="nhsuk-table__head">
+              <tr role="row">
+                <th role="columnheader" class="" scope="col">
+                  Cohort run date
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Condition group
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Dataset and code
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Added to patient medical record
+                </th>
+              </tr>
+            </thead>
+            <tbody class="nhsuk-table__body">
+
+              <!--
+                Row 1
+              -->
+
+              <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Cohort run date
+                  </span>
+                    1 March 2024
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Condition group
+                  </span>
+                    covid 16+ chronic neurological disease
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Dataset and code
+                  </span>
+                    GP SNOMED 1003368009
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Added to patient medical record
+                  </span>
+                    10 October 2023
+                </td>
+              </tr>
+
+              <!--
+                Row 2
+              -->
+
+              <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Cohort run date
+                  </span>
+                    1 March 2024
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Condition group
+                  </span>
+                    covid 16+ chronic neurological disease
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Dataset and code
+                  </span>
+                    GP SNOMED 101421000119107
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Added to patient medical record
+                  </span>
+                    07 August 2023
+                </td>
+              </tr>
+
+              <!--
+                Row 3
+              -->
+
+              <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Cohort run date
+                  </span>
+                    1 March 2024
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Condition group
+                  </span>
+                    covid 16+ chronic neurological disease
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Dataset and code
+                  </span>
+                    GP SNOMED 1184621000
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">
+                    Added to patient medical record
+                  </span>
+                    07 August 2023
+                </td>
+              </tr>
+
+            </tbody>
+        </table>
+
+        <div class="nhsuk-u-padding-bottom-9"></div>
+
+      </div> <!-- /. nhsuk-grid-column-full -->
+
+      <div class="nhsuk-grid-column-two-thirds">
+        <p>The search results are based on patient information processed on or after 16 April 2024.</p>
+        <p>If you need information from before 16 April 2024, create a request through <a href="https://nhsdigitallive.service-now.com/nhs_digital">ServiceNow</a>.</p>
+
+        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+          Start new search
+        </button>
+      </div> <!-- /. govuk-grid-column-two-thirds -->
+
+      </div> <!-- /. nhsuk-grid-column-full -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
