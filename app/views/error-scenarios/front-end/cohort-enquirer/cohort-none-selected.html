@@ -1,0 +1,136 @@
+{% extends 'custom-layouts/enquirer/header-logged-in.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Enter patient details - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="search-results" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
+            <h2 class="nhsuk-error-summary__title" id="error-summary-title">
+              There is a problem
+            </h2>
+            <div class="nhsuk-error-summary__body">
+              <ul class="nhsuk-list nhsuk-error-summary__list" role="list">
+                <li>
+                  <a href="#cohort-select">You need to select a cohort</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+        <h1 class="nhsuk-heading-xl">Enter patient details</h1>
+
+        <!-- Cohort select -->
+
+        <div class="nhsuk-form-group">
+
+            <div class="nhsuk-form-group nhsuk-form-group--error">
+
+                <fieldset class="nhsuk-fieldset" aria-describedby="select-a-cohort">
+                  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                    <h2 class="nhsuk-fieldset__heading">
+                      Select a cohort
+                    </h2>
+                  </legend>
+              
+                  <span class="nhsuk-error-message" id="select-a-cohort">
+                    <span class="nhsuk-u-visually-hidden">Error:</span> You need to select a cohort
+                  </span>
+              
+                  <div class="nhsuk-radios">
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="cohort-select" name="cohort-select-error" type="radio" value="covid19-23-24">
+                      <label class="nhsuk-label nhsuk-radios__label" for="cohort-select">
+                        COVID-19 autumn booster vaccinations 2023 to 2024
+                      </label>
+                    </div>
+              
+                  </div>
+                </fieldset>
+              
+              </div>
+        
+        </div>
+
+        <!--
+            NHS Number
+        -->
+
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="nhsNumber">
+              <h2 class="nhsuk-heading-l" style="margin-bottom: 15px;">NHS number</h2>
+          </label>
+          <div class="nhsuk-hint" id="nhs-number-hint-text">
+            This is a 10 digit number. For example, 485 777 3456.
+          </div>
+          <input class="nhsuk-input nhsuk-input--width-10" id="nhsNumber" name="nhsNumber" type="text" aria-describedby="NHS-Number" inputmode="numeric" value="{{ data['nhsNumber'] }}">
+        </div>
+
+      <!--
+        Date of Birth
+      -->
+
+      <div class="nhsuk-form-group">
+        <fieldset class="nhsuk-fieldset" aria-describedby="date-hint" role="group">
+          <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+            <h2 class="nhsuk-fieldset__heading">
+              Date of birth
+            </h2>
+          </legend>
+          <div class="nhsuk-hint" id="date-hint">
+            For example, 15 11 1984
+          </div>
+      
+          <div class="nhsuk-date-input" id="example">
+            <div class="nhsuk-date-input__item">
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label nhsuk-date-input__label" for="day">
+                  Day
+                </label>
+                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="day" name="day" type="text" pattern="[0-9]*" inputmode="numeric" value="{{ data['day'] }}">
+              </div>
+            </div>
+            <div class="nhsuk-date-input__item">
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label nhsuk-date-input__label" for="month">
+                  Month
+                </label>
+                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="month" name="month" type="text" pattern="[0-9]*" inputmode="numeric" value="{{ data['month'] }}">
+              </div>
+            </div>
+            <div class="nhsuk-date-input__item">
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label nhsuk-date-input__label" for="year">
+                  Year
+                </label>
+                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="year" name="year" type="text" pattern="[0-9]*" inputmode="numeric" value="{{ data['year'] }}">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      
+      </div>
+
+      <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+        Find patient
+      </button>
+
+      </form> <!-- /. form -->
+    </div> <!-- /. nhsuk-grid-column-two-thirds -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

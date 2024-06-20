@@ -1,0 +1,47 @@
+{% extends 'custom-layouts/enquirer/enquirer-cookie-banner.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Find out why a patient is in a cohort - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="cis2-login" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <h1 class="nhsuk-heading-xl">Find out why a patient is in a cohort</h1>
+        <p class="nhsuk-body">This tool explains why a patient is included in a cohort. It shows the conditions that made them eligible and the data sets and code lists used.</p>
+        
+        <h2>Which patient details you need</h2>
+        <p>To search for a patient's cohort information, you will need both the patient's NHS number and date of birth.</p>
+
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <p>This tool provides only the latest patient cohort information. For older information, create a request through <a href="https://nhsdigitallive.service-now.com/nhs_digital"> ServiceNow</a>.</p>
+        </div>
+
+        <h2>Before you start</h2>
+        <p>To access the tool, you must log in through the Care Identity Service (CIS2).</p>
+
+        <p>You will need to make sure JavaScript is enabled in your browser.</p>
+
+        <p>By continuing you confirm that you agree to our <a href="../legal-pages/aup">Acceptable Use Policy</a>.</p>
+
+        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+          Start now
+        </button>
+
+      </div> <!-- /. nhsuk-grid-column-two-thirds -->
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

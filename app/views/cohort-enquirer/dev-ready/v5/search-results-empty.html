@@ -1,0 +1,57 @@
+{% extends 'custom-layouts/enquirer/header-logged-in.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Search results - NHS England
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block outerContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <form action="patient-lookup" method="POST">
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Search results</h1>
+        <h2>Patient details</h2>
+        <p>
+          <strong>NHS number:</strong>
+          {% if data['nhsNumber'] %}
+            {{ data['nhsNumber'] }}
+          {% else %}
+            {{ data['nhsNumber'] or '485 777 3456' }}
+          {% endif %}
+        </p>
+        <p>
+          <strong>Date of birth:</strong>
+          {% if data['day'] %}
+            {{ data['day'] }} November {{ data['year'] }}
+          {% else %}
+            {{ '15 November 1984' }}
+          {% endif %}
+        </p>
+
+        <p class="nhsuk-body nhsuk-u-font-weight-bold">No cohort is associated with this patient’s details.</p>
+
+        <p>Patients are not included in a digital cohort if:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>they do not have a condition that makes them eligible</li>
+          <li>their medical information is not recorded and stored in a digital health and care record</li>
+        </ul>
+
+        <p>This tool provides only the latest patient cohort information. For older information, create a request through <a href="https://nhsdigitallive.service-now.com/nhs_digital">ServiceNow</a>.</p>
+
+        <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+          Start new search
+        </button>
+
+      </div>
+    </form> <!-- /. form -->
+  </div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
