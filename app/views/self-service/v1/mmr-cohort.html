@@ -1,0 +1,276 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'custom-layouts/caas-header.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %} 
+
+Cohorting as a Service
+
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %} {% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %} {% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+
+  <form action="edit-cohort" method="POST">
+
+    <div class="nhsuk-grid-column-full">
+
+      <h1>Measles, Mumps and Rubella (MMR) vaccination specification</h1>
+  
+    </div> <!-- /. nhsuk-grid-column-full -->
+  
+    <div class="nhsuk-grid-column-two-thirds">
+  
+      <div class="inline-text-container">
+        <p class="nhsuk-u-font-weight-bold">Version</p>
+        <p class="inline-text-block-2">0.1</p>
+      </div>
+  
+      <div class="inline-text-container">
+        <p class="nhsuk-u-font-weight-bold">Date created</p>
+        <p class="inline-text-block-2">11 September 2023</p>
+      </div>
+  
+      <div class="inline-text-container">
+        <p class="nhsuk-u-font-weight-bold">Programme</p>
+        <p class="inline-text-block-2">Vaccinations</p>
+      </div>
+  
+      <div class="inline-text-container">
+        <p class="nhsuk-u-font-weight-bold">Author</p>
+        <p class="inline-text-block-2">Sam Wise - Clinical Information Manager</p>
+      </div>
+  
+      <div class="inline-text-container">
+        <p class="nhsuk-u-font-weight-bold">Status</p>
+        <p class="inline-text-block-2"><strong class="nhsuk-tag">Published</strong></p>
+      </div>
+  
+      <div class="nhsuk-u-padding-bottom-2"></div>
+  
+      <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+        Edit cohort
+      </button>
+  
+      <div class="nhsuk-u-padding-bottom-3"></div>
+  
+    </div> <!-- /. nhsuk-grid-column-two-thirds -->
+  
+    <div class="nhsuk-grid-column-full">
+  
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Cohort background
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>The Public Health Commissioning Office (PHCO) have commissioned the NHS England Vaccine Delivery Service (VDS) to support an urgent national MMR catch-up campaign over the course of the next 12 months, partly in response to the current measles outbreak in London. All individuals of the eligible age range should be encouraged to complete their MMR vaccination course if they have not done so already.</p>
+          <p>The NHS England Vaccination and Screening Directorate, via VDS, have commissioned NHS England’s Cohorting as a Service (CaaS) to identify patients in specific age-based categories as outlined in the Green Book chapters 21, 23 and 28.</p>
+          <p>CaaS will output a list of individuals that are eligible to be in the cohorts. Patient identifiable data will be flowed to the Data Processing Service (DPS) by CaaS. VDS may flow data which originates from these cohorts downstream as per separate DPIA/DSA. This data is to be used to drive invitation, and for delivering and monitoring the MMR vaccination programme, both the general MMR programme (running continuously) and with a specific catch-up campaign planned to run from 23 October 2023 to 31 August 2024.</p>
+        </div>
+      </details>
+
+      <h2>Datasets used</h2>
+
+      <table role="table" class="nhsuk-table-responsive">
+
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col">
+                Data source
+            </th>
+            <th role="columnheader" class="" scope="col">
+                Description
+            </th>
+            <th role="columnheader" class="" scope="col">
+                Refresh cycle
+            </th>
+            <th role="columnheader" class="" scope="col">
+                Data lag
+            </th>
+          </tr>
+        </thead>
+
+        <tbody class="nhsuk-table__body">
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Dataset source </span>Personal Demographics Service (PDS)
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Description </span>A national database of NHS patient details
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Refresh cycle </span>Daily
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Data lag </span>Up to 24 hours
+            </td>
+          </tr>
+          
+        </tbody>
+
+      </table> <!-- /. Reuable cohort table -->
+
+      <div class="nhsuk-u-padding-bottom-9"></div>
+
+      <h2>Business rules</h2>
+
+      <table role="table" class="nhsuk-table-responsive">
+
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col">
+                Rule
+            </th>
+            <th role="columnheader" class="" scope="col">
+                Include
+            </th>
+            <th role="columnheader" class="" scope="col">
+                Do not include
+            </th>
+            <th role="columnheader" class="" scope="col">
+                Data used
+            </th>
+          </tr>
+        </thead>
+
+        <tbody class="nhsuk-table__body">
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Rule </span>Age-based rule 1
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Include </span>Include individuals in England aged 6 and over on 31 August 2023.
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Do not include </span>Do not include individuals aged 11 and over on 31 August 2023.
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Data used </span>PDS
+            </td>
+          </tr>
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Rule </span>Age-based rule 2
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Include </span>Include individuals in England aged 11 and over on 31 August 2023.
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Do not include </span>Do not include individuals aged 16 and over on 31 August 2023.
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Data used </span>PDS
+            </td>
+          </tr>
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Rule </span>Age-based rule 3
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Include </span>Include individuals in England aged 16 and over on 31 August 2023.
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Do not include </span>Do not include individuals aged 19 and over on 31 August 2023.
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Data used </span>PDS
+            </td>
+          </tr>
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Rule </span>Age-based rule 4
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Include </span>Include individuals aged 19 and over on 31 August 2023.
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Do not include </span>Do not include individuals aged 26 and over on 31 March 2024.
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Data used </span>PDS
+            </td>
+          </tr>
+          
+        </tbody>
+      </table> <!-- /. Reuable cohort table -->
+
+      <div class="nhsuk-u-padding-bottom-9"></div>
+  
+    </div> <!-- /. nhsuk-grid-column-full -->
+
+    <div class="nhsuk-grid-column-two-thirds">
+      
+      <h2>Clinical safety risk assessment</h2>
+
+      <dl class="nhsuk-summary-list">
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Severity
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            Major
+          </dd>
+        </div>
+      
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Likelihood
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            Very low
+          </dd>
+        </div>
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Risk score
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <strong class="nhsuk-tag nhsuk-tag--yellow">
+              2
+            </strong>
+          </dd>
+        </div>
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Justification
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            Although it’s possible to miss patients from these groups due to upstream data issues. It is highly unlikely to affect any individuals adversely.
+          </dd>
+        </div>
+      
+      </dl>
+
+    </div> <!-- /. nhsuk-grid-column-two-thirds -->
+  </form> <!-- /. form -->
+</div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}

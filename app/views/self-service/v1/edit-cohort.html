@@ -1,0 +1,292 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'custom-layouts/caas-header.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %} 
+
+Cohorting as a Service
+
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %} {% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %} {% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+
+  <form action="" method="POST">
+  
+    <div class="nhsuk-grid-column-two-thirds">
+
+        <h1>Edit MMR</h1>
+
+        <p>Review the cohort and create new rules.</p>
+
+        <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p>You can only edit the details you have access to change.</p>
+        </div>
+
+        <h2>Cohort information</h2>
+
+        <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="cohort-name">
+              Cohort name
+            </label>
+            <input class="nhsuk-input" id="cohort-name" name="cohort-name" type="text">
+        </div>
+
+        <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="cohort-description">
+              Description
+            </label>
+            <textarea class="nhsuk-textarea" id="cohort-description" name="cohort-description" rows="5" aria-describedby="cohort-description-hint"></textarea>
+        </div>
+
+        <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="cohort-author">
+              Author
+            </label>
+            <input class="nhsuk-input" id="cohort-author" name="cohort-author" type="text">
+        </div>
+
+        <div class="inline-text-container">
+            <p class="nhsuk-u-font-weight-bold">Date created</p>
+            <p class="inline-text-block-2"><script> document.write(new Date().toLocaleDateString()); </script></p>
+        </div>
+
+        <div class="inline-text-container">
+            <p class="nhsuk-u-font-weight-bold">Version</p>
+            <p class="inline-text-block-2">0.2</p>
+        </div>
+
+        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+        <h2>Age rules</h2>
+
+        <table role="table" class="nhsuk-table-responsive">
+
+            <thead role="rowgroup" class="nhsuk-table__head">
+              <tr role="row">
+                <th role="columnheader" class="" scope="col">
+                  Label
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Rule
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Action
+                </th>
+              </tr>
+            </thead>
+
+            <tbody class="nhsuk-table__body">
+
+              <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading" aria-hidden="true">Label </span>No label created
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading" aria-hidden="true">Rule </span>No rule created
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading" aria-hidden="true">Action </span>
+                  <a href="#label">Create rule</a>
+                </td>
+              </tr>
+
+            </tbody>
+        </table>
+
+        <div class="nhsuk-u-padding-bottom-5"></div>
+
+        <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="label">
+              Label
+            </label>
+            <input class="nhsuk-input" id="label" name="label" type="text">
+        </div>
+
+        <div class="nhsuk-form-group">
+
+            <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+          
+              <div class="nhsuk-radios nhsuk-radios--conditional">
+          
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="age-rule-1" name="age-rule" type="radio" value="include" aria-controls="conditional-age-rule-1" aria-expanded="false">
+                  <label class="nhsuk-label nhsuk-radios__label" for="age-rule-1">
+                    Include
+                  </label>
+                </div>
+          
+                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-rule-1">
+          
+                  <div class="nhsuk-form-group">
+
+                    <p class="nhsuk-u-font-weight-bold">Include individuals aged</p>
+
+                    <label class="nhsuk-label" for="example">
+                        Weight in kilograms
+                      </label>
+         
+                        <input class="nhsuk-input nhsuk-input--width-3" id="example" name="example" type="text">
+                        <div class="nhsuk-input__suffix" aria-hidden="true">years</div>
+                    
+         
+
+                    <label class="nhsuk-label" for="email">
+                      Email address
+                    </label>
+                    <input class="nhsuk-input nhsuk-u-width-two-thirds" id="email" name="email" type="text">
+                  </div>
+          
+                </div>
+          
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="age-rule-2" name="age-rule" type="radio" value="phone" aria-controls="conditional-age-rule-2" aria-expanded="false">
+                  <label class="nhsuk-label nhsuk-radios__label" for="age-rule-2">
+                    Do not include
+                  </label>
+                </div>
+          
+                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-rule-2">
+          
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="phone">
+                      Phone number
+                    </label>
+                    <input class="nhsuk-input nhsuk-u-width-two-thirds" id="phone" name="phone" type="text">
+                  </div>
+          
+                </div>
+          
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="age-rule-3" name="age-rule" type="radio" value="text" aria-controls="conditional-age-rule-3" aria-expanded="false">
+                  <label class="nhsuk-label nhsuk-radios__label" for="age-rule-3">
+                    Age on
+                  </label>
+                </div>
+          
+                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-rule-3">
+          
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="mobile">
+                      Mobile phone number
+                    </label>
+                    <input class="nhsuk-input nhsuk-u-width-two-thirds" id="mobile" name="mobile" type="text">
+                  </div>
+          
+                </div>
+
+                <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="age-rule-4" name="age-rule" type="radio" value="text" aria-controls="conditional-age-rule-4" aria-expanded="false">
+                    <label class="nhsuk-label nhsuk-radios__label" for="age-rule-4">
+                      Age between
+                    </label>
+                  </div>
+            
+                  <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-rule-4">
+            
+                    <div class="nhsuk-form-group">
+                      <label class="nhsuk-label" for="mobile">
+                        Mobile phone number
+                      </label>
+                      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="mobile" name="mobile" type="text">
+                    </div>
+            
+                </div>
+
+                <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="age-rule-5" name="age-rule" type="radio" value="text" aria-controls="conditional-age-rule-5" aria-expanded="false">
+                    <label class="nhsuk-label nhsuk-radios__label" for="age-rule-5">
+                      Age over and under
+                    </label>
+                  </div>
+            
+                  <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-rule-5">
+            
+                    <div class="nhsuk-form-group">
+                      <label class="nhsuk-label" for="mobile">
+                        Mobile phone number
+                      </label>
+                      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="mobile" name="mobile" type="text">
+                    </div>
+            
+                </div>
+          
+              </div>
+            </fieldset>
+          
+        </div>
+
+        <p><a href="#!">Save rule</a></p>
+
+        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+      
+        <h2>Clinical safety risk assessment</h2>
+
+        <dl class="nhsuk-summary-list">
+
+            <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+                Severity
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+                Major
+            </dd>
+            </div>
+        
+            <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+                Likelihood
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+                Very low
+            </dd>
+            </div>
+
+            <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+                Risk score
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+                <strong class="nhsuk-tag nhsuk-tag--yellow">
+                2
+                </strong>
+            </dd>
+            </div>
+
+            <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+                Justification
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+                Although it’s possible to miss patients from these groups due to upstream data issues. It is highly unlikely to affect any individuals adversely.
+            </dd>
+            </div>
+        
+        </dl>
+
+    </div> <!-- /. nhsuk-grid-column-two-thirds -->
+  </form> <!-- /. form -->
+</div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
