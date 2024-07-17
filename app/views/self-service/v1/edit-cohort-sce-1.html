@@ -35,6 +35,10 @@ Cohorting as a Service
 
         <h1>Edit MMR</h1>
 
+        <p>{{ data['first-name'] }}</p>
+
+        <p>{{ data['rule-label'] }}</p>
+
         <p>Review the cohort and create new rules.</p>
 
         <div class="nhsuk-inset-text">
@@ -48,21 +52,21 @@ Cohorting as a Service
             <label class="nhsuk-label" for="cohort-name">
             Cohort name
             </label>
-            <input class="nhsuk-input" id="cohort-name" name="cohort-name" type="text">
+            <input class="nhsuk-input" id="cohort-name" name="cohort-name" type="text" value="{{ data[cohort-name'] }}">
         </div>
 
         <div class="nhsuk-form-group">
             <label class="nhsuk-label" for="cohort-author">
             Author
             </label>
-            <input class="nhsuk-input" id="cohort-author" name="cohort-author" type="text">
+            <input class="nhsuk-input" id="cohort-author" name="cohort-author" type="text" value="{{ data['cohort-author'] }}">
         </div>
 
         <div class="nhsuk-form-group">
             <label class="nhsuk-label" for="cohort-description">
             Description
             </label>
-            <textarea class="nhsuk-textarea" id="cohort-description" name="cohort-description" rows="5" aria-describedby="cohort-description-hint"></textarea>
+            <textarea class="nhsuk-textarea" id="cohort-description" name="cohort-description" rows="5" aria-describedby="cohort-description-hint" value="{{ data['cohort-description'] }}"></textarea>
         </div>
 
         <div class="nhsuk-u-padding-bottom-4"></div>
@@ -99,18 +103,17 @@ Cohorting as a Service
 
             <tbody class="nhsuk-table__body">
 
-            <tr role="row" class="nhsuk-table__row">
-                <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Label </span>No label created
-                </td>
-                <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Rule </span>No rule created
-                </td>
-                <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Action </span>
-                <a href="#label">Create rule</a>
-                </td>
-            </tr>
+                <tr role="row" class="nhsuk-table__row">
+                    <td role="cell" class="nhsuk-table__cell">
+                    <span class="nhsuk-table-responsive__heading" aria-hidden="true">Label </span><p>{{ data['rule-label'] }}</p>
+                    </td>
+                    <td role="cell" class="nhsuk-table__cell">
+                    <span class="nhsuk-table-responsive__heading" aria-hidden="true">Rule </span>Exclude individuals who are {{ data['exclude-age'] }} years old on or after {{ data['exclude-day'] }} {{ data['exclude-month'] }} {{ data['exclude-year'] }}
+                    </td>
+                    <td role="cell" class="nhsuk-table__cell">
+                    <span class="nhsuk-table-responsive__heading" aria-hidden="true">Action </span><a href="#label">Delete</a>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -505,5 +508,49 @@ Cohorting as a Service
     </div> <!-- /. nhsuk-grid-column-two-thirds -->
     
 </div> <!-- /. nhsuk-grid-row -->
+
+<script>
+
+// ORIGIN PAGE
+// ===========
+
+// Save Y Offset Position to localStorage
+const recordVerticalOffset = () => {
+
+localStorage.setItem('pageVerticalPosition', window.scrollY);
+}
+
+// Only save window position after scrolling stops
+const throttleScroll = (delay) => {
+
+let time = Date.now();
+
+const checkScroll = setInterval(() => {
+
+  if (Date.now() > (time + delay)) {
+
+    clearInterval(checkScroll);
+    return recordVerticalOffset();
+  }
+}, 300);
+}
+
+// Scroll Event Listener
+window.addEventListener('scroll', throttleScroll(1000));
+
+
+// DESTINATION PAGE
+// ================
+
+const repositionPage = () => {
+
+let pageVerticalPosition = localStorage.getItem('pageVerticalPosition') || 0;
+
+window.scrollTo(0, pageVerticalPosition);
+}
+
+window.addEventListener('load', repositionPage);
+    
+</script>
 
 {% endblock %}
