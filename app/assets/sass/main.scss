@@ -26,3 +26,22 @@
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
 ///
+
+.unstyle-button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font-size: 18px;
+    color: #1d70b8;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .unstyle-button:hover {
+    color: #003078;
+  }
+
+  .highlight {
+    background-color: #fff2d3;
+    border-bottom: 3px solid #ffbf47;
+    width: fit-content;
+  }

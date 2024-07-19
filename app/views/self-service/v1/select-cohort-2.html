@@ -58,7 +58,7 @@ Cohorting as a Service
                 Cohort name
             </th>
             <th role="columnheader" class="" scope="col">
-              Purpose
+                Purpose
             </th>
             <th role="columnheader" class="" scope="col">
                 Status
@@ -79,12 +79,12 @@ Cohorting as a Service
                 <span class="nhsuk-table-responsive__heading" aria-hidden="true">Cohort name </span>Measles, Mumps and Rubella (MMR)
             </td>
             <td role="cell" class="nhsuk-table__cell">
-              <span class="nhsuk-table-responsive__heading" aria-hidden="true">Purpose </span>The Public Health Commissioning Office (PHCO) have commissioned the NHS England Vaccine Delivery Service (VDS) to support an urgent national MMR catch-up campaign over the course of the next 12 months, partly in response to the current measles outbreak in London.
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Purpose </span>The Public Health Commissioning Office (PHCO) have commissioned the NHS England Vaccine Delivery Service (VDS) to support an urgent national MMR catch-up campaign over the course of the next 12 months, partly in response to the current measles outbreak in London.
             </td>
             <td role="cell" class="nhsuk-table__cell">
                 <span class="nhsuk-table-responsive__heading" aria-hidden="true">Status </span>
                 <strong class="nhsuk-tag nhsuk-tag--blue">
-                  Published
+                    Published
                 </strong>
             </td>
             <td role="cell" class="nhsuk-table__cell">
@@ -106,7 +106,55 @@ Cohorting as a Service
       <!-- Edited Cohorts -->
 
       <h2>Cohorts you have edited</h2>
-      <p>No cohorts have been edited.</p>
+
+      <table role="table" class="nhsuk-table-responsive">
+
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col">
+                Cohort name
+            </th>
+            <th role="columnheader" class="" scope="col">
+                Purpose
+            </th>
+            <th role="columnheader" class="" scope="col">
+                Status
+            </th>
+            <th role="columnheader" class="" scope="col">
+                Date created
+            </th>
+            <th role="columnheader" class="" scope="col">
+                Action
+            </th>
+          </tr>
+        </thead>
+
+        <tbody class="nhsuk-table__body">
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Cohort name </span>{{ data['cohort-name'] }}
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Purpose </span>{{ data['cohort-description'] }}
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Status </span>
+                <strong class="nhsuk-tag nhsuk-tag--yellow">Ready for review</strong>
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Date created </span> <script>document.write(new Date().toLocaleDateString());</script>
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Action </span>
+                <a href="preview-2">View</a>
+            </td>
+          </tr>
+          
+        </tbody>
+
+      </table> <!-- /. Reuable cohort table -->
+      
 
   </div> <!-- /. nhsuk-grid-column-full -->
 </div> <!-- /. nhsuk-grid-row -->

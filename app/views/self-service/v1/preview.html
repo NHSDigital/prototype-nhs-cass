@@ -1,0 +1,455 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'custom-layouts/caas-header.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %} 
+
+Cohorting as a Service
+
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %} {% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %} {% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    <form action="cohort-submitted" method="POST">
+
+        <div class="nhsuk-grid-column-two-thirds">
+          <h1>Preview MMR before submitting</h1>
+          <p>Check your cohort against the original to make sure the details you’ve entered are correct.</p>
+          <p>The highlighted text shows the details you have changed.</p>
+        </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+        <!--
+          ORIGINAL COHORT
+        -->
+
+        <div class="nhsuk-grid-column-one-half">
+
+          <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+            <div class="nhsuk-card--care__heading-container">
+              <h2 class="nhsuk-card--care__heading">
+                <span role="text"><span class="nhsuk-u-visually-hidden">Original cohort </span>Original cohort</span>
+              </h2>
+              <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+            </div>
+          
+            <div class="nhsuk-card__content">
+
+              <!-- Cohort details -->
+
+              <h3>Cohort details</h3>
+
+              <p class="nhsuk-u-font-weight-bold">Cohort name</p>
+              <p>Measles, Mumps and Rubella (MMR) vaccination specification</p>
+
+              <p class="nhsuk-u-font-weight-bold">Background</p>
+
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Cohort background
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                  <p>The Public Health Commissioning Office (PHCO) have commissioned the NHS England Vaccine Delivery Service (VDS) to support an urgent national MMR catch-up campaign over the course of the next 12 months, partly in response to the current measles outbreak in London. All individuals of the eligible age range should be encouraged to complete their MMR vaccination course if they have not done so already.</p>
+                  <p>The NHS England Vaccination and Screening Directorate, via VDS, have commissioned NHS England’s Cohorting as a Service (CaaS) to identify patients in specific age-based categories as outlined in the Green Book chapters 21, 23 and 28.</p>
+                  <p>CaaS will output a list of individuals that are eligible to be in the cohorts. Patient identifiable data will be flowed to the Data Processing Service (DPS) by CaaS. VDS may flow data which originates from these cohorts downstream as per separate DPIA/DSA. This data is to be used to drive invitation, and for delivering and monitoring the MMR vaccination programme, both the general MMR programme (running continuously) and with a specific catch-up campaign planned to run from 23 October 2023 to 31 August 2024.</p>
+                </div>
+              </details>
+
+              <p class="nhsuk-u-font-weight-bold">Version</p>
+              <p>0.1</p>
+
+              <p class="nhsuk-u-font-weight-bold">Programme</p>
+              <p>Vaccinations</p>
+
+              <p class="nhsuk-u-font-weight-bold">Date created</p>
+              <p>11 September 2023</p>
+
+              <p class="nhsuk-u-font-weight-bold">Author</p>
+              <p>Sam wise - Clinical Informatics Manager</p>
+
+              <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+              <h3>Data sources</h3>
+
+              <p class="nhsuk-u-font-weight-bold">Name</p>
+              <p>Personal Demographics Service (PDS)</p>
+
+              <p class="nhsuk-u-font-weight-bold">Description</p>
+              <p>A national database of NHS patient details</p>
+
+              <p class="nhsuk-u-font-weight-bold">Refresh cycle</p>
+              <p>Daily</p>
+
+              <p class="nhsuk-u-font-weight-bold">Data lag</p>
+              <p>Up to 24 hours</p>
+
+              <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+              <h3>Business rules</h3>
+
+              <!-- Rule 1 -->
+
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Age based rule 1
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                  <!-- Label -->
+
+                  <p class="nhsuk-u-font-weight-bold">Label</p>
+                  <p>Age based rule 1</p>
+
+                  <!-- Rule -->
+
+                  <p class="nhsuk-u-font-weight-bold">Rule</p>
+                  <p>Include individuals in England aged 6 and over on 31 August 2023.</p>
+                  <p>Do not include individuals aged 11 and over on 31 August 2023.</p>
+
+                  <!-- Data source -->
+                  <p class="nhsuk-u-font-weight-bold">Data source</p>
+                  <p>PDS</p>
+
+                </div>
+              </details>
+
+              <!-- Rule 2 -->
+
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Age based rule 2
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                  <!-- Label -->
+
+                  <p class="nhsuk-u-font-weight-bold">Label</p>
+                  <p>Age based rule 2</p>
+
+                  <!-- Rule -->
+
+                  <p class="nhsuk-u-font-weight-bold">Rule</p>
+                  <p>Include individuals in England aged 11 and over on 31 August 2023.</p>
+                  <p>Do not include individuals aged 16 and over on 31 August 2023.</p>
+
+                  <!-- Data source -->
+                  <p class="nhsuk-u-font-weight-bold">Data source</p>
+                  <p>PDS</p>
+
+                </div>
+              </details>
+
+              <!-- Rule 3 -->
+
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Age based rule 3
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                  <!-- Label -->
+
+                  <p class="nhsuk-u-font-weight-bold">Label</p>
+                  <p>Age based rule 3</p>
+
+                  <!-- Rule -->
+
+                  <p class="nhsuk-u-font-weight-bold">Rule</p>
+                  <p>Include individuals in England aged 16 and over on 31 August 2023.</p>
+                  <p>Do not include individuals aged 19 and over on 31 August 2023.</p>
+
+                  <!-- Data source -->
+                  <p class="nhsuk-u-font-weight-bold">Data source</p>
+                  <p>PDS</p>
+
+                </div>
+              </details>
+
+              <!-- Rule 4 -->
+
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Age based rule 4
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                  <!-- Label -->
+
+                  <p class="nhsuk-u-font-weight-bold">Label</p>
+                  <p>Age based rule 4</p>
+
+                  <!-- Rule -->
+
+                  <p class="nhsuk-u-font-weight-bold">Rule</p>
+                  <p>Include individuals aged 19 and over on 31 August 2023.</p>
+                  <p>Do not include individuals aged 26 and over on 31 March 2024.</p>
+
+                  <!-- Data source -->
+                  <p class="nhsuk-u-font-weight-bold">Data source</p>
+                  <p>PDS</p>
+
+                </div>
+              </details>
+
+              <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+              <h3>Clinical safety risk assessment</h3>
+
+              <p class="nhsuk-u-font-weight-bold">Severity</p>
+              <p>Major</p>
+
+              <p class="nhsuk-u-font-weight-bold">Likelihood</p>
+              <p>Very low</p>
+
+              <p class="nhsuk-u-font-weight-bold">Risk score</p>
+              <strong class="nhsuk-tag nhsuk-tag--yellow">2</strong>
+
+              <div class="nhsuk-u-padding-bottom-4"></div>
+
+              <p class="nhsuk-u-font-weight-bold">Justification</p>
+              <p>Although it’s possible to miss patients from these groups due to upstream data issues. It is highly unlikely to affect any individuals adversely.</p>
+
+              <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+              <p class="nhsuk-u-font-weight-bold">Number of people in cohort</p>
+              <p>360,964</p>
+
+            </div>
+          </div>
+
+        </div> <!-- /. nhsuk-grid-column-one-half -->
+
+        <!--
+          YOUR COHORT
+        -->
+
+        <div class="nhsuk-grid-column-one-half">
+
+          <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+            <div class="nhsuk-card--care__heading-container">
+              <h2 class="nhsuk-card--care__heading">
+                <span role="text"><span class="nhsuk-u-visually-hidden">Your cohort </span>Your cohort</span>
+              </h2>
+              <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+            </div>
+          
+            <div class="nhsuk-card__content">
+              
+              <!-- Cohort details -->
+
+              <h3>Cohort details</h3>
+
+              <p class="nhsuk-u-font-weight-bold">Cohort name</p>
+              <p class="highlight">{{ data['cohort-name'] }}</p>
+
+              <p class="nhsuk-u-font-weight-bold">Background</p>
+
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Cohort background
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                  <p class="highlight">{{ data['cohort-description'] }}</p>
+                </div>
+              </details>
+
+              <p class="nhsuk-u-font-weight-bold">Version</p>
+              <p class="highlight">0.2</p>
+
+              <p class="nhsuk-u-font-weight-bold">Programme</p>
+              <p>Vaccinations</p>
+
+              <p class="nhsuk-u-font-weight-bold">Date created</p>
+              <p class="highlight">
+                <script>document.write(new Date().toLocaleDateString());</script>
+              </p>
+
+              <p class="nhsuk-u-font-weight-bold">Author</p>
+              <p class="highlight">{{ data['cohort-author'] }}</p>
+
+              <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+              <h3>Data sources</h3>
+
+              <p class="nhsuk-u-font-weight-bold">Name</p>
+              <p>Personal Demographics Service (PDS)</p>
+
+              <p class="nhsuk-u-font-weight-bold">Description</p>
+              <p>A national database of NHS patient details</p>
+
+              <p class="nhsuk-u-font-weight-bold">Refresh cycle</p>
+              <p>Daily</p>
+
+              <p class="nhsuk-u-font-weight-bold">Data lag</p>
+              <p>Up to 24 hours</p>
+
+              <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+              <h3>Business rules</h3>
+
+              <!-- Rule 1 -->
+
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Age based rule 1
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                  <!-- Label -->
+
+                  <p class="nhsuk-u-font-weight-bold">Label</p>
+                  <p class="highlight">{{ data['rule-label-1'] }}</p>
+
+                  <!-- Rule -->
+
+                  <p class="nhsuk-u-font-weight-bold">Rule</p>
+                  <p class="highlight">Do not include individuals who are {{ data['not-include-age'] }} years old by {{ data['not-include-day'] }} {{ data['not-include-month'] }} {{ data['not-include-year'] }}</p>
+
+                  <!-- Data source -->
+                  <p class="nhsuk-u-font-weight-bold">Data source</p>
+                  <p>PDS</p>
+
+                </div>
+              </details>
+
+              <!-- Rule 2 -->
+
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Age based rule 2
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                  <!-- Label -->
+
+                  <p class="nhsuk-u-font-weight-bold">Label</p>
+                  <p class="highlight">{{ data['rule-label-2'] }}</p>
+
+                  <!-- Rule -->
+
+                  <p class="nhsuk-u-font-weight-bold">Rule</p>
+                  <p class="highlight">Include individuals who are {{ data['age-by-age-1'] }} years old by {{ data['age-by-day-1'] }} {{ data['age-by-month-1'] }} {{ data['age-by-year-1'] }}</p>
+
+                  <!-- Data source -->
+                  <p class="nhsuk-u-font-weight-bold">Data source</p>
+                  <p>PDS</p>
+
+                </div>
+              </details>
+
+              <!-- Rule 3 -->
+
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Age based rule 3
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                  <!-- Label -->
+
+                  <p class="nhsuk-u-font-weight-bold">Label</p>
+                  <p class="highlight">{{ data['rule-label-3'] }}</p>
+
+                  <!-- Rule -->
+
+                  <p class="nhsuk-u-font-weight-bold">Rule</p>
+                  <p class="highlight">Include individuals who are {{ data['age-over-under-2'] }} years old and {{ data['age-over-under-select-2'] }} by {{ data['age-over-under-day-2'] }} {{ data['age-over-under-month-2'] }} {{ data['age-over-under-year-2'] }}</p>
+
+                  <!-- Data source -->
+                  <p class="nhsuk-u-font-weight-bold">Data source</p>
+                  <p>PDS</p>
+
+                </div>
+              </details>
+
+              <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+              <h3>Clinical safety risk assessment</h3>
+
+              <p class="nhsuk-u-font-weight-bold">Severity</p>
+              <p>Major</p>
+
+              <p class="nhsuk-u-font-weight-bold">Likelihood</p>
+              <p>Very low</p>
+
+              <p class="nhsuk-u-font-weight-bold">Risk score</p>
+              <strong class="nhsuk-tag nhsuk-tag--yellow">2</strong>
+
+              <div class="nhsuk-u-padding-bottom-4"></div>
+
+              <p class="nhsuk-u-font-weight-bold">Justification</p>
+              <p>Although it’s possible to miss patients from these groups due to upstream data issues. It is highly unlikely to affect any individuals adversely.</p>
+
+              <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+              <p class="nhsuk-u-font-weight-bold">Estimated number of people in cohort</p>
+              <p class="highlight">370,342</p>
+
+              <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+              <p class="nhsuk-u-font-weight-bold">Run schedule</p>
+              <p class="highlight">{{ data['run-schedule-day'] }} {{ data['run-schedule-month'] }} {{ data['run-schedule-year'] }}</p>
+
+            </div>
+          </div>
+
+        </div> <!-- /. nhsuk-grid-column-one-half -->
+
+        <div class="nhsuk-grid-column-two-thirds">
+
+          <h2>Declaration</h2>
+          <p>By submitting changes to this cohort you agree:</p>
+          <ul class="nhsuk-list nhsuk-list--bullet">
+            <li>you and your programme are responsible for the changes made</li>
+            <li>you must conduct your own clinical risk assessment</li>
+          </ul>
+
+          <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+            I agree – submit cohort
+          </button>
+
+          <p><a href="#!">Save and return later</a></p>
+
+        </div> <!-- /. nhsuk-grid-column-two-thirds -->
+
+    </form> <!-- /. form -->
+</div> <!-- /. nhsuk-grid-row -->
+
+{% endblock %}
