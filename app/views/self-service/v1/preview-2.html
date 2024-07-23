@@ -33,7 +33,7 @@ Cohorting as a Service
     <form action="select-cohort-2" method="POST">
 
         <div class="nhsuk-grid-column-full">
-          <h1>View your edited MMR cohort</h1>
+          <h1>View your edited {{ data['cohort-name'] }} cohort</h1>
           <p>The highlighted text shows the details you have changed.</p>
           <div class="nhsuk-u-padding-bottom-4"></div>
           <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
@@ -366,7 +366,7 @@ Cohorting as a Service
                   <!-- Rule -->
 
                   <p class="nhsuk-u-font-weight-bold">Rule</p>
-                  <p class="highlight">Include individuals who are {{ data['age-by-age-1'] }} years old by {{ data['age-by-day-1'] }} {{ data['age-by-month-1'] }} {{ data['age-by-year-1'] }}</p>
+                  <p class="highlight">Include individuals who are {{ data['include-age-by-1'] }} years old by {{ data['include-age-by-day-1'] }} {{ data['include-age-by-month-1'] }} {{ data['include-age-by-year-1'] }}</p>
 
                   <!-- Data source -->
                   <p class="nhsuk-u-font-weight-bold">Data source</p>
@@ -404,26 +404,8 @@ Cohorting as a Service
 
               <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
 
-              <h3>Clinical safety risk assessment</h3>
-
-              <p class="nhsuk-u-font-weight-bold">Severity</p>
-              <p>Major</p>
-
-              <p class="nhsuk-u-font-weight-bold">Likelihood</p>
-              <p>Very low</p>
-
-              <p class="nhsuk-u-font-weight-bold">Risk score</p>
-              <strong class="nhsuk-tag nhsuk-tag--yellow">2</strong>
-
-              <div class="nhsuk-u-padding-bottom-4"></div>
-
-              <p class="nhsuk-u-font-weight-bold">Justification</p>
-              <p>Although it’s possible to miss patients from these groups due to upstream data issues. It is highly unlikely to affect any individuals adversely.</p>
-
-              <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
-
               <p class="nhsuk-u-font-weight-bold">Estimated number of people in cohort</p>
-              <p class="highlight">370,342</p>
+              <p class="highlight">270,342</p>
 
               <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
 
