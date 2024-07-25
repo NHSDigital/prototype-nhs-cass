@@ -35,7 +35,7 @@ Cohorting as a Service
 
         <div class="nhsuk-grid-column-two-thirds">
 
-            <h1>Create new rules for a copy of MMR</h1>
+            <h1>Create a new cohort from a copy of MMR</h1>
     
             <div class="nhsuk-inset-text">
                 <span class="nhsuk-u-visually-hidden">Information: </span>
@@ -118,19 +118,19 @@ Cohorting as a Service
                 <input class="nhsuk-input" type="text" id="label" name="rule-label-1">
             </div>
 
-            <h3>Include individuals who are</h3>
+            <h3>Include individuals aged</h3>
     
             <div class="nhsuk-form-group">
                 <fieldset class="nhsuk-fieldset" aria-describedby="include-age-rule-hint">
                     <div class="nhsuk-radios nhsuk-radios--conditional">
 
                         <!---------------------------------------
-                        A certain age on or after a specific date
+                        on or after a date
                         ---------------------------------------->
             
                         <div class="nhsuk-radios__item">
                             <input class="nhsuk-radios__input" id="include-age-rule-1" name="age-rule" type="radio" value="include" aria-controls="conditional-include-age-rule-1" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="include-age-rule-1">a certain age on or after a specific date</label>
+                            <label class="nhsuk-label nhsuk-radios__label" for="include-age-rule-1">on or after a date</label>
                         </div>
         
                         <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-include-age-rule-1">
@@ -184,12 +184,12 @@ Cohorting as a Service
                         </div> <!-- /. nhsuk-radios -->
 
                         <!----------------------------------
-                        A certain age when the cohort is run
+                        when the cohort is run
                         ----------------------------------->
                 
                         <div class="nhsuk-radios__item">
                             <input class="nhsuk-radios__input" id="include-age-rule-2" name="age-rule" type="radio" value="text" aria-controls="conditional-include-age-rule-2" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="include-age-rule-2">a certain age when the cohort is run</label>
+                            <label class="nhsuk-label nhsuk-radios__label" for="include-age-rule-2">when the cohort is run</label>
                         </div>
         
                         <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-include-age-rule-2">
@@ -214,12 +214,12 @@ Cohorting as a Service
                         </div> <!-- /. nhsuk-radios -->
 
                         <!------------------------------
-                        A certain age by a specific date
+                        by a date
                         ------------------------------->
 
                         <div class="nhsuk-radios__item">
                             <input class="nhsuk-radios__input" id="include-age-rule-3" name="age-rule" type="radio" value="text" aria-controls="conditional-include-age-rule-3" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="include-age-rule-3">a certain age by a specific date</label>
+                            <label class="nhsuk-label nhsuk-radios__label" for="include-age-rule-3">by a date</label>
                         </div>
             
                         <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-include-age-rule-3">
@@ -273,12 +273,12 @@ Cohorting as a Service
                         </div> <!-- /. nhsuk-radios -->
 
                         <!----------------------------------------------------
-                        Older or younger than a certain age on a specific date
+                        older or younger on a date
                         ----------------------------------------------------->
 
                         <div class="nhsuk-radios__item">
                             <input class="nhsuk-radios__input" id="include-age-rule-4" name="age-rule" type="radio" value="text" aria-controls="conditional-include-age-rule-4" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="include-age-rule-4">older or younger than a certain age on a specific date</label>
+                            <label class="nhsuk-label nhsuk-radios__label" for="include-age-rule-4">older or younger on a date</label>
                         </div>
             
                         <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-include-age-rule-4">
@@ -344,19 +344,19 @@ Cohorting as a Service
                 </fieldset> <!-- /. nhsuk-fieldset -->
             </div> <!-- /. nhsuk-form-group -->
 
-            <h3>Do not include individuals who are</h3>
+            <h3>Do not include individuals aged</h3>
 
             <div class="nhsuk-form-group">
                 <fieldset class="nhsuk-fieldset" aria-describedby="exclude-age-rule-hint">
                     <div class="nhsuk-radios nhsuk-radios--conditional">
                         
                         <!---------------------------------------
-                        A certain age on or after a specific date
+                        on or after a date
                         ---------------------------------------->
             
                         <div class="nhsuk-radios__item">
                             <input class="nhsuk-radios__input" id="exclude-age-rule-1" name="age-rule" type="radio" value="exclude" aria-controls="conditional-exclude-age-rule-1" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-1">a certain age on or after a specific date</label>
+                            <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-1">on or after a date</label>
                         </div>
         
                         <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-exclude-age-rule-1">
@@ -410,12 +410,12 @@ Cohorting as a Service
                         </div> <!-- /. nhsuk-radios -->
 
                         <!----------------------------------------
-                        A certain age when the cohort is run radio
+                        when the cohort is run
                         ----------------------------------------->
                 
                         <div class="nhsuk-radios__item">
                             <input class="nhsuk-radios__input" id="exclude-age-rule-2" name="age-rule" type="radio" value="exclude" aria-controls="conditional-exclude-age-rule-2" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-2">a certain age when the cohort is run</label>
+                            <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-2">when the cohort is run</label>
                         </div>
         
                         <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-exclude-age-rule-2">
@@ -448,14 +448,12 @@ Cohorting as a Service
                         </div> <!-- /. nhsuk-radios -->
 
                         <!---------------------------------
-                        A certain age by a specific date by
+                        by a date
                         ---------------------------------->
 
                         <div class="nhsuk-radios__item">
                             <input class="nhsuk-radios__input" id="age-by-age-rule" name="age-rule" type="radio" value="exclude" aria-controls="conditional-exclude-age-rule-4" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="age-by-age-rule-4">
-                                a certain age by a specific date
-                            </label>
+                            <label class="nhsuk-label nhsuk-radios__label" for="age-by-age-rule-4">by a date</label>
                         </div>
             
                         <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-exclude-age-rule-4">
@@ -509,12 +507,12 @@ Cohorting as a Service
                         </div> <!-- /. nhsuk-radios -->
 
                         <!----------------------------------------------------
-                        Older or younger than a certain age on a specific date
+                        older or younger on a date
                         ----------------------------------------------------->
 
                         <div class="nhsuk-radios__item">
                             <input class="nhsuk-radios__input" id="age-rule-5" name="age-rule" type="radio" value="exclude" aria-controls="conditional-exclude-age-rule-5" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-5">older or younger than a certain age on a specific date</label>
+                            <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-5">older or younger on a date</label>
                         </div>
             
                         <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-exclude-age-rule-5">
@@ -583,8 +581,37 @@ Cohorting as a Service
             <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
         
             <h2>Run schedule</h2>
+
+            <div class="nhsuk-form-group">
+
+                <div class="nhsuk-radios">
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="frequency-year" name="frequency-radio" type="radio" value="every-year">
+                      <label class="nhsuk-label nhsuk-radios__label" for="frequency-year">
+                        Every year
+                      </label>
+                    </div>
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="frequency-month" name="frequency-radio" type="radio" value="every-month">
+                      <label class="nhsuk-label nhsuk-radios__label" for="frequency-month">
+                        Every month
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                        <input class="nhsuk-radios__input" id="frequency-week" name="frequency-radio" type="radio" value="every-week">
+                        <label class="nhsuk-label nhsuk-radios__label" for="frequency-week">
+                          Every week
+                        </label>
+                    </div>
+              
+                </div>
+        
+            </div>
     
-            <p>Run from</p>
+            <p class="nhsuk-u-font-weight-bold">from</p>
     
             <div class="nhsuk-date-input" id="run-schedule">
     

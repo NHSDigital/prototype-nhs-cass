@@ -33,9 +33,14 @@ Cohorting as a Service
     <form action="cohort-submitted" method="POST">
 
         <div class="nhsuk-grid-column-two-thirds">
-          <h1>Preview {{ data['cohort-name'] }} before submitting</h1>
-          <p>Check your cohort against the original to make sure the details you’ve entered are correct.</p>
+          <h1>Check your cohort before submitting for review</h1>
           <p>The highlighted text shows the details you have changed.</p>
+
+          <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p>We will review your new cohort before creating it. It will be published alongside the original and will not replace it.</p>
+          </div>
+
         </div> <!-- /. nhsuk-grid-column-two-thirds -->
 
         <!--
@@ -421,7 +426,7 @@ Cohorting as a Service
           </ul>
 
           <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
-            I agree – submit cohort
+            I agree – submit cohort for review
           </button>
 
           <p><a href="#!">Save and return later</a></p>
