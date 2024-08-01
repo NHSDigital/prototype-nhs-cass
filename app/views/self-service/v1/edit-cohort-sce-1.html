@@ -54,7 +54,7 @@ Cohorting as a Service
                 <label class="nhsuk-label" for="cohort-author">
                 Author
                 </label>
-                <input class="nhsuk-input" id="cohort-author" name="cohort-author" type="text" value="{{ data['cohort-author'] }}">
+                <input class="nhsuk-input" id="cohort-author" name="cohort-author" type="text" value="Amy White">
             </div>
     
             <div class="nhsuk-form-group">
@@ -97,6 +97,68 @@ Cohorting as a Service
                 </thead>
     
                 <tbody class="nhsuk-table__body">
+
+                    <!-- Row 1 -->
+        
+                    <tr role="row" class="nhsuk-table__row">
+                        <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Label </span>Age-based rule 1
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Rule </span>Include individuals in England aged 6 and over on 31 August 2023. Do not include individuals aged 11 and over on 31 August 2023.
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Action </span>
+                        <a href="#!">Delete</a>
+                        </td>
+                    </tr>
+
+                    <!-- Row 2 -->
+        
+                    <tr role="row" class="nhsuk-table__row">
+                        <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Label </span>Age-based rule 2
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Rule </span>Include individuals in England aged 11 and over on 31 August 2023.	Do not include individuals aged 16 and over on 31 August 2023.
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Action </span>
+                        <a href="#!">Delete</a>
+                        </td>
+                    </tr>
+
+                    <!-- Row 3 -->
+        
+                    <tr role="row" class="nhsuk-table__row">
+                        <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Label </span>Age-based rule 3
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Rule </span>Include individuals in England aged 16 and over on 31 August 2023.	Do not include individuals aged 19 and over on 31 August 2023.
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Action </span>
+                        <a href="#!">Delete</a>
+                        </td>
+                    </tr>
+
+                    <!-- Row 4 -->
+    
+                    <tr role="row" class="nhsuk-table__row">
+                        <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Label </span>Age-based rule 4
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Rule </span>Include individuals aged 19 and over on 31 August 2023. Do not include individuals aged 26 and over on 31 March 2024.	
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Action </span>
+                        <a href="#!">Delete</a>
+                        </td>
+                    </tr>
+
+                    <!-- Row 5 -->
     
                     <tr role="row" class="nhsuk-table__row">
                         <td role="cell" class="nhsuk-table__cell">
@@ -106,7 +168,7 @@ Cohorting as a Service
                             <span class="nhsuk-table-responsive__heading" aria-hidden="true">Rule </span>Do not include individuals who are {{ data['not-include-age'] }} years old by {{ data['not-include-day'] }} {{ data['not-include-month'] }} {{ data['not-include-year'] }}
                         </td>
                         <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Action </span><a href="edit-cohort">Delete</a>
+                            <span class="nhsuk-table-responsive__heading" aria-hidden="true">Action </span><a href="#!">Delete</a>
                         </td>
                     </tr>
     
@@ -114,515 +176,598 @@ Cohorting as a Service
             </table>
     
             <div class="nhsuk-u-padding-bottom-5"></div>
+
+            <h3>Create a rule</h3>
     
             <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="label">
-                Label
-                </label>
+                <p>Add a label and select whether you want to include or exclude individuals from the rule</p>
+                <label class="nhsuk-label" for="label">Label</label>
                 <input class="nhsuk-input" id="label" name="rule-label-2" type="text">
             </div>
 
-            <h3>Include individuals aged</h3>
-    
-            <div class="nhsuk-form-group">
-                <fieldset class="nhsuk-fieldset" aria-describedby="age-rule-hint">
-                    <div class="nhsuk-radios nhsuk-radios--conditional">
-    
-                        <!---------------------------------------
-                        on or after a date
-                        ---------------------------------------->
-            
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="age-rule-1" name="age-rule" type="radio" aria-controls="conditional-age-rule-1" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="age-rule-1">on or after a date</label>
-                        </div> <!-- /. nhsuk-radios -->
-            
-                        <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-rule-1">
-                
-                            <div class="nhsuk-form-group">
-        
-                                <label class="nhsuk-label" for="include-age-1">Age</label>
-                                <div class="nhsuk-input__wrapper">
-                                    <input class="nhsuk-input nhsuk-input--width-2" id="include-age-1" name="include-age-1" type="text">
-                                    <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
-                                </div>
-        
-                                <div class="nhsuk-u-padding-bottom-4"></div>
-        
-                                <p class="nhsuk-u-font-weight-bold">on or after</p>
-        
-                                <div class="nhsuk-date-input" id="include-date">
-        
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="include-day-1">Day</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="include-day-1" name="include-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="include-month-1">Month</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="include-month-1" name="include-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-        
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="include-year-1">Year</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="include-year-1" name="include-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-        
-                                </div> <!-- /. nhsuk-date-input -->
+            <details class="nhsuk-details">
 
-                                <div class="nhsuk-u-padding-bottom-4"></div>
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Include individuals aged
+                  </span>
+                </summary>
 
-                                <button class="nhsuk-button nhsuk-button--secondary">
-                                    Add rule
-                                </button>
+                <div class="nhsuk-details__text">
 
-                            </div> <!-- /. nhsuk-form-group -->
-                        </div> <!-- /. nhsuk-radios -->
-
-                        <!----------------------------------
-                        when the cohort is run
-                        ----------------------------------->
+                    <div class="nhsuk-form-group">
+                        <fieldset class="nhsuk-fieldset" aria-describedby="age-rule-hint">
+                            <div class="nhsuk-radios nhsuk-radios--conditional">
             
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="age-rule-2" name="age-rule" type="radio" aria-controls="conditional-age-rule-2" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="age-rule-2">when the cohort is run</label>
-                        </div> <!-- /. nhsuk-radios -->
-            
-                        <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-rule-2">
-            
-                        <div class="nhsuk-form-group">
-    
-                            <label class="nhsuk-label" for="not-include-age-1">Age</label>
-                            <div class="nhsuk-input__wrapper">
-                                <input class="nhsuk-input nhsuk-input--width-2" id="not-include-age-1" name="not-include-age-1" type="text">
-                                <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
-                            </div>
-    
-                            <div class="nhsuk-u-padding-bottom-4"></div>
-    
-                            <p class="nhsuk-u-font-weight-bold">on or after</p>
-    
-                            <div class="nhsuk-date-input" id="not-include-date">
-    
-                                <div class="nhsuk-date-input__item">
+                                <!---------------------------------------
+                                on or after a date
+                                ---------------------------------------->
+                    
+                                <div class="nhsuk-radios__item">
+                                    <input class="nhsuk-radios__input" id="age-rule-1" name="age-rule" type="radio" aria-controls="conditional-age-rule-1" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="age-rule-1">on or after a date</label>
+                                </div> <!-- /. nhsuk-radios -->
+                    
+                                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-rule-1">
+                        
                                     <div class="nhsuk-form-group">
-                                        <label class="nhsuk-label nhsuk-date-input__label" for="not-include-day-1">Day</label>
-                                        <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="not-include-day-1" name="not-include-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                    </div>
-                                </div>
-                                
-                                <div class="nhsuk-date-input__item">
-                                    <div class="nhsuk-form-group">
-                                        <label class="nhsuk-label nhsuk-date-input__label" for="not-include-month-1">Month</label>
-                                        <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="not-include-month-1" name="not-include-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                    </div>
-                                </div>
-    
-                                <div class="nhsuk-date-input__item">
-                                    <div class="nhsuk-form-group">
-                                        <label class="nhsuk-label nhsuk-date-input__label" for="not-include-year-1">Year</label>
-                                        <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="not-include-year-1" name="not-include-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                    </div>
-                                </div>
-    
-                            </div> <!-- /. nhsuk-date-input -->
-    
-                            <div class="nhsuk-u-padding-bottom-4"></div>
-
-                            <button class="nhsuk-button nhsuk-button--secondary">
-                                Add rule
-                            </button>
-    
-                        </div> <!-- /. nhsuk-form-group -->
-                        </div> <!-- /. nhsuk-radios -->
-
-                        <!------------------------------
-                        by a date
-                        ------------------------------->
                 
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="age-rule-3" name="age-rule" type="radio" value="text" aria-controls="conditional-age-rule-3" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="age-rule-3">by a date</label>
-                        </div> <!-- /. nhsuk-radios -->
+                                        <label class="nhsuk-label" for="include-age-1">Age</label>
+                                        <div class="nhsuk-input__wrapper">
+                                            <input class="nhsuk-input nhsuk-input--width-2" id="include-age-1" name="include-age-1" type="text">
+                                            <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
+                                        </div>
+                
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+                
+                                        <p class="nhsuk-u-font-weight-bold">on or after</p>
+                
+                                        <div class="nhsuk-date-input" id="include-date">
+                
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="include-day-1">Day</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="include-day-1" name="include-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="include-month-1">Month</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="include-month-1" name="include-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="include-year-1">Year</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="include-year-1" name="include-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                
+                                        </div> <!-- /. nhsuk-date-input -->
         
-                        <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-rule-3">
-                
-                            <div class="nhsuk-form-group">
-
-                                <label class="nhsuk-label" for="include-age-by-1">Age</label>
-                                <div class="nhsuk-input__wrapper">
-                                    <input class="nhsuk-input nhsuk-input--width-2" id="include-age-by-1" name="include-age-by-1" type="text">
-                                    <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
-                                </div>
-
-                                <div class="nhsuk-u-padding-bottom-4"></div>
-
-                                <p class="nhsuk-u-font-weight-bold">by</p>
-
-                                <div class="nhsuk-date-input" id="include-age-by-date-1">
-
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="include-age-by-day">Day</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="include-age-by-day-1" name="include-age-by-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="include-age-by-month">Month</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="include-age-by-month-1" name="include-age-by-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-            
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="include-age-by-year">Year</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="include-age-by-year-1" name="include-age-by-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-            
-                                </div> <!-- /. nhsuk-date-input -->
-
-                                <div class="nhsuk-u-padding-bottom-4"></div>
-
-                                <button class="nhsuk-button nhsuk-button--secondary" type="submit" formaction="edit-cohort-sce-2" data-module="nhsuk-button">
-                                    Add rule
-                                </button>
-
-                            </div> <!-- /. nhsuk-form-group -->
-                        </div> <!-- /. nhsuk-radios -->
-
-                        <!----------------------------------------------------
-                        older or younger on a date
-                        ----------------------------------------------------->
-
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="age-rule-4" name="age-rule" type="radio" value="text" aria-controls="conditional-age-rule-4" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="age-rule-4">
-                                older or younger on a date
-                            </label>
-                        </div>
-            
-                        <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-rule-4">
-            
-                            <div class="nhsuk-form-group">
-
-                                <label class="nhsuk-label" for="age-over-under">Age</label>
-                                <div class="nhsuk-input__wrapper">
-                                    <input class="nhsuk-input nhsuk-input--width-2" id="age-over-under" name="age-over-under-1" type="tex">
-                                    <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
-                                </div>
-
-                                <div class="nhsuk-u-padding-bottom-4"></div>
-
-                                <p class="nhsuk-u-font-weight-bold">and</p>
-
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+        
+                                        <button class="nhsuk-button nhsuk-button--secondary">
+                                            Add rule
+                                        </button>
+        
+                                    </div> <!-- /. nhsuk-form-group -->
+                                </div> <!-- /. nhsuk-radios -->
+        
+                                <!----------------------------------
+                                when the cohort is run
+                                ----------------------------------->
+                    
+                                <div class="nhsuk-radios__item">
+                                    <input class="nhsuk-radios__input" id="age-rule-2" name="age-rule" type="radio" aria-controls="conditional-age-rule-2" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="age-rule-2">when the cohort is run</label>
+                                </div> <!-- /. nhsuk-radios -->
+                    
+                                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-rule-2">
+                    
                                 <div class="nhsuk-form-group">
-                                    <select class="nhsuk-select" id="age-over-under" name="age-over-under-select-1">
-                                    <option value="over" selected>Over</option>
-                                    <option value="under">Under</option>
-                                    </select>
-                                </div>
-
-                                <p class="nhsuk-u-font-weight-bold">by</p>
-
-                                <div class="nhsuk-date-input" id="age-date-1">
-
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="age-over-day-1">Day</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="age-over-day-1" name="age-over-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="age-over-month-1">Month</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="age-over-month-1" name="age-over-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="age-over-year-1">Year</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="age-over-year-1" name="age-over-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-
-                                </div> <!-- /. nhsuk-date-input -->
-
-                                <div class="nhsuk-u-padding-bottom-4"></div>
-
-                                <button class="nhsuk-button nhsuk-button--secondary">
-                                    Add rule
-                                </button>
-
-                            </div> <!-- /. nhsuk-form-group -->
-                        </div> <!-- /. nhsuk-radios--conditional -->
-
-                    </div> <!-- /. wrapper nhsuk-radios--conditional -->
-                </fieldset> <!-- /. nhsuk-fieldset -->
-            </div> <!-- /. nhsuk-form-group -->
-
-            <h3>Do not include individuals aged</h3>
-    
-            <div class="nhsuk-form-group">
-                <fieldset class="nhsuk-fieldset" aria-describedby="age-rule-hint">
-                    <div class="nhsuk-radios nhsuk-radios--conditional">
-    
-                        <!---------------------------------------
-                        on or after a date
-                        ---------------------------------------->
             
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="exclude-age-rule-1" name="age-rule" type="radio" aria-controls="conditional-exclude-age-rule-1" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-1">on or after a date</label>
-                        </div> <!-- /. nhsuk-radios -->
+                                    <label class="nhsuk-label" for="not-include-age-1">Age</label>
+                                    <div class="nhsuk-input__wrapper">
+                                        <input class="nhsuk-input nhsuk-input--width-2" id="not-include-age-1" name="not-include-age-1" type="text">
+                                        <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
+                                    </div>
             
-                        <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-exclude-age-rule-1">
+                                    <div class="nhsuk-u-padding-bottom-4"></div>
+            
+                                    <p class="nhsuk-u-font-weight-bold">on or after</p>
+            
+                                    <div class="nhsuk-date-input" id="not-include-date">
+            
+                                        <div class="nhsuk-date-input__item">
+                                            <div class="nhsuk-form-group">
+                                                <label class="nhsuk-label nhsuk-date-input__label" for="not-include-day-1">Day</label>
+                                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="not-include-day-1" name="not-include-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="nhsuk-date-input__item">
+                                            <div class="nhsuk-form-group">
+                                                <label class="nhsuk-label nhsuk-date-input__label" for="not-include-month-1">Month</label>
+                                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="not-include-month-1" name="not-include-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+            
+                                        <div class="nhsuk-date-input__item">
+                                            <div class="nhsuk-form-group">
+                                                <label class="nhsuk-label nhsuk-date-input__label" for="not-include-year-1">Year</label>
+                                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="not-include-year-1" name="not-include-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+            
+                                    </div> <!-- /. nhsuk-date-input -->
+            
+                                    <div class="nhsuk-u-padding-bottom-4"></div>
+        
+                                    <button class="nhsuk-button nhsuk-button--secondary">
+                                        Add rule
+                                    </button>
+            
+                                </div> <!-- /. nhsuk-form-group -->
+                                </div> <!-- /. nhsuk-radios -->
+        
+                                <!------------------------------
+                                by a dat
+                                ------------------------------->
+                        
+                                <div class="nhsuk-radios__item">
+                                    <input class="nhsuk-radios__input" id="age-rule-3" name="age-rule" type="radio" value="text" aria-controls="conditional-age-rule-3" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="age-rule-3">by a date</label>
+                                </div> <!-- /. nhsuk-radios -->
                 
-                            <div class="nhsuk-form-group">
+                                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-rule-3">
+                        
+                                    <div class="nhsuk-form-group">
         
-                                <label class="nhsuk-label" for="include-age-1">Age</label>
-                                <div class="nhsuk-input__wrapper">
-                                    <input class="nhsuk-input nhsuk-input--width-2" id="include-age-1" name="include-age-1" type="text">
-                                    <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
-                                </div>
-        
-                                <div class="nhsuk-u-padding-bottom-4"></div>
-        
-                                <p class="nhsuk-u-font-weight-bold">on or after</p>
-        
-                                <div class="nhsuk-date-input" id="include-date">
-        
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="include-day-1">Day</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="include-day-1" name="include-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                        <label class="nhsuk-label" for="include-age-by-1">Age</label>
+                                        <div class="nhsuk-input__wrapper">
+                                            <input class="nhsuk-input nhsuk-input--width-2" id="include-age-by-1" name="include-age-by-1" type="text">
+                                            <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
                                         </div>
-                                    </div>
-                                    
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="include-month-1">Month</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="include-month-1" name="include-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
         
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="include-year-1">Year</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="include-year-1" name="include-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
         
-                                </div> <!-- /. nhsuk-date-input -->
-
-                                <div class="nhsuk-u-padding-bottom-4"></div>
-
-                                <div class="nhsuk-u-padding-bottom-4"></div>
-
-                                <button class="nhsuk-button nhsuk-button--secondary">
-                                    Add rule
-                                </button>
-
-                            </div> <!-- /. nhsuk-form-group -->
-                        </div> <!-- /. nhsuk-radios -->
-
-                        <!----------------------------------
-                        when the cohort is run
-                        ----------------------------------->
-            
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="exclude-age-rule-2" name="age-rule" type="radio" aria-controls="conditional-exclude-age-rule-2" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-2">when the cohort is run</label>
-                        </div> <!-- /. nhsuk-radios -->
-            
-                        <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-exclude-age-rule-2">
-            
-                            <div class="nhsuk-form-group">
+                                        <p class="nhsuk-u-font-weight-bold">by</p>
         
-                                <label class="nhsuk-label" for="not-include-age-1">Age</label>
-                                <div class="nhsuk-input__wrapper">
-                                    <input class="nhsuk-input nhsuk-input--width-2" id="not-include-age-1" name="not-include-age-1" type="text">
-                                    <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
-                                </div>
+                                        <div class="nhsuk-date-input" id="include-age-by-date-1">
         
-                                <div class="nhsuk-u-padding-bottom-4"></div>
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="include-age-by-day">Day</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="include-age-by-day-1" name="include-age-by-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="include-age-by-month">Month</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="include-age-by-month-1" name="include-age-by-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                    
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="include-age-by-year">Year</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="include-age-by-year-1" name="include-age-by-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                    
+                                        </div> <!-- /. nhsuk-date-input -->
         
-                                <p class="nhsuk-u-font-weight-bold">on or after</p>
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
         
-                                <div class="nhsuk-date-input" id="not-include-date">
+                                        <button class="nhsuk-button nhsuk-button--secondary" type="submit" formaction="edit-cohort-sce-2" data-module="nhsuk-button">
+                                            Add rule
+                                        </button>
         
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="not-include-day-1">Day</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="not-include-day-1" name="not-include-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="not-include-month-1">Month</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="not-include-month-1" name="not-include-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
+                                    </div> <!-- /. nhsuk-form-group -->
+                                </div> <!-- /. nhsuk-radios -->
         
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="not-include-year-1">Year</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="not-include-year-1" name="not-include-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-        
-                                </div> <!-- /. nhsuk-date-input -->
-        
-                                <div class="nhsuk-u-padding-bottom-4"></div>
-        
-                                <div class="nhsuk-u-padding-bottom-4"></div>
-
-                                <button class="nhsuk-button nhsuk-button--secondary">
-                                    Add rule
-                                </button>
-        
-                            </div> <!-- /. nhsuk-form-group -->
-                        </div> <!-- /. nhsuk-radios -->
-
-                        <!------------------------------
-                        by a date
-                        ------------------------------->
-                
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="exclude-age-rule-3" name="age-rule" type="radio" value="text" aria-controls="conditional-exclude-age-rule-3" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-3">by a date</label>
-                        </div> <!-- /. nhsuk-radios -->
-        
-                        <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-exclude-age-rule-3">
-                
-                            <div class="nhsuk-form-group">
-
-                                <label class="nhsuk-label" for="age-when-run-1">Age</label>
-                                <div class="nhsuk-input__wrapper">
-                                    <input class="nhsuk-input nhsuk-input--width-2" id="age-when-run-1" name="age-when-run-1" type="text">
-                                    <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
-                                </div>
-
-                                <div class="nhsuk-u-padding-bottom-4"></div>
-
-                                <p class="nhsuk-u-font-weight-bold">by</p>
-
-                                <div class="nhsuk-date-input" id="age-by-date-2">
-
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="age-by-day">Day</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="age-by-day-1" name="age-by-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="age-by-month">Month</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="age-by-month-1" name="age-by-month-2" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-            
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="age-by-year">Year</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="age-by-year-1" name="age-by-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
-            
-                                </div> <!-- /. nhsuk-date-input -->
-
-                                <div class="nhsuk-u-padding-bottom-4"></div>
-
-                                <button class="nhsuk-button nhsuk-button--secondary">
-                                    Add rule
-                                </button>
-
-                            </div> <!-- /. nhsuk-form-group -->
-                        </div> <!-- /. nhsuk-radios -->
-
-                        <!----------------------------------------------------
-                        older or younger on a date
-                        ----------------------------------------------------->
-
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="age-exclude-rule-4" name="age-rule" type="radio" value="text" aria-controls="conditional-exclude-age-rule-4" aria-expanded="false">
-                            <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-4">
+                                <!----------------------------------------------------
                                 older or younger on a date
-                            </label>
-                        </div>
-            
-                        <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-exclude-age-rule-4">
-            
-                            <div class="nhsuk-form-group">
-
-                                <label class="nhsuk-label" for="age-over-under">Age</label>
-                                <div class="nhsuk-input__wrapper">
-                                    <input class="nhsuk-input nhsuk-input--width-2" id="age-over-under" name="age-over-under-1" type="tex">
-                                    <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
+                                ----------------------------------------------------->
+        
+                                <div class="nhsuk-radios__item">
+                                    <input class="nhsuk-radios__input" id="age-rule-4" name="age-rule" type="radio" value="text" aria-controls="conditional-age-rule-4" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="age-rule-4">
+                                        older or younger on a date
+                                    </label>
                                 </div>
+                    
+                                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-age-rule-4">
+                    
+                                    <div class="nhsuk-form-group">
+        
+                                        <label class="nhsuk-label" for="age-over-under">Age</label>
+                                        <div class="nhsuk-input__wrapper">
+                                            <input class="nhsuk-input nhsuk-input--width-2" id="age-over-under" name="age-over-under-1" type="tex">
+                                            <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
+                                        </div>
+        
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+        
+                                        <p class="nhsuk-u-font-weight-bold">and</p>
+        
+                                        <div class="nhsuk-form-group">
+                                            <select class="nhsuk-select" id="age-over-under" name="age-over-under-select-1">
+                                                <option value="older" selected>Older</option>
+                                                <option value="younger">Younger</option>
+                                            </select>
+                                        </div>
+        
+                                        <p class="nhsuk-u-font-weight-bold">by</p>
+        
+                                        <div class="nhsuk-date-input" id="age-date-1">
+        
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="age-over-day-1">Day</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="age-over-day-1" name="age-over-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="age-over-month-1">Month</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="age-over-month-1" name="age-over-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+        
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="age-over-year-1">Year</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="age-over-year-1" name="age-over-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+        
+                                        </div> <!-- /. nhsuk-date-input -->
+        
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+        
+                                        <button class="nhsuk-button nhsuk-button--secondary">
+                                            Add rule
+                                        </button>
+        
+                                    </div> <!-- /. nhsuk-form-group -->
+                                </div> <!-- /. nhsuk-radios--conditional -->
+        
+                            </div> <!-- /. wrapper nhsuk-radios--conditional -->
+                        </fieldset> <!-- /. nhsuk-fieldset -->
+                    </div> <!-- /. nhsuk-form-group -->
+                    
+                </div>
+            </details>
 
-                                <div class="nhsuk-u-padding-bottom-4"></div>
+            <details class="nhsuk-details">
 
-                                <p class="nhsuk-u-font-weight-bold">and</p>
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Do not include individuals aged
+                  </span>
+                </summary>
 
-                                <div class="nhsuk-form-group">
-                                    <select class="nhsuk-select" id="age-over-under" name="age-over-under-select-1">
-                                    <option value="over" selected>Over</option>
-                                    <option value="under">Under</option>
-                                    </select>
+                <div class="nhsuk-details__text">
+
+                    <div class="nhsuk-form-group">
+                        <fieldset class="nhsuk-fieldset" aria-describedby="age-rule-hint">
+                            <div class="nhsuk-radios nhsuk-radios--conditional">
+            
+                                <!---------------------------------------
+                                on or after a date
+                                ---------------------------------------->
+                    
+                                <div class="nhsuk-radios__item">
+                                    <input class="nhsuk-radios__input" id="exclude-age-rule-1" name="age-rule" type="radio" aria-controls="conditional-exclude-age-rule-1" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-1">on or after a date</label>
+                                </div> <!-- /. nhsuk-radios -->
+                    
+                                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-exclude-age-rule-1">
+                        
+                                    <div class="nhsuk-form-group">
+                
+                                        <label class="nhsuk-label" for="include-age-1">Age</label>
+                                        <div class="nhsuk-input__wrapper">
+                                            <input class="nhsuk-input nhsuk-input--width-2" id="include-age-1" name="include-age-1" type="text">
+                                            <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
+                                        </div>
+                
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+                
+                                        <p class="nhsuk-u-font-weight-bold">on or after</p>
+                
+                                        <div class="nhsuk-date-input" id="include-date">
+                
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="include-day-1">Day</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="include-day-1" name="include-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="include-month-1">Month</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="include-month-1" name="include-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="include-year-1">Year</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="include-year-1" name="include-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                
+                                        </div> <!-- /. nhsuk-date-input -->
+        
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+        
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+        
+                                        <button class="nhsuk-button nhsuk-button--secondary">
+                                            Add rule
+                                        </button>
+        
+                                    </div> <!-- /. nhsuk-form-group -->
+                                </div> <!-- /. nhsuk-radios -->
+        
+                                <!----------------------------------
+                                when the cohort is run
+                                ----------------------------------->
+                    
+                                <div class="nhsuk-radios__item">
+                                    <input class="nhsuk-radios__input" id="exclude-age-rule-2" name="age-rule" type="radio" aria-controls="conditional-exclude-age-rule-2" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-2">when the cohort is run</label>
+                                </div> <!-- /. nhsuk-radios -->
+                    
+                                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-exclude-age-rule-2">
+                    
+                                    <div class="nhsuk-form-group">
+                
+                                        <label class="nhsuk-label" for="not-include-age-1">Age</label>
+                                        <div class="nhsuk-input__wrapper">
+                                            <input class="nhsuk-input nhsuk-input--width-2" id="not-include-age-1" name="not-include-age-1" type="text">
+                                            <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
+                                        </div>
+                
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+                
+                                        <p class="nhsuk-u-font-weight-bold">on or after</p>
+                
+                                        <div class="nhsuk-date-input" id="not-include-date">
+                
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="not-include-day-1">Day</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="not-include-day-1" name="not-include-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="not-include-month-1">Month</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="not-include-month-1" name="not-include-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="not-include-year-1">Year</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="not-include-year-1" name="not-include-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                
+                                        </div> <!-- /. nhsuk-date-input -->
+                
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+                
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+        
+                                        <button class="nhsuk-button nhsuk-button--secondary">
+                                            Add rule
+                                        </button>
+                
+                                    </div> <!-- /. nhsuk-form-group -->
+                                </div> <!-- /. nhsuk-radios -->
+        
+                                <!------------------------------
+                                by a date
+                                ------------------------------->
+                        
+                                <div class="nhsuk-radios__item">
+                                    <input class="nhsuk-radios__input" id="exclude-age-rule-3" name="age-rule" type="radio" value="text" aria-controls="conditional-exclude-age-rule-3" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-3">by a date</label>
+                                </div> <!-- /. nhsuk-radios -->
+                
+                                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-exclude-age-rule-3">
+                        
+                                    <div class="nhsuk-form-group">
+        
+                                        <label class="nhsuk-label" for="age-when-run-1">Age</label>
+                                        <div class="nhsuk-input__wrapper">
+                                            <input class="nhsuk-input nhsuk-input--width-2" id="age-when-run-1" name="age-when-run-1" type="text">
+                                            <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
+                                        </div>
+        
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+        
+                                        <p class="nhsuk-u-font-weight-bold">by</p>
+        
+                                        <div class="nhsuk-date-input" id="age-by-date-2">
+        
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="age-by-day">Day</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="age-by-day-1" name="age-by-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="age-by-month">Month</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="age-by-month-1" name="age-by-month-2" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                    
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="age-by-year">Year</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="age-by-year-1" name="age-by-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                    
+                                        </div> <!-- /. nhsuk-date-input -->
+        
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+        
+                                        <button class="nhsuk-button nhsuk-button--secondary">
+                                            Add rule
+                                        </button>
+        
+                                    </div> <!-- /. nhsuk-form-group -->
+                                </div> <!-- /. nhsuk-radios -->
+        
+                                <!----------------------------------------------------
+                                older or younger on a date
+                                ----------------------------------------------------->
+        
+                                <div class="nhsuk-radios__item">
+                                    <input class="nhsuk-radios__input" id="age-exclude-rule-4" name="age-rule" type="radio" value="text" aria-controls="conditional-exclude-age-rule-4" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="exclude-age-rule-4">
+                                        older or younger on a date
+                                    </label>
                                 </div>
-
-                                <p class="nhsuk-u-font-weight-bold">by</p>
-
-                                <div class="nhsuk-date-input" id="age-date-1">
-
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="age-over-day-1">Day</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="age-over-day-1" name="age-over-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                    
+                                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-exclude-age-rule-4">
+                    
+                                    <div class="nhsuk-form-group">
+        
+                                        <label class="nhsuk-label" for="age-over-under">Age</label>
+                                        <div class="nhsuk-input__wrapper">
+                                            <input class="nhsuk-input nhsuk-input--width-2" id="age-over-under" name="age-over-under-1" type="tex">
+                                            <div class="nhsuk-input__suffix" aria-hidden="true">years old</div>
                                         </div>
-                                    </div>
-                                    
-                                    <div class="nhsuk-date-input__item">
+        
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+        
+                                        <p class="nhsuk-u-font-weight-bold">and</p>
+        
                                         <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="age-over-month-1">Month</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="age-over-month-1" name="age-over-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                            <select class="nhsuk-select" id="age-over-under" name="age-over-under-select-1">
+                                                <option value="older" selected>Older</option>
+                                                <option value="younger">Younger</option>
+                                            </select>
                                         </div>
-                                    </div>
+        
+                                        <p class="nhsuk-u-font-weight-bold">by</p>
+        
+                                        <div class="nhsuk-date-input" id="age-date-1">
+        
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="age-over-day-1">Day</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="age-over-day-1" name="age-over-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="age-over-month-1">Month</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="age-over-month-1" name="age-over-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+        
+                                            <div class="nhsuk-date-input__item">
+                                                <div class="nhsuk-form-group">
+                                                    <label class="nhsuk-label nhsuk-date-input__label" for="age-over-year-1">Year</label>
+                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="age-over-year-1" name="age-over-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                                                </div>
+                                            </div>
+        
+                                        </div> <!-- /. nhsuk-date-input -->
+        
+                                        <div class="nhsuk-u-padding-bottom-4"></div>
+        
+                                        <button class="nhsuk-button nhsuk-button--secondary">
+                                            Add rule
+                                        </button>
+        
+                                    </div> <!-- /. nhsuk-form-group -->
+                                </div> <!-- /. nhsuk-radios--conditional -->
+        
+                            </div> <!-- /. wrapper nhsuk-radios--conditional -->
+                        </fieldset> <!-- /. nhsuk-fieldset -->
+                    </div> <!-- /. nhsuk-form-group -->
 
-                                    <div class="nhsuk-date-input__item">
-                                        <div class="nhsuk-form-group">
-                                            <label class="nhsuk-label nhsuk-date-input__label" for="age-over-year-1">Year</label>
-                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="age-over-year-1" name="age-over-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
-                                        </div>
-                                    </div>
+                </div>
+            </details>
 
-                                </div> <!-- /. nhsuk-date-input -->
+            <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+        
+            <h2>Run schedule</h2>
 
-                                <div class="nhsuk-u-padding-bottom-4"></div>
+            <div class="nhsuk-form-group">
 
-                                <button class="nhsuk-button nhsuk-button--secondary">
-                                    Add rule
-                                </button>
+                <div class="nhsuk-radios">
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="frequency-year" name="frequency-year-1" type="radio" value="every-year">
+                      <label class="nhsuk-label nhsuk-radios__label" for="frequency-year">
+                        Every year
+                      </label>
+                    </div>
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="frequency-month" name="frequency-month-1" type="radio" value="every-month">
+                      <label class="nhsuk-label nhsuk-radios__label" for="frequency-month">
+                        Every month
+                      </label>
+                    </div>
 
-                            </div> <!-- /. nhsuk-form-group -->
-                        </div> <!-- /. nhsuk-radios--conditional -->
-
-                    </div> <!-- /. wrapper nhsuk-radios--conditional -->
-                </fieldset> <!-- /. nhsuk-fieldset -->
-            </div> <!-- /. nhsuk-form-group -->
+                    <div class="nhsuk-radios__item">
+                        <input class="nhsuk-radios__input" id="frequency-week" name="frequency-week-1" type="radio" value="every-week">
+                        <label class="nhsuk-label nhsuk-radios__label" for="frequency-week">
+                          Every week
+                        </label>
+                    </div>
+              
+                </div>
+        
+            </div>
+    
+            <p class="nhsuk-u-font-weight-bold">from</p>
+    
+            <div class="nhsuk-date-input" id="run-schedule">
+    
+                <div class="nhsuk-date-input__item">
+                    <div class="nhsuk-form-group">
+                        <label class="nhsuk-label nhsuk-date-input__label" for="run-schedule-day">Day</label>
+                        <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="run-schedule-day" name="run-schedule-day-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                </div>
+                
+                <div class="nhsuk-date-input__item">
+                    <div class="nhsuk-form-group">
+                        <label class="nhsuk-label nhsuk-date-input__label" for="run-schedule-month">Month</label>
+                        <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="run-schedule-month" name="run-schedule-month-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                </div>
+    
+                <div class="nhsuk-date-input__item">
+                    <div class="nhsuk-form-group">
+                        <label class="nhsuk-label nhsuk-date-input__label" for="run-schedule-year">Year</label>
+                        <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="run-schedule-year" name="run-schedule-year-1" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                </div>
+    
+            </div> <!-- /. nhsuk-date-input -->
     
             <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
         

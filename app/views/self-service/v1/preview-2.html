@@ -62,7 +62,7 @@ Cohorting as a Service
               <h3>Cohort details</h3>
 
               <p class="nhsuk-u-font-weight-bold">Cohort name</p>
-              <p>Measles, Mumps and Rubella (MMR) vaccination specification</p>
+              <p>Measles, Mumps and Rubella (MMR) vaccination 2024</p>
 
               <p class="nhsuk-u-font-weight-bold">Background</p>
 
@@ -225,24 +225,6 @@ Cohorting as a Service
 
               <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
 
-              <h3>Clinical safety risk assessment</h3>
-
-              <p class="nhsuk-u-font-weight-bold">Severity</p>
-              <p>Major</p>
-
-              <p class="nhsuk-u-font-weight-bold">Likelihood</p>
-              <p>Very low</p>
-
-              <p class="nhsuk-u-font-weight-bold">Risk score</p>
-              <strong class="nhsuk-tag nhsuk-tag--yellow">2</strong>
-
-              <div class="nhsuk-u-padding-bottom-4"></div>
-
-              <p class="nhsuk-u-font-weight-bold">Justification</p>
-              <p>Although it’s possible to miss patients from these groups due to upstream data issues. It is highly unlikely to affect any individuals adversely.</p>
-
-              <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
-
               <p class="nhsuk-u-font-weight-bold">Number of people in cohort</p>
               <p>360,964</p>
 
@@ -334,6 +316,118 @@ Cohorting as a Service
                   <!-- Label -->
 
                   <p class="nhsuk-u-font-weight-bold">Label</p>
+                  <p>Age based rule 1</p>
+
+                  <!-- Rule -->
+
+                  <p class="nhsuk-u-font-weight-bold">Rule</p>
+                  <p>Include individuals in England aged 6 and over on 31 August 2023.</p>
+                  <p>Do not include individuals aged 11 and over on 31 August 2023.</p>
+
+                  <!-- Data source -->
+                  <p class="nhsuk-u-font-weight-bold">Data source</p>
+                  <p>PDS</p>
+
+                </div>
+              </details>
+
+              <!-- Rule 2 -->
+
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Age based rule 2
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                  <!-- Label -->
+
+                  <p class="nhsuk-u-font-weight-bold">Label</p>
+                  <p>Age based rule 2</p>
+
+                  <!-- Rule -->
+
+                  <p class="nhsuk-u-font-weight-bold">Rule</p>
+                  <p>Include individuals in England aged 11 and over on 31 August 2023.</p>
+                  <p>Do not include individuals aged 16 and over on 31 August 2023.</p>
+
+                  <!-- Data source -->
+                  <p class="nhsuk-u-font-weight-bold">Data source</p>
+                  <p>PDS</p>
+
+                </div>
+              </details>
+
+              <!-- Rule 3 -->
+
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Age based rule 3
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                  <!-- Label -->
+
+                  <p class="nhsuk-u-font-weight-bold">Label</p>
+                  <p>Age based rule 3</p>
+
+                  <!-- Rule -->
+
+                  <p class="nhsuk-u-font-weight-bold">Rule</p>
+                  <p>Include individuals in England aged 16 and over on 31 August 2023.</p>
+                  <p>Do not include individuals aged 19 and over on 31 August 2023.</p>
+
+                  <!-- Data source -->
+                  <p class="nhsuk-u-font-weight-bold">Data source</p>
+                  <p>PDS</p>
+
+                </div>
+              </details>
+
+              <!-- Rule 4 -->
+
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Age based rule 4
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                  <!-- Label -->
+
+                  <p class="nhsuk-u-font-weight-bold">Label</p>
+                  <p>Age based rule 4</p>
+
+                  <!-- Rule -->
+
+                  <p class="nhsuk-u-font-weight-bold">Rule</p>
+                  <p>Include individuals aged 19 and over on 31 August 2023.</p>
+                  <p>Do not include individuals aged 26 and over on 31 March 2024.</p>
+
+                  <!-- Data source -->
+                  <p class="nhsuk-u-font-weight-bold">Data source</p>
+                  <p>PDS</p>
+
+                </div>
+              </details>
+
+              <!-- Rule 5 -->
+
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    {{ data['rule-label-1'] }}
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                  <!-- Label -->
+
+                  <p class="nhsuk-u-font-weight-bold">Label</p>
                   <p class="highlight">{{ data['rule-label-1'] }}</p>
 
                   <!-- Rule -->
@@ -353,12 +447,12 @@ Cohorting as a Service
                 </div>
               </details>
 
-              <!-- Rule 2 -->
+              <!-- Rule 6 -->
 
               <details class="nhsuk-details">
                 <summary class="nhsuk-details__summary">
                   <span class="nhsuk-details__summary-text">
-                    Age based rule 2
+                    {{ data['rule-label-2'] }}
                   </span>
                 </summary>
                 <div class="nhsuk-details__text">
@@ -371,7 +465,7 @@ Cohorting as a Service
                   <!-- Rule -->
 
                   <p class="nhsuk-u-font-weight-bold">Rule</p>
-                  <p class="highlight">Include individuals who are {{ data['include-age-by-1'] }} years old by {{ data['include-age-by-day-1'] }} {{ data['include-age-by-month-1'] }} {{ data['include-age-by-year-1'] }}</p>
+                  <p class="highlight">Include individuals who are {{ data['include-age-by-1'] }} years old by {{ data['include-age-by-day-1'] }} {{ data[include-age-by-month-1'] }} {{ data['include-age-by-year-1'] }}</p>
 
                   <!-- Data source -->
                   <p class="nhsuk-u-font-weight-bold">Data source</p>
@@ -385,12 +479,12 @@ Cohorting as a Service
                 </div>
               </details>
 
-              <!-- Rule 3 -->
+              <!-- Rule 7 -->
 
               <details class="nhsuk-details">
                 <summary class="nhsuk-details__summary">
                   <span class="nhsuk-details__summary-text">
-                    Age based rule 3
+                    {{ data['rule-label-3'] }}
                   </span>
                 </summary>
                 <div class="nhsuk-details__text">
@@ -425,7 +519,9 @@ Cohorting as a Service
               <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
 
               <p class="nhsuk-u-font-weight-bold">Run schedule</p>
-              <p class="highlight">{{ data['run-schedule-day'] }} {{ data['run-schedule-month'] }} {{ data['run-schedule-year'] }}</p>
+              <p class="highlight">{{ data['frequency-radio'] }}</p>
+              <p class="nhsuk-u-font-weight-bold">From</p>
+              <p class="highlight">{{ data['run-schedule-day-3'] }} {{ data['run-schedule-month-3'] }} {{ data['run-schedule-year-3'] }}</p>
 
             </div>
           </div>

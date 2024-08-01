@@ -40,7 +40,10 @@ Cohorting as a Service
         <li>have been created by you or your healthcare programme</li>
     </ul>
 
-    <p>Copying a cohort will create a new cohort with the same dataset.</p>
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <p>Copying a cohort will create a new cohort with the same dataset. It will not replace the original.</p>
+    </div>
 
     <div class="nhsuk-u-padding-bottom-5"></div>
   
@@ -78,10 +81,20 @@ Cohorting as a Service
 
           <tr role="row" class="nhsuk-table__row">
             <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Cohort name </span>Measles, Mumps and Rubella (MMR)
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Cohort name </span>Measles, Mumps and Rubella (MMR) vaccination 2024
             </td>
             <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Purpose </span>The Public Health Commissioning Office (PHCO) have commissioned the NHS England Vaccine Delivery Service (VDS) to support an urgent national MMR catch-up campaign over the course of the next 12 months, partly in response to the current measles outbreak in London.
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Purpose </span>
+                <details class="nhsuk-details">
+                  <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                      Purpose
+                    </span>
+                  </summary>
+                  <div class="nhsuk-details__text">
+                    The Public Health Commissioning Office (PHCO) have commissioned the NHS England Vaccine Delivery Service (VDS) to support an urgent national MMR catch-up campaign over the course of the next 12 months, partly in response to the current measles outbreak in London.
+                  </div>
+                </details>
             </td>
             <td role="cell" class="nhsuk-table__cell">
                 <span class="nhsuk-table-responsive__heading" aria-hidden="true">Status </span>
@@ -95,7 +108,7 @@ Cohorting as a Service
             <td role="cell" class="nhsuk-table__cell">
                 <span class="nhsuk-table-responsive__heading" aria-hidden="true">Action </span>
                 <a href="mmr-cohort">View</a>
-                <a href="edit-cohort">Edit</a>
+                <a href="edit-cohort">Copy</a>
             </td>
           </tr>
           
@@ -138,7 +151,17 @@ Cohorting as a Service
                 <span class="nhsuk-table-responsive__heading" aria-hidden="true">Cohort name </span>{{ data['cohort-name'] }}
             </td>
             <td role="cell" class="nhsuk-table__cell">
-                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Purpose </span>{{ data['cohort-description'] }}
+                <span class="nhsuk-table-responsive__heading" aria-hidden="true">Purpose </span>
+                <details class="nhsuk-details">
+                  <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                      Purpose
+                    </span>
+                  </summary>
+                  <div class="nhsuk-details__text">
+                    {{ data['cohort-description'] }}
+                  </div>
+                </details>
             </td>
             <td role="cell" class="nhsuk-table__cell">
                 <span class="nhsuk-table-responsive__heading" aria-hidden="true">Status </span>
